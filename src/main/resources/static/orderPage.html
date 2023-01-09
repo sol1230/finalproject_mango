@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex justify-content-between align-items-center border-bottom"
+      >
+        <nav class="navbar">
+          <a href="./index.html" class="navbar-brand">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
+              alt="logo"
+              width="80"
+            />
+            와인로고
+          </a>
+        </nav>
+        <div>
+          <nav class="fw-bold nav">
+            <a href="#" class="nav-link link-dark">와인상품</a>
+            <a href="#" class="nav-link link-dark">주문</a>
+            <a href="#" class="nav-link link-dark">Q&A</a>
+            <a href="#" class="nav-link link-dark">공지</a>
+          </nav>
+        </div>
+      </header>
+      <form action="" method="post">
+        <div class="fs-4 fw-bold text-center mt-5 mb-5">주문/결제</div>
+        <!-- 여기서부터 구매 상품 정보 -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>상품정보</th>
+              <th>판매자</th>
+              <th>배송비</th>
+              <th>수량</th>
+              <th>상품금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>
+              <div class="d-flex">
+                <div class="me-3">
+                  <img
+                    src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201808/24/a2c657f3-9abd-425e-999a-2bef2e88f160.jpg"
+                    alt="상품이미지"
+                    width="50"
+                  />
+                </div>
+                <div>
+                  <div>테 마타 에스테이트 샤르도네</div>
+                  <span>화이트</span>
+                  <span>뉴질랜드</span>
+                  <span>샤르도네</span>
+                </div>
+              </div>
+            </td>
+            <td>와인컴</td>
+            <td>무료</td>
+            <td>1개</td>
+            <td>30,000원</td>
+          </tbody>
+        </table>
+        <!-- 여기서부터 주문자 정보 -->
+        <div class="d-flex">
+          <div class="flex-fill w-50">
+            <div class="mt-4">
+              <div class="mt-3 fw-bold">주문자 정보</div>
+              <hr />
+              <ul class="mt-3 list-unstyled">
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="order_name">이름</label>
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="order_name"
+                      id="order_name"
+                      placeholder="이름을 입력해주세요."
+                    />
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="order_email">이메일</label>
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="order_email"
+                      id="order_email"
+                      placeholder="이메일을 입력해주세요."
+                    />
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="order_phone">연락처</label>
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="order_phone"
+                      id="order_phone"
+                      placeholder="'-'제외한 숫자만 입력해주세요."
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 여기서부터 배송정보 -->
+            <div>
+              <div class="mt-4 fw-bold d-flex justify-content-between">
+                <div class="fw-bold">배송정보</div>
+                <div class="justify-content-right">
+                  <input
+                    type="checkbox"
+                    name="order_infoCopy"
+                    id="order_infoCopy"
+                  />
+                  <label for="order_infoCopy">주문자와 동일</label>
+                </div>
+              </div>
+              <hr />
+              <ul class="mt-3 list-unstyled">
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="ship_name">수취인</label>
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="ship_name"
+                      id="ship_name"
+                      placeholder="이름을 입력해주세요."
+                    />
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="ship_phone">연락처</label>
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="ship_phone"
+                      id="ship_phone"
+                      placeholder="'-'제외한 숫자만 입력해주세요."
+                    />
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="ship_address">배송지</label>
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="ship_address"
+                      id="ship_address"
+                      placeholder="주소를 입력해주세요."
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 여기서부터 배송 요청사항 -->
+            <div>
+              <div class="mt-4 fw-bold form-label">배송 요청사항</div>
+              <div class="mb-1">
+                <textarea
+                  class="form-control"
+                  name="ship_request"
+                  id="ship_request"
+                  cols=""
+                  rows="2"
+                  placeholder="내용을 입력해주세요."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- 여기서부터 할인/적립 -->
+          <div class="flex-fill ms-5">
+            <div class="mt-4">
+              <div class="mt-3 fw-bold">할인/적립</div>
+              <hr />
+              <ul class="mt-3 list-unstyled">
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="discount_coupon">쿠폰할인</label>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-fill">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="discount_coupon"
+                        id="discount_coupon"
+                        placeholder="0 원"
+                      />
+                    </div>
+                    <div>
+                      <button class="btn btn-secondary ms-3">쿠폰선택</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <div class="mb-1">
+                    <label for="discount_point">적립금</label>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-fill">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="discount_point"
+                        id="discount_point"
+                        placeholder="0 원"
+                      />
+                    </div>
+                    <div>
+                      <button class="btn btn-secondary ms-3">전액사용</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 여기서부터 결제방법 -->
+            <div class="mt-4">
+              <div class="mt-3 fw-bold">결제정보</div>
+              <hr />
+              <div class="border p-4">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-2">
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div>상품금액</div>
+                      <div>30,000원</div>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div>쿠폰할인</div>
+                      <div>- 0원</div>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div>적립금할인</div>
+                      <div>- 0원</div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="mb-2">
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="align-self-center">최종결제금액</div>
+                      <div class="fs-3 fw-bold">30,000원</div>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="align-self-center">결제방법</div>
+                      <div>
+                        <button class="btn btn-secondary">신용카드</button>
+                        <button class="btn btn-secondary">계좌이체</button>
+                        <button class="btn btn-secondary">휴대폰결제</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5 pb-5">
+          <button class="btn btn-outline-secondary btn-lg w-25">취소</button>
+          <button class="btn btn-secondary btn-lg w-25">결제하기</button>
+        </div>
+      </form>
+    </div>
+    <footer class="text-bg-secondary border-top p-5 mt-5">
+      <div class="row m-auto">
+        <div class="col fs-5">
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a href="" class="text-white text-decoration-none">회사소개</a>
+            </li>
+            <li>
+              <a href="" class="text-white text-decoration-none">브랜드 소개</a>
+            </li>
+            <li>
+              <a href="" class="text-white text-decoration-none">이용약관</a>
+            </li>
+            <li>
+              <a href="" class="text-white text-decoration-none"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-white text-decoration-none">고객센터</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div>
+            <ul class="list-unstyled">
+              <li>
+                대표번호 : 0000-0000-0000 (업무시간 : 09:00-17:00 월~금) 주말,
+                공휴일 휴무
+              </li>
+              <li>
+                <span>대표자 : 아무개</span>
+                <span>주소 : 서울시 서초대로 17길</span>
+              </li>
+              <li>
+                <span>법인명 : (주)회사명</span>
+                <span>사업자 등록정보 : 000-000-000</span>
+              </li>
+              <li>
+                <span>호스팅 : (주)회사명</span>
+                <span>E-MAIL : wine@wine.com</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
+              alt="logo"
+              width="230"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

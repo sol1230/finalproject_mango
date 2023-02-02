@@ -11,46 +11,117 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
-      <header
-        class="d-flex justify-content-between align-items-center border-bottom"
-      >
-        <nav class="navbar">
-          <a href="./index.html" class="navbar-brand">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
-              alt="logo"
-              width="80"
-            />
-            와인로고
-          </a>
-        </nav>
-        <div>
-          <nav class="fw-bold nav">
-            <a href="./wine.html" class="nav-link link-dark">와인상품</a>
-            <a href="./orderPage.html" class="nav-link link-dark">주문</a>
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
-          </nav>
-        </div>
-      </header>
+    <header
+      class="d-flex justify-content-between align-items-center border-bottom"
+    >
+      <nav class="navbar">
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
+            alt="logo"
+            width="80"
+          />
+          와인로고
+        </a>
+      </nav>
       <div>
-        <img
-          src="https://www.lesvinskr.com/wp-content/uploads/2018/12/221226_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80_1%EC%9B%94%EB%A9%94%EC%9D%B8%EB%B0%B0%EB%84%88-05.jpg"
-          alt="메인이미지"
-          width="100%"
-        />
+        <nav class="fw-bold nav">
+          <a href="./wine.html" class="nav-link link-dark">와인상품</a>
+          <a href="./orderPage.html" class="nav-link link-dark">주문</a>
+          <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
+          <a href="./notice.html" class="nav-link link-dark">공지</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 검색 navbar -->
+    <nav
+      class="navbar navbar-expand justify-content-center border-top shadow-sm"
+    >
+      <div class="p-1">
+        <ul class="navbar-nav">
+          <li class="dropdown nav-item">
+            <a href="#dropdownId" class="nav-link" data-bs-toggle="dropdown"
+              >와인</a
+            >
+            <div id="dropdownId" class="dropdown-menu">
+              <a href="" class="dropdown-item">
+           
+                레드
+              </a>
+              <a href="" class="dropdown-item">
+       
+                화이트</a
+              >
+              <a href="" class="dropdown-item">
+  
+                로제</a
+              >
+              <a href="" class="dropdown-item">
+     
+                스파클링</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav-link">국가</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">품종</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">음식페어링</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">도수</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container pt-5">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+          <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.lesvinskr.com/wp-content/uploads/2018/12/221226_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80_1%EC%9B%94%EB%A9%94%EC%9D%B8%EB%B0%B0%EB%84%88-05.jpg" alt="main" width="100%" height="700">
+    </div>
+    <div class="carousel-item">
+      <img src="../src/img/carnmorWine.PNG" alt="Chicago" width="100%" height="700">
+    </div>
+    <div class="carousel-item">
+      <img src="../src/img/wine.PNG" alt="New York" width="100%" height="700">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
       </div>
     </div>
     <footer class="text-bg-secondary border-top p-5 mt-5">
       <div class="row m-auto">
-        <div class="col fs-5">
+        <div class="col">
           <ul class="list-unstyled d-flex">
             <li>
               <a href="" class="text-white text-decoration-none">회사소개</a>

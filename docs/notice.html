@@ -15,49 +15,109 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <style>
+      .page-link {
+        color: white;
+        background-color: rgb(220, 53, 69);
+        border-color: white;
+      }
+      .page-link:focus,
+      .page-link:hover {
+        color: rgb(220, 53, 69);
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <header
-        class="d-flex justify-content-between align-items-center border-bottom"
-      >
-        <nav class="navbar">
-          <a href="./index.html" class="navbar-brand">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
-              alt="logo"
-              width="80"
-            />
-            와인로고
-          </a>
+    <header
+      class="d-flex justify-content-between align-items-center border-bottom"
+    >
+      <nav class="navbar">
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
+            alt="logo"
+            width="80"
+          />
+          와인로고
+        </a>
+      </nav>
+      <div>
+        <nav class="fw-bold nav">
+          <a href="./wine.html" class="nav-link link-dark">와인상품</a>
+          <a href="./orderPage.html" class="nav-link link-dark">주문</a>
+          <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
+          <a href="./notice.html" class="nav-link link-dark">공지</a>
         </nav>
-        <div>
-          <nav class="fw-bold nav">
-            <a href="./wine.html" class="nav-link link-dark">와인상품</a>
-            <a href="./orderPage.html" class="nav-link link-dark">주문</a>
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
-          </nav>
-        </div>
-      </header>
+      </div>
+    </header>
+
+    <!-- 검색 navbar -->
+    <nav
+      class="navbar navbar-expand justify-content-center border-top shadow-sm"
+    >
+      <div class="p-1">
+        <ul class="navbar-nav">
+          <li class="dropdown nav-item">
+            <a href="#dropdownId" class="nav-link" data-bs-toggle="dropdown"
+              >와인</a
+            >
+            <div id="dropdownId" class="dropdown-menu">
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                레드
+              </a>
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                화이트</a
+              >
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                로제</a
+              >
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                스파클링</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav-link">국가</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">품종</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">음식페어링</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">도수</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
       <div class="fs-3 text-center mt-5 fw-bold">공지사항</div>
-    </div>
-    <div class="input-group justify-content-center mt-5">
-      <input
-        class=""
-        type="text"
-        name=""
-        id=""
-        placeholder="검색어를 입력해주세요. "
-        style="width: 20%"
-      />
-      <button class="btn btn-danger">검색</button>
-    </div>
-    <div class="justify-items-center">
-      <table
-        class="table mt-5 text-center"
-        style="margin-left: auto; margin-right: auto; width: 60%"
-      >
+      <table class="table mt-5 text-center">
         <thead>
           <tr>
             <th>번호</th>
@@ -88,19 +148,36 @@
           </tr>
         </tbody>
       </table>
-    </div>
-    <div class="pagination pagination-sm justify-content-center mt-5">
-      <a class="page-item page-link disabled" href="">Pre</a>
-      <a class="page-item page-link active" href="">1</a>
-      <a class="page-item page-link" href="">2</a>
-      <a class="page-item page-link" href="">3</a>
-      <a class="page-item page-link" href="">4</a>
-      <a class="page-item page-link" href="">Next</a>
+
+      <div class="input-group justify-content-center mt-5">
+        <div class="">
+          <input
+            class="form-control"
+            type="text"
+            name=""
+            id=""
+            placeholder="검색어를 입력하세요."
+            style="width: 100%"
+          />
+        </div>
+        <div class="ms-1">
+          <button class="btn btn-danger center">검색</button>
+        </div>
+      </div>
+
+      <div class="pagination pagination-sm justify-content-center mt-5">
+        <a class="page-item page-link" href="">Pre</a>
+        <a class="page-item page-link" href="">1</a>
+        <a class="page-item page-link" href="">2</a>
+        <a class="page-item page-link" href="">3</a>
+        <a class="page-item page-link" href="">4</a>
+        <a class="page-item page-link" href="">Next</a>
+      </div>
     </div>
 
     <footer class="text-bg-secondary border-top p-5 mt-5">
       <div class="row m-auto">
-        <div class="col fs-5">
+        <div class="col">
           <ul class="list-unstyled d-flex">
             <li>
               <a href="" class="text-white text-decoration-none">회사소개</a>

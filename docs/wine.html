@@ -17,34 +17,99 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header
-        class="d-flex justify-content-between align-items-center border-bottom"
-      >
-        <nav class="navbar">
-          <a href="./index.html" class="navbar-brand">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
-              alt="logo"
-              width="80"
-            />
-            와인로고
-          </a>
+    <header
+      class="d-flex justify-content-between align-items-center border-bottom"
+    >
+      <nav class="navbar">
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
+            alt="logo"
+            width="80"
+          />
+          와인로고
+        </a>
+      </nav>
+      <div>
+        <nav class="fw-bold nav">
+          <a href="./wine.html" class="nav-link link-dark">와인상품</a>
+          <a href="./orderPage.html" class="nav-link link-dark">주문</a>
+          <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
+          <a href="./notice.html" class="nav-link link-dark">공지</a>
         </nav>
-        <div>
-          <nav class="fw-bold nav">
-            <a href="./wine.html" class="nav-link link-dark">와인상품</a>
-            <a href="./orderPage.html" class="nav-link link-dark">주문</a>
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
-          </nav>
-        </div>
-      </header>
+      </div>
+    </header>
+
+    <!-- 검색 navbar -->
+    <nav
+      class="navbar navbar-expand justify-content-center border-top shadow-sm"
+    >
+      <div class="p-1">
+        <ul class="navbar-nav">
+          <li class="dropdown nav-item">
+            <a href="#dropdownId" class="nav-link" data-bs-toggle="dropdown"
+              >와인</a
+            >
+            <div id="dropdownId" class="dropdown-menu">
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                레드
+              </a>
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                화이트</a
+              >
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                로제</a
+              >
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                스파클링</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav-link">국가</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">품종</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">음식페어링</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">도수</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
       <div class="fs-3 text-center mt-5 fw-bold">와인</div>
       <div class="input-group justify-content-center mt-5">
         <div class="">
           <input
-            class=""
+            class="form-control"
             type="text"
             name=""
             id=""
@@ -56,52 +121,8 @@
           <button class="btn btn-danger center">검색</button>
         </div>
       </div>
+      <hr />
       <div class="justify-content-between row">
-        <div class="mt-5 col">
-          <div class="fs-5 fw-bold mb-2">종류</div>
-          <div class="row">
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                name="wine"
-                value="1"
-                id="wine1"
-                class="form-check-input"
-              />
-              <label for="wine1" class="form-check-label">레드</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                name="wine"
-                value="2"
-                id="wine2"
-                class="form-check-input"
-              />
-              <label for="wine2" class="form-check-label">화이트</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                name="wine"
-                value="3"
-                id="wine3"
-                class="form-check-input"
-              />
-              <label for="wine3" class="form-check-label">로제</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                name="wine"
-                value="4"
-                id="wine4"
-                class="form-check-input"
-              />
-              <label for="wine4" class="form-check-label">스파클링</label>
-            </div>
-          </div>
-        </div>
         <div class="mt-5 col">
           <div class="fs-5 fw-bold mb-2">가격</div>
           <div class="row">
@@ -577,7 +598,7 @@
 
     <footer class="text-bg-secondary border-top p-5 mt-5">
       <div class="row m-auto">
-        <div class="col fs-5">
+        <div class="col">
           <ul class="list-unstyled d-flex">
             <li>
               <a href="" class="text-white text-decoration-none">회사소개</a>

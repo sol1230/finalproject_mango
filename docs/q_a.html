@@ -17,38 +17,105 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header
-        class="d-flex justify-content-between align-items-center border-bottom"
-      >
-        <nav class="navbar">
-          <a href="./index.html" class="navbar-brand">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
-              alt="logo"
-              width="80"
-            />
-            와인로고
-          </a>
+    <header
+      class="d-flex justify-content-between align-items-center border-bottom"
+    >
+      <nav class="navbar">
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_5ol64lNZ7OGxmfFkcK0Skhfrhs8HiJpGQ&usqp=CAU"
+            alt="logo"
+            width="80"
+          />
+          와인로고
+        </a>
+      </nav>
+      <div>
+        <nav class="fw-bold nav">
+          <a href="./wine.html" class="nav-link link-dark">와인상품</a>
+          <a href="./orderPage.html" class="nav-link link-dark">주문</a>
+          <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
+          <a href="./notice.html" class="nav-link link-dark">공지</a>
         </nav>
-        <div>
-          <nav class="fw-bold nav">
-            <a href="./wine.html" class="nav-link link-dark">와인상품</a>
-            <a href="./orderPage.html" class="nav-link link-dark">주문</a>
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
-          </nav>
-        </div>
-      </header>
+      </div>
+    </header>
+
+    <!-- 검색 navbar -->
+    <nav
+      class="navbar navbar-expand justify-content-center border-top shadow-sm"
+    >
+      <div class="p-1">
+        <ul class="navbar-nav">
+          <li class="dropdown nav-item">
+            <a href="#dropdownId" class="nav-link" data-bs-toggle="dropdown"
+              >와인</a
+            >
+            <div id="dropdownId" class="dropdown-menu">
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                레드
+              </a>
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                화이트</a
+              >
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                로제</a
+              >
+              <a href="" class="dropdown-item">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="item"
+                  id=""
+                />
+                스파클링</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav-link">국가</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">품종</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">음식페어링</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">도수</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
       <div class="fs-3 text-center mt-5 fw-bold">Q & A</div>
 
-      <div class="mt-5">
-        <nav class="nav anv-tabs" style="float:right;">
-          <a href="./notice_questions.html" class="nav-link link-danger">자주하는 질문</a>
-          <a href="./notice_inquiry.html" class="nav-link link-danger">1:1문의</a>
+      <div class="">
+        <nav class="nav anv-tabs" style="float: right">
+          <a href="./notice_questions.html" class="nav-link link-dark fw-bold"
+            >자주하는 질문</a
+          >
+          <a href="./notice_inquiry.html" class="nav-link link-dark fw-bold"
+            >1:1문의</a
+          >
         </nav>
-     
-
       </div>
       <table class="table mt-5 text-center">
         <thead>
@@ -108,7 +175,7 @@
 
     <footer class="text-bg-secondary border-top p-5 mt-5">
       <div class="row m-auto">
-        <div class="col fs-5">
+        <div class="col">
           <ul class="list-unstyled d-flex">
             <li>
               <a href="" class="text-white text-decoration-none">회사소개</a>

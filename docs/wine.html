@@ -260,24 +260,50 @@
     <div class="container">
       <div class="fs-3 text-center mt-5 fw-bold">와인</div>
       <div class="input-group justify-content-center mt-5">
-        <div class="">
-          <input
-            class=""
-            type="text"
-            name=""
-            id=""
-            placeholder="검색어를 입력하세요."
-            style="width: 100%"
-          />
-        </div>
-        <div class="ms-1">
-          <button class="btn btn-danger center">검색</button>
-        </div>
+        <nav class="navbar navbar-light">
+          <div class="container-fluid dropdown nav-item">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="검색어를 입력하세요."
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-danger"
+                type="submit"
+                style="width: 30%"
+              >
+                검색
+              </button>
+            </form>
+
+            <div class="ps-2">
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarFilter2"
+                aria-controls="navbarFilter"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class=""
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/3839/3839020.png"
+                    alt="filter"
+                    width="30"
+                /></span>
+              </button>
+            </div>
+          </div>
+        </nav>
       </div>
+
       <!-- collapse 버튼 클릭하면 나오는 검색 필터 -->
       <div
         class="collapse text-secondary shadow-sm pt-4 pb-2 align-self-center"
-        id="navbarFilter"
+        id="navbarFilter2"
         style="width: 60%"
       >
         <div class="mb-3">

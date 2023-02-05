@@ -20,6 +20,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <style>
+      table {
+        border-spacing: 10px;
+        border-collapse: separate;
+      }
+      span {
+        border-radius: 10px;
+        padding: 0.3rem;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -36,6 +46,21 @@
             <a href="./notice.html" class="nav-link link-dark">공지</a>
           </nav>
         </div>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="검색어를 입력하세요."
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-danger"
+            type="submit"
+            style="width: 30%"
+          >
+            검색
+          </button>
+        </form>
       </nav>
       <div class="">
         <nav class="fw-bold nav align-items-center pt-2">
@@ -261,46 +286,6 @@
 
     <!-- 본 페이지 content -->
     <div class="container">
-      <div class="input-group justify-content-center mt-5">
-        <nav class="navbar navbar-light">
-          <div class="container-fluid dropdown nav-item">
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="검색어를 입력하세요."
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-danger"
-                type="submit"
-                style="width: 30%"
-              >
-                검색
-              </button>
-            </form>
-
-            <div class="ps-2">
-              <button
-                class="navbar-toggler collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarFilter2"
-                aria-controls="navbarFilter"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class=""
-                  ><img
-                    src="https://cdn-icons-png.flaticon.com/512/3839/3839020.png"
-                    alt="filter"
-                    width="30"
-                /></span>
-              </button>
-            </div>
-          </div>
-        </nav>
-      </div>
       <div
         class="d-flex justify-content-center mt-5 rounded-3 pt-5 p-5"
         style="background-color: rgb(252, 249, 244)"
@@ -388,124 +373,229 @@
               <option value="3">3</option>
             </select>
             <a href="./orderPage.html">
-              <button class="ms-2 btn btn-outline-danger">구매하기</button>
+              <button class="ms-2 btn btn-danger">구매하기</button>
             </a>
+            <a href="#"
+              ><button class="ms-2 btn btn-outline-danger">장바구니</button></a
+            >
+            <a href="#"><i class="bi bi-bag-heart"></i></a>
+            <span><i class="bi bi-bag-heart"></i>하트</span>
           </div>
         </div>
       </div>
-      <div class="mt-5 ms-5" style="width: 60%">
+      <div class="row">
+        <div class="mt-5 ms-5 col" style="width: 60%">
+          <table>
+            <tr>
+              <th>바디</th>
+              <td>
+                <span class="label" style="background: #dfb8b8">가벼움</span>
+              </td>
+              <td><span>중간</span></td>
+              <td><span>무거움</span></td>
+            </tr>
+            <tr>
+              <th>산도</th>
+              <td>
+                <span class="label" style="background: #dfb8b8">낮음</span>
+              </td>
+              <td>중간</td>
+              <td>높음</td>
+            </tr>
+            <tr>
+              <th>당도</th>
+              <td>낮음</td>
+              <td>중간</td>
+              <td>
+                <span class="label" style="background: #dfb8b8">높음</span>
+              </td>
+            </tr>
+            <tr>
+              <th>타닌</th>
+              <td>
+                <span class="label" style="background: #dfb8b8">약함</span>
+              </td>
+              <td>중간</td>
+              <td>강함</td>
+            </tr>
+            <tr>
+              <th>알코올</th>
+              <td>
+                <span class="label" style="background: #dfb8b8"
+                  >낮음(~11%)</span
+                >
+              </td>
+              <td>중간(12~13%)</td>
+              <td>높음(14%~)</td>
+            </tr>
+          </table>
+        </div>
+        <div class="mt-5 ms-5 col">
+          <div class="m-3 fw-bold">추천 음식</div>
+          <div class="ms-2">
+            <div class="">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="pear"
+                width="70px"
+              />
+              <span>배</span><span>사과</span><span>복숭아</span
+              ><span>망고</span><span>메론</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="text-center fs-5 fw-bold" style="color: rgb(196, 32, 3)">
+          4.0
+        </div>
+        <div class="text-center mb-3">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i
+          ><i class="bi bi-star"></i>
+        </div>
         <ul class="list-unstyled">
-          <li class="fs-5 fw-bold">당도</li>
-          <li>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-danger"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 80%"
-              ></div>
+          <li class="text-decoration-none">
+            <div class="card p-3" style="width: 80%, height 20%">
+              <div class="fw-bold">
+                Brian
+                <span class="ms-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star"></i>
+                </span>
+              </div>
+              <div class="mt-2">
+                First time one of the most famous Italian Frizzante, Moscato
+                D’Asti! Eye: pale golden color with light smooth bubble Nose:
+                delicate floral aromas of apple blossom, jasmine with some
+                citrus.
+              </div>
             </div>
           </li>
-          <li class="mt-2">
-            <span>약함</span> <span style="margin-left: 90%">진함</span>
-          </li>
-        </ul>
-        <ul class="list-unstyled">
-          <li class="fs-5 fw-bold">산도</li>
-          <li>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 40%"
-              ></div>
+          <li class="text-decoration-none">
+            <div class="card p-3 mt-3" style="width: 80%, height 20%">
+              <div class="fw-bold">
+                Brian
+                <span class="ms-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star"></i>
+                </span>
+              </div>
+              <div class="mt-2">
+                First time one of the most famous Italian Frizzante, Moscato
+                D’Asti! Eye: pale golden color with light smooth bubble Nose:
+                delicate floral aromas of apple blossom, jasmine with some
+                citrus.
+              </div>
             </div>
-          </li>
-          <li class="mt-2">
-            <span>약함</span> <span style="margin-left: 90%">진함</span>
-          </li>
-        </ul>
-        <ul class="list-unstyled">
-          <li class="fs-5 fw-bold">타닌</li>
-          <li>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 20%"
-              ></div>
-            </div>
-          </li>
-          <li class="mt-2">
-            <span>부드러움</span> <span style="margin-left: 85.5%">진함</span>
-          </li>
-        </ul>
-        <ul class="list-unstyled">
-          <li class="fs-5 fw-bold">바디감</li>
-          <li>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 40%"
-              ></div>
-            </div>
-          </li>
-          <li class="mt-2">
-            <span>가벼움</span> <span style="margin-left: 85.5%">묵직함</span>
           </li>
         </ul>
       </div>
-      <div class="mt-5">
-        <div class="text-center fs-5 fw-bold">4.0</div>
-        <div class="text-center mb-3">★★★★☆</div>
-        <ul class="list-unstyled">
-          <li class="text-decoration-none">
-            <div class="card" style="width: 80%, height 20%">
-              <div class="fw-bold">
-                Brian
-                <span class="ms-3">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star"></i>
-                </span>
-              </div>
-              <div class="">
-                First time one of the most famous Italian Frizzante, Moscato
-                D’Asti! Eye: pale golden color with light smooth bubble Nose:
-                delicate floral aromas of apple blossom, jasmine with some
-                citrus.
-              </div>
-            </div>
-          </li>
-          <li class="text-decoration-none">
-            <div class="card mt-3" style="width: 80%, height 20%">
-              <div class="fw-bold">
-                Brian
-                <span class="ms-3">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star"></i>
-                </span>
-              </div>
-              <div class="">
-                First time one of the most famous Italian Frizzante, Moscato
-                D’Asti! Eye: pale golden color with light smooth bubble Nose:
-                delicate floral aromas of apple blossom, jasmine with some
-                citrus.
+      <div style="margin-top: 5rem">
+        <div class="fs-4 fw-bold mb-5 ms-5">추천 와인</div>
+        <div class="row" style="width: 80%; margin-left: 10%">
+          <div class="col-3 flex-fill d-flex">
+            <div class="card" style="width: 200px">
+              <img src="./img/디아블로 카베르네 소비뇽 할로윈.PNG" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">디아블로 카베르네 소비뇽 할로윈</h5>
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >레드</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >칠레</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >카베르네 소비뇽</span
+                >
+                <a href="#" class="btn btn-outline-danger mt-3">더보기</a>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="col-3 flex-fill d-flex">
+            <div class="card" style="width: 200px">
+              <img src="./img/디아블로 카베르네 소비뇽 할로윈.PNG" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">디아블로 카베르네 소비뇽 할로윈</h5>
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >레드</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >칠레</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >카베르네 소비뇽</span
+                >
+                <a href="#" class="btn btn-outline-danger mt-3">더보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 flex-fill d-flex">
+            <div class="card" style="width: 200px">
+              <img src="./img/디아블로 카베르네 소비뇽 할로윈.PNG" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">디아블로 카베르네 소비뇽 할로윈</h5>
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >레드</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >칠레</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >카베르네 소비뇽</span
+                >
+                <a href="#" class="btn btn-outline-danger mt-3">더보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 flex-fill d-flex">
+            <div class="card" style="width: 200px">
+              <img src="./img/디아블로 카베르네 소비뇽 할로윈.PNG" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">디아블로 카베르네 소비뇽 할로윈</h5>
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >레드</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >칠레</span
+                >
+                <span
+                  class="badge badge-pill"
+                  style="background-color: rgb(224, 216, 234)"
+                  >카베르네 소비뇽</span
+                >
+                <a href="#" class="btn btn-outline-danger mt-3">더보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

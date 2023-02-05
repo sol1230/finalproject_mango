@@ -16,6 +16,18 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <style>
+      .page-link {
+        color: black;
+        background-color: white;
+        border-color: white;
+      }
+      .page-link:focus,
+      .page-link:hover {
+        color: white;
+        background-color: black;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -301,8 +313,8 @@
 
       <!-- collapse 버튼 클릭하면 나오는 검색 필터 -->
       <div
-        class="collapse text-secondary shadow-sm pt-4 pb-2 w-50"
-        style="margin: 0 auto"
+        class="collapse text-secondary shadow-sm pt-4 pb-2"
+        style="margin: 0 auto; width: 70%"
         id="navbarFilter2"
       >
         <div class="mb-3">
@@ -323,12 +335,12 @@
                   id=""
                 />
                 <span>&#8361; 0~</span>
-                <span style="margin-left: 4%">30,000</span>
-                <span style="margin-left: 4%">60,000</span>
-                <span style="margin-left: 4%">90,000</span>
-                <span style="margin-left: 4%">150,000</span>
-                <span style="margin-left: 4%">200,000</span>
-                <span style="margin-left: 4%">300,000~</span>
+                <span style="margin-left: 7%">30,000</span>
+                <span style="margin-left: 7%">60,000</span>
+                <span style="margin-left: 7%">90,000</span>
+                <span style="margin-left: 7%">150,000</span>
+                <span style="margin-left: 7%">200,000</span>
+                <span style="margin-left: 7%">300,000~</span>
               </li>
             </ul>
           </div>
@@ -835,6 +847,7 @@
       <hr />
 
       <div class="mt-5">
+        <div class="mb-5">총 70개 상품</div>
         <ul class="row">
           <li class="col" style="list-style: none">
             <div class="item" style="text-align: center">
@@ -918,6 +931,263 @@
             </div>
           </li>
         </ul>
+        <ul class="row">
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="wine1"
+                  width="100"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">G7 까베르네 쇼비뇽 2016</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">9,500&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="wine2"
+                  width="140"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">모엣 샹동 로제 임페리얼</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">88,500&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="https://gangnam.wine/shopimages/vinit777/0010040000402.?1640843794"
+                  alt="wine2"
+                  width="140"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">돔 페리뇽 빈티지 2012</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">350,000&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <a href="./wine_canti.html">
+                  <img
+                    src="https://worldbeermarket.kr/userfiles/prdimg/2207270009_M.jpg"
+                    alt="wine2"
+                    width="140"
+                  />
+                </a>
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">칸티 모스카토 다스티</p>
+                </div>
+                <div class="price_area">
+                  <p class="price">22,000&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="row">
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="wine1"
+                  width="100"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">G7 까베르네 쇼비뇽 2016</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">9,500&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="wine2"
+                  width="140"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">모엣 샹동 로제 임페리얼</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">88,500&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="https://gangnam.wine/shopimages/vinit777/0010040000402.?1640843794"
+                  alt="wine2"
+                  width="140"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">돔 페리뇽 빈티지 2012</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">350,000&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <a href="./wine_canti.html">
+                  <img
+                    src="https://worldbeermarket.kr/userfiles/prdimg/2207270009_M.jpg"
+                    alt="wine2"
+                    width="140"
+                  />
+                </a>
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">칸티 모스카토 다스티</p>
+                </div>
+                <div class="price_area">
+                  <p class="price">22,000&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="row">
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="wine1"
+                  width="100"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">G7 까베르네 쇼비뇽 2016</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">9,500&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="wine2"
+                  width="140"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">모엣 샹동 로제 임페리얼</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">88,500&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <img
+                  src="https://gangnam.wine/shopimages/vinit777/0010040000402.?1640843794"
+                  alt="wine2"
+                  width="140"
+                />
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">돔 페리뇽 빈티지 2012</p>
+                </div>
+
+                <div class="price_area">
+                  <p class="price">350,000&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col" style="list-style: none">
+            <div class="item" style="text-align: center">
+              <div class="mt-1">
+                <a href="./wine_canti.html">
+                  <img
+                    src="https://worldbeermarket.kr/userfiles/prdimg/2207270009_M.jpg"
+                    alt="wine2"
+                    width="140"
+                  />
+                </a>
+              </div>
+              <div class="info">
+                <div class="more_info">
+                  <p class="prd_name fw-bold">칸티 모스카토 다스티</p>
+                </div>
+                <div class="price_area">
+                  <p class="price">22,000&#8361;</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination pagination-sm justify-content-center mt-5">
+        <a class="page-item page-link" href="">이전</a>
+        <a class="page-item page-link" href="">1</a>
+        <a class="page-item page-link" href="">2</a>
+        <a class="page-item page-link" href="">3</a>
+        <a class="page-item page-link" href="">4</a>
+        <a class="page-item page-link" href="">다음</a>
       </div>
     </div>
 

@@ -56,6 +56,21 @@
             <a href="./notice.html" class="nav-link link-dark">공지</a>
           </nav>
         </div>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="검색어를 입력하세요."
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-danger"
+            type="submit"
+            style="width: 30%"
+          >
+            검색
+          </button>
+        </form>
       </nav>
       <div class="">
         <nav class="fw-bold nav align-items-center pt-2">
@@ -312,47 +327,36 @@
 
     <!-- 본 페이지 content -->
     <div class="container">
-      <div class="fs-3 text-center mt-5 fw-bold">와인</div>
-      <div class="input-group justify-content-center mt-5">
-        <nav class="navbar navbar-light">
-          <div class="container-fluid dropdown nav-item">
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="검색어를 입력하세요."
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-danger"
-                type="submit"
-                style="width: 30%"
-              >
-                검색
-              </button>
-            </form>
-
-            <div class="ps-2">
-              <button
-                class="navbar-toggler collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarFilter2"
-                aria-controls="navbarFilter"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class=""
-                  ><img
-                    src="https://cdn-icons-png.flaticon.com/512/3839/3839020.png"
-                    alt="filter"
-                    width="30"
-                /></span>
-              </button>
+      <nav class="navbar navbar-light">
+        <div
+          class="row d-flex justify-content-between align-items-center"
+          style="margin-left: 45%"
+        >
+          <div class="col fs-3 mt-5 fw-bold">와인</div>
+          <div class="col input-group mt-5">
+            <div class="container-fluid dropdown nav-item">
+              <div class="ps-2">
+                <button
+                  class="navbar-toggler collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarFilter2"
+                  aria-controls="navbarFilter"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class=""
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/3839/3839020.png"
+                      alt="filter"
+                      width="30"
+                  /></span>
+                </button>
+              </div>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
 
       <!-- collapse 버튼 클릭하면 나오는 검색 필터 -->
       <div
@@ -888,10 +892,9 @@
       </div>
 
       <hr />
-
       <div class="mt-5">
         <div class="mb-5">총 70개 상품</div>
-        <ul class="row">
+        <ul class="row mb-5">
           <li class="col" style="list-style: none">
             <div class="item" style="text-align: center">
               <div class="mt-1">
@@ -974,7 +977,7 @@
             </div>
           </li>
         </ul>
-        <ul class="row">
+        <ul class="row mb-5">
           <li class="col" style="list-style: none">
             <div class="item" style="text-align: center">
               <div class="mt-1">
@@ -1057,7 +1060,7 @@
             </div>
           </li>
         </ul>
-        <ul class="row">
+        <ul class="row mb-5">
           <li class="col" style="list-style: none">
             <div class="item" style="text-align: center">
               <div class="mt-1">
@@ -1140,7 +1143,7 @@
             </div>
           </li>
         </ul>
-        <ul class="row">
+        <ul class="row mb-5">
           <li class="col" style="list-style: none">
             <div class="item" style="text-align: center">
               <div class="mt-1">

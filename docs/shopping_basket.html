@@ -32,6 +32,21 @@
             <a href="./notice.html" class="nav-link link-dark">공지</a>
           </nav>
         </div>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="검색어를 입력하세요."
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-danger"
+            type="submit"
+            style="width: 30%"
+          >
+            검색
+          </button>
+        </form>
       </nav>
       <div class="">
         <nav class="fw-bold nav align-items-center pt-2">
@@ -54,6 +69,14 @@
               id="shopping_cart"
             >
               shopping_cart</i
+            ></a
+          >
+          <a
+            href="./wishlist.html"
+            class="nav-link link-dark"
+            data-bs-toggle="modal"
+            ><i class="material-icons col-1 text-secondary fs-3" id="favorite">
+              favorite</i
             ></a
           >
         </nav>
@@ -83,7 +106,7 @@
               alt=""
               style="width: 100px"
             />
-            &nbsp; 닥터리드만 포피리 블랑
+            <span>&nbsp; 닥터린드만 포피리 블랑</span>
           </td>
           <td>₩35,000</td>
           <td>₩5,000</td>
@@ -91,7 +114,7 @@
             <div class="input-group justify-content-center">
               <button class="btn">-</button>
               <input
-                class="text-center border"
+                class="text-center border border-0"
                 type="text"
                 name=""
                 id=""
@@ -113,7 +136,7 @@
               alt=""
               style="width: 100px"
             />
-            &nbsp; 디아블로 카베르네 소비뇽 할로윈
+            <span>&nbsp; 디아블로 카베르네 소비뇽 할로윈</span>
           </td>
           <td>₩40,000</td>
           <td>₩3,000</td>
@@ -121,7 +144,7 @@
             <div class="input-group justify-content-center">
               <button class="btn">-</button>
               <input
-                class="text-center border"
+                class="text-center border border-0"
                 type="text"
                 name=""
                 id=""
@@ -136,7 +159,7 @@
       </table>
       <div class="border text- text-center p-5">
         <div>총 판매 금액 - 총 할인 금액 = 총 결제 금액</div>
-        <div>₩75,000 - ₩8,000 = ₩67,000</div>
+        <div class="mt-4">₩75,000 - ₩8,000 = ₩67,000</div>
       </div>
       <div class="text-end mt-4">
         <button class="btn btn-danger">삭제</button>

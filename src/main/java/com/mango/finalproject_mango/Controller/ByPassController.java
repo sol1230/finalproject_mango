@@ -205,4 +205,24 @@ public class ByPassController {
   public void wine_price() {
     int i = 0;
   }
+
+  @RequestMapping(value = { "/wine/wine_red" })
+  public void wine_red() {
+    int i = 0;
+  }
+
+  @RequestMapping(value = { "/wine/wine_rose" })
+  public void wine_rose() {
+    int i = 0;
+  }
+
+  @RequestMapping(value = { "/wine/wine_sparkling" })
+  public void wine_sparkling() {
+    int i = 0;
+  }
+
+  @RequestMapping(value = { "/wine/wine_white" })
+  public void wine_white() {
+    int i = 0;
+  }
 }

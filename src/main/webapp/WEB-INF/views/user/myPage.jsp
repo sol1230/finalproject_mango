@@ -1,10 +1,12 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up form</title>
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,16 +14,27 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/font.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous">
-    </script>
   </head>
+  <style>
+    .info_area {
+      margin-top: 10px;
+      border: 1px solid lightgrey;
+      width: 25%;
+      float: left;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  </style>
   <body>
     <header
       class="d-flex justify-content-between align-items-center border-bottom"
@@ -32,11 +45,25 @@
         </a>
         <div>
           <nav class="fw-bold nav">
-            <a href="./orderPage.html" class="nav-link link-dark">주문</a>
             <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
             <a href="./notice.html" class="nav-link link-dark">공지</a>
           </nav>
         </div>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="검색어를 입력하세요."
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-danger"
+            type="submit"
+            style="width: 30%"
+          >
+            검색
+          </button>
+        </form>
       </nav>
       <div class="">
         <nav class="fw-bold nav align-items-center pt-2">
@@ -45,26 +72,25 @@
               language
             </i></a
           >
-          <a href="./signup_terms.html" class="nav-link link-dark"
+          <a
+            href="#modalTarget02"
+            class="nav-link link-dark"
+            data-bs-toggle="modal"
             ><i class="material-icons col-1 text-secondary fs-3" id="person">
               person</i
             ></a
           >
           <a
-            href="#modalTarget02"
+            href="./wishlist.html"
             class="nav-link link-dark"
             data-bs-toggle="modal"
-            ><i
-              class="material-icons col-1 text-secondary fs-3"
-              id="shopping_cart"
-            >
-              shopping_cart</i
+            ><i class="material-icons col-1 text-secondary fs-3" id="favorite">
+              favorite</i
             ></a
           >
         </nav>
       </div>
     </header>
-
     <!-- 검색 navbar -->
     <nav class="navbar p-3 justify-content-center shadow-sm">
       <div class="">
@@ -146,35 +172,35 @@
         <div class="border-end border-secondary border-opacity-25 pe-5 ps-5">
           <ul class="list-unstyled">
             <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >2만원 이하</a
-              >
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >2만원 ~ 3만원</a
-              >
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >3만원 ~ 4만원</a
-              >
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >4만원 ~ 5만원</a
-              >
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >5만원 ~ 6만원</a
-              >
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >6만원 이상</a
-              >
-            </li>
+                  <a href="" class="text-decoration-none text-secondary"
+                    >3만원 이하</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >3만원 ~ 6만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >6만원 ~ 9만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >6만원 ~ 15만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >15만원 ~ 20만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >20만원 이상</a
+                  >
+                </li>
           </ul>
         </div>
         <div class="ps-5">
@@ -259,120 +285,83 @@
         </div>
       </div>
     </div>
-
-    <!-- 본 페이지 content -->
+    <!-- 로그인한 회원만 보여지는 마이 페이지-->
     <div class="container" style="width: 40rem">
-      <div class="fs-4 fw-bold text-center pt-5">회원정보 수정</div>
+      <div class="fs-4 fw-bold text-center pt-5">
+        <로그인한 회원 id>님의 마이페이지
+      </div>
       <form action="">
-        <div class="pt-3">
-          <div class="">
-            <label for="" class="pb-1">아이디</label>
-            <input type="text" class="form-control" name="user_id" readonly />
+        <div class="info_area">
+          <div class="title">
+            <string>찜한 상품</string>
+            (건)
           </div>
-          <div class="pt-3">
-            <label for="" class="pb-1">현재 비밀번호</label>
-            <input
-              type="password"
-              class="form-control"
-              name="password"
-              required
-            />
-          </div>
-
-          <div class="pt-3">
-            <label for="" class="pb-1">변경할 비밀번호</label>
-            <input
-              type="password"
-              class="form-control"
-              name="password"
-              required
-            />
-          </div>
-
-          <div class="pt-3">
-            <label for="" class="pb-1">비밀번호 확인</label>
-            <input
-              type="password"
-              class="form-control"
-              name="password"
-              required
-            />
-          </div>
-
-          <div class="pt-3">
-            <label for="" class="pb-1">이름</label>
-            <input type="text" class="form-control" name="name" required />
-          </div>
-          <div class="pt-3">
-            <label for="" class="pb-1">생년월일</label>
-            <input
-              type="date"
-              name="birth"
-              id="birth"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="pt-3">
-            <label for="" class="pb-1">성별</label>
-            <select class="form-select" name="gender" id="gender" required>
-              <option value="men">남자</option>
-              <option value="women">여자</option>
-            </select>
-          </div>
-          <div class="pt-3">
-            <label for="" class="pb-1">휴대전화</label>
-            <div class="row">
-              <div class="col">
-                <select class="form-select" name="phone0" required>
-                  <option>선택</option>
-                  <option value="010">010</option>
-                  <option value="012">012</option>
-                  <option value="013">013</option>
-                </select>
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  name="phone1"
-                  id="phone1"
-                  class="form-control rounded mb-2"
-                  required
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  name="phone2"
-                  id="phone2"
-                  class="form-control rounded mb-2"
-                  required
-                />
-              </div>
-            </div>
+          <div class="number">0</div>
+          <div class="detail">
+            <a href="/wishlist.html">
+              <span class="width80">자세히 보기</span>
+            </a>
           </div>
         </div>
 
-        <!-- 모달 추가 -->
+        <div class="info_area">
+          <div class="title">
+            <string>1:1 문의</string>
+            (건)
+          </div>
+          <div class="number">0</div>
+          <div class="detail">
+            <a href="user_inquiry.html">
+              <span class="width80">자세히 보기</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="info_area">
+          <div class="title">
+            <string>내가 쓴 리뷰</string>
+            (건)
+          </div>
+          <div class="number">0</div>
+          <div class="detail">
+            <a href="/user_REVIEW_modify.html">
+              <span class="width80">자세히 보기</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="info_area">
+          <div class="title">
+            <string>사용가능 쿠폰</string>
+            (건)
+          </div>
+          <div class="number">0</div>
+          <div class="detail">
+            <a href="/user_coupon.html">
+              <span class="width80">자세히 보기</span>
+            </a>
+          </div>
+        </div>
 
         <div class="mt-5 text-center">
-          <button
-            class="btn btn-secondary btn-lg w-25 text-decoration-none text-white"
-            style="margin-right: 10px"
-          >
-            수정하기
-          </button>
-          <button
-          onclick="bye();"
+          <a
+            href="./changeInfo.html"
             class="btn btn-danger btn-lg w-25 text-decoration-none text-white"
-            style="margin-left: 10px"
-            id="bye"
           >
-            탈퇴하기
-          </button>
+            정보 수정하기
+          </a>
+
+          <a
+            href="./index.html"
+            class="btn btn-secondary btn-lg w-25 text-decoration-none text-white"
+            style="margin-left: 20px"
+          >
+            메인으로
+          </a>
         </div>
       </form>
     </div>
+
     <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"
       style="background-color: #eae0da; font-size: 0.8rem"
@@ -383,34 +372,29 @@
             <ul class="list-unstyled d-flex">
               <li>
                 <a
-                  href=""
+                  href="./companyInfo.html"
                   class="text-black text-decoration-none border-end border-secondary"
                   >회사소개 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href=""
-                  class="text-black text-decoration-none ps-2 border-end border-secondary"
-                  >브랜드 소개 &nbsp;</a
-                >
-              </li>
-              <li>
-                <a
-                  href=""
+                  href="./terms_of_use.html"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >이용약관 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href=""
+                  href="./privacy_policy.html"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >개인정보처리방침 &nbsp;</a
                 >
               </li>
               <li>
-                <a href="" class="text-black text-decoration-none ps-2"
+                <a
+                  href="./notice_questions.html"
+                  class="text-black text-decoration-none ps-2"
                   >고객센터</a
                 >
               </li>
@@ -442,22 +426,5 @@
         <img src="./img/와인.png" alt="logo" height="150rem" />
       </div>
     </footer>
-
-  <script>
-  function bye() {
-    Swal.fire({
-      title:'정말 탈퇴하시겠습니까? ',
-      text: '탈퇴하시면 다시 복구할 수 없습니다.',
-      icon:'warning',
-      showCancelButton:true,
-      confirmButtonColor:'#3085d6',
-      confirmButtonText:'탈퇴',
-      cancleButtonText:'취소'
-    }).then((result)=>{
-      
-    })
-  }
-  </script>
-  
- </body>
+  </body>
 </html>

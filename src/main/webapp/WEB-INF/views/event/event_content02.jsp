@@ -1,10 +1,12 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Event</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,6 +17,10 @@
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
   </head>
   <body>
@@ -73,97 +79,37 @@
         </nav>
       </div>
     </header>
+
+    <!-- 본 페이지  -->
     <div class="container">
-      <div class="fw-bold mt-5 text-center fs-3">장바구니</div>
-      <hr />
-      <table class="table mt-4 align-middle text-center">
-        <tr>
-          <th>
-            <input type="checkbox" name="" id="" />
-          </th>
-          <th>상품명</th>
-          <th>판매 금액</th>
-          <th>할인 금액</th>
-          <th>수량</th>
-          <th>결제 금액</th>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" name="" id="" />
-          </td>
-          <td class="text-start">
-            <div class="d-flex align-items-center">
-              <div>
-                <img
-                  src="./img/닥터 린드만 포피리 블랑.PNG"
-                  alt=""
-                  style="width: 100px"
-                />
-              </div>
-              <div>
-                <div>&nbsp; 닥터린드만 포피리 블랑</div>
-                <div class=""></div>
-              </div>
-            </div>
-          </td>
-          <td>₩35,000</td>
-          <td>₩5,000</td>
-          <td>
-            <div class="input-group justify-content-center">
-              <button class="btn">-</button>
-              <input
-                class="text-center border border-0"
-                type="text"
-                name=""
-                id=""
-                style="width: 30px"
-                placeholder="1"
-              />
-              <button class="btn">+</button>
-            </div>
-          </td>
-          <td>₩30,000</td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" name="" id="" />
-          </td>
-          <td class="text-start">
-            <img
-              src="./img/디아블로 카베르네 소비뇽 할로윈.PNG"
-              alt=""
-              style="width: 100px"
-            />
-            <span>&nbsp; 디아블로 카베르네 소비뇽 할로윈</span>
-          </td>
-          <td>₩40,000</td>
-          <td>₩3,000</td>
-          <td>
-            <div class="input-group justify-content-center">
-              <button class="btn">-</button>
-              <input
-                class="text-center border border-0"
-                type="text"
-                name=""
-                id=""
-                style="width: 30px"
-                placeholder="1"
-              />
-              <button class="btn">+</button>
-            </div>
-          </td>
-          <td>₩37,000</td>
-        </tr>
-      </table>
-      <div class="border text- text-center p-5">
-        <div>총 판매 금액 - 총 할인 금액 = 총 결제 금액</div>
-        <div class="mt-4">₩75,000 - ₩8,000 = ₩67,000</div>
+      <div class="fs-3 fw-bold text-center mt-5">이벤트</div>
+      <div class="d-flex justify-content-between mt-5">
+        <div>뚜아 리따 디너</div>
+        <div>2023.01.11 ~ 2023.02.12</div>
       </div>
-      <div class="text-end mt-4">
-        <button class="btn btn-danger">삭제</button>
-        <button class="btn btn-danger">주문</button>
+      <hr />
+      <div class="text-center mt-5">
+        <div>
+          <img src="./img/event02-1.PNG" alt="" style="width: 800px" />
+        </div>
+        <div>
+          <img src="./img/event02-2.PNG" alt="" style="width: 800px" />
+        </div>
+        <div>
+          <img src="./img/event02-3.PNG" alt="" style="width: 800px" />
+        </div>
+        <div>
+          <img src="./img/event02-4.PNG" alt="" style="width: 800px" />
+        </div>
+        <div>
+          <img src="./img/event02-5.PNG" alt="" style="width: 800px" />
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="./event.html" class="btn btn-danger">목록</a>
       </div>
     </div>
+
     <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"
       style="background-color: #eae0da; font-size: 0.8rem"

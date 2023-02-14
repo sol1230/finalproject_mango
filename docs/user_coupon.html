@@ -20,23 +20,19 @@
       rel="stylesheet"
     />
     <style>
-
-
+      .info_area {
+        margin-top: 10px;
+        border: 1px solid lightgrey;
+        width: 25%;
+        float: left;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     </style>
   </head>
-  <style>
-    .info_area {
-      margin-top: 10px;
-      border: 1px solid lightgrey;
-      width: 25%;
-      float: left;
-      text-align: center;
-      margin-bottom: 30px;
-      font-weight: bold;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-  </style>
   <body>
     <header
       class="d-flex justify-content-between align-items-center border-bottom"
@@ -98,7 +94,7 @@
       <div class="">
         <ul class="list-unstyled nav">
           <li class="dropdown nav-item">
-            <a href="./wine.html" class="nav-link link-secondary">와인</a>
+            <a href="./wine_list.html" class="nav-link link-secondary">와인</a>
           </li>
           <li>
             <a href="" class="nav-link link-secondary">국가</a>
@@ -175,32 +171,32 @@
           <ul class="list-unstyled">
             <li class="pb-2">
               <a href="" class="text-decoration-none text-secondary"
-                >2만원 이하</a
+                >3만원 이하</a
               >
             </li>
             <li class="pb-2">
               <a href="" class="text-decoration-none text-secondary"
-                >2만원 ~ 3만원</a
+                >3만원 ~ 6만원</a
               >
             </li>
             <li class="pb-2">
               <a href="" class="text-decoration-none text-secondary"
-                >3만원 ~ 4만원</a
+                >6만원 ~ 9만원</a
               >
             </li>
             <li class="pb-2">
               <a href="" class="text-decoration-none text-secondary"
-                >4만원 ~ 5만원</a
+                >6만원 ~ 15만원</a
               >
             </li>
             <li class="pb-2">
               <a href="" class="text-decoration-none text-secondary"
-                >5만원 ~ 6만원</a
+                >15만원 ~ 20만원</a
               >
             </li>
             <li class="pb-2">
               <a href="" class="text-decoration-none text-secondary"
-                >6만원 이상</a
+                >20만원 이상</a
               >
             </li>
           </ul>
@@ -288,46 +284,40 @@
       </div>
     </div>
     <!-- 로그인한 회원만 보여지는 쿠폰함-->
-    
-    <div class="fs-4 fw-bold text-center" style="margin-top:3rem; margin-bottom: 3rem;">
-        쿠폰함
-      </div>
 
-      <table class="table" style="text-align: center; border: hidden;">
-        <thead style="border: hidden;">
-          <tr>
-            <th>다운로드 가능한 쿠폰</th>
-            <th>사용 가능한 쿠폰</th>      
-          </tr>
-        </thead>
-        <tbody>
-       
-            <tr>
-                <td>
-                  <img src="./img/무료 배송 쿠폰.PNG" width="300rem;" >
-                </td>
-                <td>
-                  <img src="./img/할인 쿠폰.PNG" width="300rem;">
-                </td>
- 
-            </tr>
+    <div
+      class="fs-4 fw-bold text-center"
+      style="margin-top: 3rem; margin-bottom: 3rem"
+    >
+      쿠폰함
+    </div>
 
-            <tr style="border: hidden;">
-              <td>
-                <button class="btn btn-outline-primary">다운로드 ↓ </button>
-              </td>
-              <td>
-               
-              </td>
+    <table class="table" style="text-align: center; border: hidden">
+      <thead style="border: hidden">
+        <tr>
+          <th>다운로드 가능한 쿠폰</th>
+          <th>사용 가능한 쿠폰</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="./img/무료 배송 쿠폰.PNG" width="300rem;" />
+          </td>
+          <td>
+            <img src="./img/할인 쿠폰.PNG" width="300rem;" />
+          </td>
+        </tr>
 
-          </tr>
-        </tbody>
+        <tr style="border: hidden">
+          <td>
+            <button class="btn btn-outline-primary">다운로드 ↓</button>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
     </table>
-      
-      
-      
-   
-     </div>
+
     <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"
       style="background-color: #eae0da; font-size: 0.8rem"
@@ -358,7 +348,9 @@
                 >
               </li>
               <li>
-                <a href="./notice_questions.html" class="text-black text-decoration-none ps-2"
+                <a
+                  href="./notice_questions.html"
+                  class="text-black text-decoration-none ps-2"
                   >고객센터</a
                 >
               </li>

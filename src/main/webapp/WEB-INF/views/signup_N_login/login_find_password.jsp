@@ -1,10 +1,12 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order</title>
+    <title>Login find password</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -186,34 +188,34 @@
               class="border-end border-secondary border-opacity-25 pe-5 ps-5"
             >
               <ul class="list-unstyled">
-                <li class="pb-2">
+                 <li class="pb-2">
                   <a href="" class="text-decoration-none text-secondary"
-                    >2만원 이하</a
+                    >3만원 이하</a
                   >
                 </li>
                 <li class="pb-2">
                   <a href="" class="text-decoration-none text-secondary"
-                    >2만원 ~ 3만원</a
+                    >3만원 ~ 6만원</a
                   >
                 </li>
                 <li class="pb-2">
                   <a href="" class="text-decoration-none text-secondary"
-                    >3만원 ~ 4만원</a
+                    >6만원 ~ 9만원</a
                   >
                 </li>
                 <li class="pb-2">
                   <a href="" class="text-decoration-none text-secondary"
-                    >4만원 ~ 5만원</a
+                    >6만원 ~ 15만원</a
                   >
                 </li>
                 <li class="pb-2">
                   <a href="" class="text-decoration-none text-secondary"
-                    >5만원 ~ 6만원</a
+                    >15만원 ~ 20만원</a
                   >
                 </li>
                 <li class="pb-2">
                   <a href="" class="text-decoration-none text-secondary"
-                    >6만원 이상</a
+                    >20만원 이상</a
                   >
                 </li>
               </ul>
@@ -314,307 +316,52 @@
     </div>
 
     <!-- 본 페이지 content -->
-    <div class="container">
-      <form action="" class="pt-5" method="post">
-        <div class="fs-4 fw-bold text-center mb-5">주문/결제</div>
-        <!-- 여기서부터 구매 상품 정보 -->
-        <table class="table align-middle">
-          <thead class="text-center">
-            <tr>
-              <th class="text-start ps-5">상품정보</th>
-              <th>판매자</th>
-              <th>배송비</th>
-              <th>수량</th>
-              <th>상품금액</th>
-            </tr>
-          </thead>
-          <tbody>
-            <td>
-              <div class="d-flex">
-                <div class="me-3">
-                  <img
-                    src="./img/텐션 샤르도네.PNG"
-                    alt="상품이미지"
-                    width="100rem"
-                  />
-                </div>
-                <div class="">
-                  <div>테 마타 에스테이트 샤르도네</div>
-                  <span>화이트</span>
-                  <span>뉴질랜드</span>
-                  <span>샤르도네</span>
-                  <div class="pt-1">
-                    <span class="badge badge-pill bg-warning bg-opacity-75"
-                      >스파클링</span
-                    >
-                    <span class="badge badge-pill bg-warning bg-opacity-75"
-                      >이탈리아</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </td>
-            <td class="text-center">와인컴</td>
-            <td class="text-center">무료</td>
-            <td class="text-center">1개</td>
-            <td class="text-center">30,000원</td>
-          </tbody>
-        </table>
-        <!-- 여기서부터 주문자 정보 -->
-        <div class="d-flex">
-          <div class="flex-fill w-50">
-            <div class="mt-4">
-              <div class="mt-3 fw-bold">주문자 정보</div>
-              <hr />
-              <ul class="mt-3 list-unstyled">
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="order_name">이름</label>
-                  </div>
-                  <div>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="order_name"
-                      id="order_name"
-                      placeholder="이름을 입력해주세요."
-                    />
-                  </div>
-                </li>
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="order_email">이메일</label>
-                  </div>
-                  <div>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="order_email"
-                      id="order_email"
-                      placeholder="이메일을 입력해주세요."
-                    />
-                  </div>
-                </li>
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="order_phone">연락처</label>
-                  </div>
-                  <div>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="order_phone"
-                      id="order_phone"
-                      placeholder="'-'제외한 숫자만 입력해주세요."
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- 여기서부터 배송정보 -->
-            <div>
-              <div class="mt-4 fw-bold d-flex justify-content-between">
-                <div class="fw-bold">배송정보</div>
-                <div class="justify-content-right">
-                  <input
-                    type="checkbox"
-                    name="order_infoCopy"
-                    id="order_infoCopy"
-                  />
-                  <label for="order_infoCopy">주문자와 동일</label>
-                </div>
-              </div>
-              <hr />
-              <ul class="mt-3 list-unstyled">
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="ship_name">수취인</label>
-                  </div>
-                  <div>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="ship_name"
-                      id="ship_name"
-                      placeholder="이름을 입력해주세요."
-                    />
-                  </div>
-                </li>
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="ship_phone">연락처</label>
-                  </div>
-                  <div>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="ship_phone"
-                      id="ship_phone"
-                      placeholder="'-'제외한 숫자만 입력해주세요."
-                    />
-                  </div>
-                </li>
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="ship_address">배송지</label>
-                  </div>
-                  <div>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="ship_address"
-                      id="ship_address"
-                      placeholder="주소를 입력해주세요."
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- 여기서부터 배송 요청사항 -->
-            <div>
-              <div class="mt-4 fw-bold form-label">배송 요청사항</div>
-              <div class="mb-1">
-                <textarea
-                  class="form-control"
-                  name="ship_request"
-                  id="ship_request"
-                  cols=""
-                  rows="2"
-                  placeholder="내용을 입력해주세요."
-                ></textarea>
-              </div>
-            </div>
+    <div class="container mt-4 pb-3" style="width: 40rem">
+      <div class="pt-5 mt-3 fs-5 fw-bold">
+        <nav class="nav nav-tabs justify-content-center">
+          <a href="./login_find_id.html" class="nav-link link-dark ps-5 pe-5"
+            >아이디 찾기</a
+          >
+          <a
+            href="./login_find_password.html"
+            class="nav-link active link-danger ps-5 pe-5"
+            >비밀번호 찾기</a
+          >
+        </nav>
+      </div>
+      <form action="./index.html">
+        <div class="pt-3">
+          <div class="pt-3">
+            <label for="" class="pb-1">아이디</label>
+            <input
+              type="text"
+              class="form-control"
+              name="user_id"
+              id="user_id"
+              required
+            />
           </div>
-          <!-- 여기서부터 할인/적립 -->
-          <div class="flex-fill ms-5">
-            <div class="mt-4">
-              <div class="mt-3 fw-bold">할인/적립</div>
-              <hr />
-              <ul class="mt-3 list-unstyled">
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="discount_coupon">쿠폰할인</label>
-                  </div>
-                  <div class="d-flex">
-                    <div class="flex-fill">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="discount_coupon"
-                        id="discount_coupon"
-                        placeholder="0 원"
-                      />
-                    </div>
-                    <div>
-                      <button class="btn btn-danger ms-3">쿠폰선택</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="mb-2">
-                  <div class="mb-1">
-                    <label for="discount_point">적립금</label>
-                  </div>
-                  <div class="d-flex">
-                    <div class="flex-fill">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="discount_point"
-                        id="discount_point"
-                        placeholder="0 원"
-                      />
-                    </div>
-                    <div>
-                      <button class="btn btn-danger ms-3">전액사용</button>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- 여기서부터 결제방법 -->
-            <div class="mt-4">
-              <div class="mt-3 fw-bold">결제정보</div>
-              <hr />
-              <div class="border p-4">
-                <ul class="list-unstyled m-0">
-                  <li class="mb-2">
-                    <div class="mb-1 d-flex justify-content-between">
-                      <div>상품금액</div>
-                      <div>30,000원</div>
-                    </div>
-                  </li>
-                  <li class="mb-2">
-                    <div class="mb-1 d-flex justify-content-between">
-                      <div>쿠폰할인</div>
-                      <div>- 0원</div>
-                    </div>
-                  </li>
-                  <li class="mb-2">
-                    <div class="mb-1 d-flex justify-content-between">
-                      <div>적립금할인</div>
-                      <div>- 0원</div>
-                    </div>
-                  </li>
-                  <hr />
-                  <li class="mb-2">
-                    <div class="mb-1 d-flex justify-content-between">
-                      <div class="align-self-center">최종결제금액</div>
-                      <div class="fs-3 fw-bold">30,000원</div>
-                    </div>
-                  </li>
-                  <li class="mb-2">
-                    <div class="mb-1 d-flex justify-content-between">
-                      <div class="align-self-center">결제방법</div>
-                      <div>
-                        <button class="btn btn-danger btn-sm">신용카드</button>
-                        <button class="btn btn-danger btn-sm">계좌이체</button>
-                        <button class="btn btn-danger btn-sm">
-                          휴대폰결제
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="card mt-2 border-0" style="background-color: #fafafa">
-                <a href="" class="text-decoration-none text-black">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="col-4 text-center rounded p-1"
-                      style="background-color: rgb(255, 244, 182)"
-                    >
-                      <img
-                        src="https://images.vivino.com/thumbs/ydGlFfsOSbufwipWV6isoA_pb_x600.png"
-                        class="card-img w-25"
-                        alt=""
-                        style="height: 1%"
-                      />
-                    </div>
-                    <div class="card-body col-8 text-center">
-                      <span class="border bg-secondary bg-opacity-25"
-                        >깔끔한 화이트 와인</span
-                      >
-                      <p class="card-text">이런 와인은 어떠세요?</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div class="pt-3 pb-2">
+            <label for="" class="pb-1">이름</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              required
+            />
           </div>
         </div>
-        <div class="text-center mt-5 pb-5">
-          <button class="btn btn-outline-secondary btn-lg w-25">취소</button>
-          <button class="btn btn-danger btn-lg w-25">결제하기</button>
+        <div class="mt-5 text-center">
+          <a
+            href="./index.html"
+            class="btn btn-danger btn-lg w-25 text-decoration-none text-white"
+          >
+            확인
+          </a>
         </div>
       </form>
     </div>
-
-    <!-- 하단 고정바 test 중 -->
-    <!-- <div class="fixed-bottom p-3 quick_menu w-25">
-      <div class="bg-light float-end">
-        <span class="material-symbols-outlined"> location_on </span>
-      </div>
-    </div> -->
     <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"
       style="background-color: #eae0da; font-size: 0.8rem"
@@ -660,16 +407,22 @@
                 공휴일 휴무
               </li>
               <li class="pt-1">
-                <span class="pe-3">대표자 : 망고</span>
-                <span>주소 : 서울시 서초대로 17길</span>
+                <span class="pe-2 border-end border-secondary"
+                  >대표자 : 망고</span
+                >
+                <span class="ps-1">주소 : 서울시 서초대로 17길</span>
               </li>
               <li class="pt-1">
-                <span>법인명 : (주)와인타임</span>
-                <span>사업자 등록정보 : 172-83-53438</span>
+                <span class="pe-2 border-end border-secondary"
+                  >법인명 : (주)와인타임</span
+                >
+                <span class="ps-1">사업자 등록정보 : 172-83-53438</span>
               </li>
               <li class="pt-1">
-                <span>호스팅 : (주)와인타임</span>
-                <span>E-MAIL : mgo@winetime.com</span>
+                <span class="pe-2 border-end border-secondary">
+                  호스팅 : (주)와인타임</span
+                >
+                <span class="ps-1">E-MAIL : mgo@winetime.com</span>
               </li>
             </ul>
           </div>
@@ -679,7 +432,6 @@
         <img src="./img/와인.png" alt="logo" height="150rem" />
       </div>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

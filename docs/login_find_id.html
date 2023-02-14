@@ -322,18 +322,20 @@
     <div class="container mt-4 pb-3" style="width: 40rem">
       <div class="pt-5 mt-3 fs-5 fw-bold">
         <nav class="nav nav-tabs justify-content-center">
-          <a
-            href="./login_find_id.html"
+          <button
+            href=""
             class="nav-link active link-danger ps-5 pe-5"
-            >아이디 찾기</a
+            id="id_btn"
           >
-          <a
-            href="./login_find_password.html"
+            아이디 찾기
+          </button>
+          <button
+            href=""
             class="nav-link ps-5 pe-5 link-dark"
             id="password_btn"
           >
             비밀번호 찾기
-          </a>
+          </button>
         </nav>
       </div>
       <div>
@@ -467,7 +469,7 @@
         <img src="./img/와인.png" alt="logo" height="150rem" />
       </div>
     </footer>
-    <!-- <script>
+    <script>
       $(document).ready(function () {
         $("#password_btn").click(function () {
           $("#changeForm").html(
@@ -479,6 +481,26 @@
               '</div><div class="mt-5 text-center"><a href="./index.html"' +
               'class="btn btn-danger btn-lg w-25 text-decoration-none text-white">' +
               '확인</a></div></form>"'
+          );
+        });
+      });
+    </script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("#id_btn").click(function () {
+          $("#changeForm").html(
+            '<form action="./index.html" id="changeForm"><div class="pt-3">' +
+              '<div class="pt-3"><label for="" class="pb-1">이름</label>' +
+              '<input type="text" class="form-control" name="name" id="name" required />' +
+              '</div><div class="pt-3"><label for="" class="pb-1">휴대전화</label>' +
+              '<div class="row"><div class="col"><select class="form-select" name="phone0" required>' +
+              '<option>선택</option><option value="010">010</option><option value="012">012</option>' +
+              '<option value="013">013</option></select></div><div class="col">' +
+              '<input type="text" name="phone1" id="phone1" class="form-control rounded mb-2" required/>' +
+              '</div><div class="col"><input type="text" name="phone2" id="phone2" class="form-control rounded mb-2" required/>' +
+              '</div></div></div></div><div class="mt-5 text-center">' +
+              '<a href="./index.html" class="btn btn-danger btn-lg w-25 text-decoration-none text-white">' +
+              "확인</a></div></form>"
           );
         });
       });

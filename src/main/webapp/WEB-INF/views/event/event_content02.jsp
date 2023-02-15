@@ -13,7 +13,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="/css/font.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -24,17 +24,18 @@
     />
   </head>
   <body>
-    <header
+     <header
       class="d-flex justify-content-between align-items-center border-bottom"
     >
-      <nav class="navbar p-0">
-        <a href="./index.html" class="navbar-brand p-3">
-          <img src="./img/와인.png" alt="logo" height="50rem" />
+      <nav class="navbar p-0" id="navbarHeader">
+        <a href="/index" class="navbar-brand p-3">
+          <img src="../img/와인.png" alt="logo" height="50rem" />
         </a>
         <div>
-          <nav class="fw-bold nav">
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
+           <nav class="fw-bold nav">
+            <a href="/notice_N_qna/notice_questions" class="nav-link link-dark">FAQ</a>
+            <a href="/notice_N_qna/notice" class="nav-link link-dark">공지</a>
+            <a href="/event/event" class="nav-link link-dark">이벤트</a>
           </nav>
         </div>
         <form class="d-flex">
@@ -69,9 +70,8 @@
             ></a
           >
           <a
-            href="./wishlist.html"
+            href="/user/user_wishlist"
             class="nav-link link-dark"
-            data-bs-toggle="modal"
             ><i class="material-icons col-1 text-secondary fs-3" id="favorite">
               favorite</i
             ></a
@@ -79,6 +79,63 @@
         </nav>
       </div>
     </header>
+    
+    <!-- 로그인 modal -->
+    <div class="modal fade" id="modalTarget02">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-5">
+          <div class="fs-4 fw-bold">로그인</div>
+          <form action="/index">
+            <div class="pt-3">
+              <div class="">
+                <div class="">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="user_id"
+                    placeholder="아이디"
+                    required
+                  />
+                </div>
+                <div class="pt-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    placeholder="비밀번호"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="text-center pt-4">
+                <button type="submit" class="btn btn-danger form-control">
+                  확인
+                </button>
+              </div>
+              <div class="pt-2 d-flex justify-content-between">
+                <div>
+                  <a
+                    href="/signup_N_login/login_find_id"
+                    class="text-decoration-none text-secondary"
+                    style="font-size: small"
+                    >아이디/비밀번호 찾기</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="/signup_N_login/signup_terms"
+                    class="text-decoration-none text-secondary"
+                    style="font-size: small"
+                    >회원가입</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
 
     <!-- 본 페이지  -->
     <div class="container">
@@ -90,27 +147,27 @@
       <hr />
       <div class="text-center mt-5">
         <div>
-          <img src="./img/event02-1.PNG" alt="" style="width: 800px" />
+          <img src="../img/event02-1.PNG" alt="" style="width: 800px" />
         </div>
         <div>
-          <img src="./img/event02-2.PNG" alt="" style="width: 800px" />
+          <img src="../img/event02-2.PNG" alt="" style="width: 800px" />
         </div>
         <div>
-          <img src="./img/event02-3.PNG" alt="" style="width: 800px" />
+          <img src="../img/event02-3.PNG" alt="" style="width: 800px" />
         </div>
         <div>
-          <img src="./img/event02-4.PNG" alt="" style="width: 800px" />
+          <img src="../img/event02-4.PNG" alt="" style="width: 800px" />
         </div>
         <div>
-          <img src="./img/event02-5.PNG" alt="" style="width: 800px" />
+          <img src="../img/event02-5.PNG" alt="" style="width: 800px" />
         </div>
       </div>
       <div class="text-center mt-5">
-        <a href="./event.html" class="btn btn-danger">목록</a>
+        <a href="/event/event" class="btn btn-danger">목록</a>
       </div>
     </div>
 
-    <footer
+   <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"
       style="background-color: #eae0da; font-size: 0.8rem"
     >
@@ -120,28 +177,28 @@
             <ul class="list-unstyled d-flex">
               <li>
                 <a
-                  href="./companyInfo.html"
+                  href="/etc/companyInfo"
                   class="text-black text-decoration-none border-end border-secondary"
                   >회사소개 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./terms_of_use.html"
+                  href="/etc/terms_of_use"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >이용약관 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./privacy_policy.html"
+                  href="/etc/privacy_policy"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >개인정보처리방침 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./notice_questions.html"
+                  href="/notice_N_qna/notice_questions"
                   class="text-black text-decoration-none ps-2"
                   >고객센터</a
                 >
@@ -171,7 +228,7 @@
         </div>
       </div>
       <div class="row">
-        <img src="./img/와인.png" alt="logo" height="150rem" />
+        <img src="../img/와인.png" alt="logo" height="150rem" />
       </div>
     </footer>
     <script

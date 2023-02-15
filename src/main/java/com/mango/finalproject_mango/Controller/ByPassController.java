@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ByPassController {
 
-  @RequestMapping(value = { "/**" })
-  public void byPass() {
+  @RequestMapping(value = { "/", "/index" })
+  public String byPass() {
     int i = 0;
+    return "/index";
   }
 
   @RequestMapping(value = { "/admin/admin_boards_add" })

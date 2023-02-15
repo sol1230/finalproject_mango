@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="/css/font.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -34,6 +34,17 @@
       .navbarFilter a:hover {
         border-bottom: 2px solid rgb(127, 127, 127);
       }
+       .page-link {
+        color: black;
+        background-color: white;
+        border-color: rgb(192, 190, 190);
+      }
+      .page-link:focus,
+      .page-link:hover {
+        color: white;
+        background-color: black;
+      }
+
       table {
         border-spacing: 10px;
         border-collapse: separate;
@@ -47,6 +58,10 @@
         text-overflow: ellipsis;
         white-space: nowrap;
       }
+       a {
+        text-decoration: none;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -54,13 +69,14 @@
       class="d-flex justify-content-between align-items-center border-bottom"
     >
       <nav class="navbar p-0" id="navbarHeader">
-        <a href="./index.html" class="navbar-brand p-3">
-          <img src="./img/와인.png" alt="logo" height="50rem" />
+        <a href="/index" class="navbar-brand p-3">
+          <img src="../img/와인.png" alt="logo" height="50rem" />
         </a>
         <div>
-          <nav class="fw-bold nav">
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
+           <nav class="fw-bold nav">
+            <a href="/notice_N_qna/notice_questions" class="nav-link link-dark">FAQ</a>
+            <a href="/notice_N_qna/notice" class="nav-link link-dark">공지</a>
+            <a href="/event/event" class="nav-link link-dark">이벤트</a>
           </nav>
         </div>
         <form class="d-flex">
@@ -95,9 +111,8 @@
             ></a
           >
           <a
-            href="./wishlist.html"
+            href="/user/user_wishlist"
             class="nav-link link-dark"
-            data-bs-toggle="modal"
             ><i class="material-icons col-1 text-secondary fs-3" id="favorite">
               favorite</i
             ></a
@@ -106,21 +121,77 @@
       </div>
     </header>
 
+      <!-- 로그인 modal -->
+    <div class="modal fade" id="modalTarget02">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-5">
+          <div class="fs-4 fw-bold">로그인</div>
+          <form action="/index">
+            <div class="pt-3">
+              <div class="">
+                <div class="">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="user_id"
+                    placeholder="아이디"
+                    required
+                  />
+                </div>
+                <div class="pt-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    placeholder="비밀번호"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="text-center pt-4">
+                <button type="submit" class="btn btn-danger form-control">
+                  확인
+                </button>
+              </div>
+              <div class="pt-2 d-flex justify-content-between">
+                <div>
+                  <a
+                    href="/signup_N_login/login_find_id"
+                    class="text-decoration-none text-secondary"
+                    style="font-size: small"
+                    >아이디/비밀번호 찾기</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="/signup_N_login/signup_terms"
+                    class="text-decoration-none text-secondary"
+                    style="font-size: small"
+                    >회원가입</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- 검색 navbar -->
     <nav class="navbar p-3 justify-content-center shadow-sm">
       <div class="navbarFilter">
         <ul class="list-unstyled nav justify-content-center">
           <li class="dropdown nav-item">
-            <a href="./wine_list.html" class="nav-link link-secondary">와인</a>
+            <a href="/wine/wine_list" class="nav-link link-secondary">와인</a>
           </li>
           <li>
-            <a href="" class="nav-link link-secondary">국가</a>
+            <a href="/wine/wine_country_france" class="nav-link link-secondary">국가</a>
           </li>
           <li>
-            <a href="" class="nav-link link-secondary">가격</a>
+            <a href="/wine/wine_price" class="nav-link link-secondary">가격</a>
           </li>
           <li>
-            <a href="" class="nav-link link-secondary">음식페어링</a>
+            <a href="/wine_" class="nav-link link-secondary">음식페어링</a>
           </li>
           <li class="">
             <a
@@ -144,22 +215,22 @@
             <div class="border-end border-secondary border-opacity-25 pe-5">
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_red" class="text-decoration-none text-secondary"
                     >레드</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_white" class="text-decoration-none text-secondary"
                     >화이트</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_rose" class="text-decoration-none text-secondary"
                     >로제</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_sparkling" class="text-decoration-none text-secondary"
                     >스파클링</a
                   >
                 </li>
@@ -170,7 +241,7 @@
             >
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_country_france" class="text-decoration-none text-secondary"
                     >프랑스</a
                   >
                 </li>
@@ -180,7 +251,7 @@
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_country_spain" class="text-decoration-none text-secondary"
                     >스페인</a
                   >
                 </li>
@@ -205,8 +276,8 @@
               class="border-end border-secondary border-opacity-25 pe-5 ps-5"
             >
               <ul class="list-unstyled">
-                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                <li class="pb-2">
+                  <a href="/wine/wine_price" class="text-decoration-none text-secondary"
                     >3만원 이하</a
                   >
                 </li>
@@ -276,62 +347,6 @@
       </div>
     </nav>
 
-    <!-- 로그인 modal -->
-    <div class="modal fade" id="modalTarget02">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center p-5">
-          <div class="fs-4 fw-bold">로그인</div>
-          <form action="./index.html">
-            <div class="pt-3">
-              <div class="">
-                <div class="">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="user_id"
-                    placeholder="아이디"
-                    required
-                  />
-                </div>
-                <div class="pt-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="password"
-                    placeholder="비밀번호"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="text-center pt-4">
-                <button type="submit" class="btn btn-danger form-control">
-                  확인
-                </button>
-              </div>
-              <div class="pt-2 d-flex justify-content-between">
-                <div>
-                  <a
-                    href="./login_find_id.html"
-                    class="text-decoration-none text-secondary"
-                    style="font-size: small"
-                    >아이디/비밀번호 찾기</a
-                  >
-                </div>
-                <div>
-                  <a
-                    href="./signup_terms.html"
-                    class="text-decoration-none text-secondary"
-                    style="font-size: small"
-                    >회원가입</a
-                  >
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
     <!-- 본 페이지 content -->
     <div class="container">
       <div
@@ -340,7 +355,7 @@
       >
         <div class="" style="margin: auto; margin-left: 20%">
           <img
-            src="https://images.vivino.com/thumbs/qSeG0gxwTzqvqljhvhdfQA_pb_x960.png"
+            src="../img/wine/wine_canti.png"
             alt="canti"
             width="130"
           />
@@ -449,7 +464,7 @@
                     <td>
                       <a href="#" class="text-decoration-none text-black"
                         >신세계몰
-                        <img src="./img/ssg.png" alt="" width="60" />
+                        <img src="../img/ssg.png" alt="" width="60" />
                       </a>
                     </td>
                     <td class="text-danger">최저</td>
@@ -469,12 +484,9 @@
                     <td>
                       <a href="#" class="text-decoration-none text-black"
                         >옥션
-                        <img
-                          src="https://pics.auction.co.kr/pc/renewal/common/header/logo_@2x.png"
-                          alt=""
-                          width="60"
-                        />
+                        <img src="../img/옥션.png" alt="" width="60" />
                       </a>
+                   
                     </td>
                     <td class="text-danger">최저</td>
                     <td class="text-danger">22,000 &#8361;</td>
@@ -493,7 +505,7 @@
                     <td>
                       <a href="#" class="text-decoration-none text-black"
                         >지마켓
-                        <img src="./img/지마켓.png" alt="" width="60" />
+                        <img src="../img/지마켓.png" alt="" width="60" />
                       </a>
                     </td>
                     <td></td>
@@ -513,7 +525,7 @@
                     <td>
                       <a href="#" class="text-decoration-none text-black"
                         >11번가
-                        <img src="./img/11번가.png" alt="" width="30" />
+                        <img src="../img/11번가.png" alt="" width="30" />
                       </a>
                     </td>
                     <td></td>
@@ -586,11 +598,8 @@
           <div class="m-3 fw-bold">추천 음식</div>
           <div class="ms-2">
             <div class="">
-              <img
-                src="data:image/jpeg;base64,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"
-                alt="pear"
-                width="70px"
-              />
+              <img src="../img/pear.jpg" alt="pear" width="70px" />
+
               <span>배</span><span>사과</span><span>복숭아</span
               ><span>망고</span><span>메론</span>
             </div>
@@ -599,7 +608,7 @@
         <div class="mt-5 ms-5">
           <div class="fw-bold">상세정보</div>
           <div class="text-center">
-            <img src="./img/wine_canti_info.jpg" alt="" width="70%" />
+            <img src="../img/wine_canti_info.jpg" alt="" width="70%" />
           </div>
         </div>
       </div>
@@ -654,7 +663,131 @@
           </li>
         </ul>
       </div>
+      <hr />
+
+   <!-- 상품문의 -->
+      <div class="mt-5" style="width: 60%">
+        <span class="fw-bold">상품 문의</span><span>(총 20건)</span>
+        <span class="float-end">
+          <a
+            href="#modalQnA"
+            class="btn btn-outline-secondary btn-sm"
+            data-bs-toggle="modal"
+          >
+            작성하기</a
+          >
+        </span>
+        <table style="font-size: small; width: 120%">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>답변여부</th>
+              <th>내용</th>
+              <th>작성자</th>
+              <th>등록일자</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20</td>
+              <td>답변완료</td>
+              <td><a href="#"> 탄닌 관련 문의</a></td>
+              <td>sso***</td>
+              <td>2023.02.15</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>답변완료</td>
+              <td><a href="#"> 탄닌 관련 문의</a></td>
+
+              <td>sso***</td>
+              <td>2023.02.15</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>답변완료</td>
+              <td><a href="#"> 탄닌 관련 문의</a></td>
+
+              <td>sso***</td>
+              <td>2023.02.15</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination pagination-sm justify-content-center mt-4">
+          <a class="page-item page-link" href="">이전</a>
+          <a class="page-item page-link" href="">1</a>
+          <a class="page-item page-link" href="">2</a>
+          <a class="page-item page-link" href="">3</a>
+          <a class="page-item page-link" href="">4</a>
+          <a class="page-item page-link" href="">다음</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modalQnA">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center p-5">
+            <div class="fs-4 fw-bold"><상품문의></div>
+            <form action="/wine/wine_info">
+              <div class="pt-3 align-self-center">
+                <div class="ms-3 p-2 bg-light rounded-3 row" style="width: 90%">
+                  <div class="col" style="margin: 0%; padding: 0%">
+                    <img src="../img/wine/wine_canti.png" alt="" width="20px" />
+                  </div>
+                  <div class="col-8 align-items-center align-self-center mt-2">
+                    <p>모스카토 칸티 다스티</p>
+                    <p style="font-size: small">Moscato Canti d'asti</p>
+                  </div>
+                </div>
+                <br />
+                <table style="border-collapse: collapse">
+                  <tbody>
+                    <tr>
+                      <th>제목</th>
+                      <td>
+                        <input
+                          type="text"
+                          name="title"
+                          style="width: 100%"
+                          placeholder="제목 입력"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>내용</th>
+                      <td>
+                        <textarea
+                          name="question"
+                          id=""
+                          cols="35"
+                          rows="10"
+                          placeholder="내용 입력"
+                        ></textarea>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="text-center pt-4">
+                  <a
+                    href="#"
+                    class="btn btn-outline-danger"
+                    onclick="location.reload();"
+                    >취소</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-danger"
+                    onclick="location.reload();"
+                    >작성하기</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div style="margin-top: 5rem">
+        <hr />
         <div class="fs-4 fw-bold mb-5 ms-5">추천 와인</div>
         <div class="border border-secondary rounded-3 pt-5">
           <ul class="row mb-5">
@@ -667,7 +800,7 @@
                   <a href="#" class="text-decoration-none text-black">
                     <div class="pt-4">
                       <img
-                        src="./img/wine/wine_escudo_rojo.png"
+                        src="../img/wine/wine_escudo_rojo.png"
                         alt="wine1"
                         width="200"
                       />
@@ -710,7 +843,7 @@
                   <a href="#" class="text-decoration-none text-black">
                     <div class="pt-4">
                       <img
-                        src="./img/wine/spain_cune_rioja_organic_red.png"
+                        src="../img/wine/spain_cune_rioja_organic_red.png"
                         alt="wine1"
                         width="200"
                       />
@@ -753,7 +886,7 @@
                   <a href="#" class="text-decoration-none text-black">
                     <div class="pt-4">
                       <img
-                        src="./img/wine/france_NVIVO X SJP ROSE.png"
+                        src="../img/wine/france_NVIVO X SJP ROSE.png"
                         alt="wine2"
                         width="200"
                       />
@@ -795,7 +928,7 @@
                   <a href="#" class="text-decoration-none text-black">
                     <div class="pt-4">
                       <img
-                        src="./img/wine/spain_cune_verdejo.png"
+                        src="../img/wine/spain_cune_verdejo.png"
                         alt="wine2"
                         width="200"
                       />
@@ -841,28 +974,28 @@
             <ul class="list-unstyled d-flex">
               <li>
                 <a
-                  href="./companyInfo.html"
+                  href="/etc/companyInfo"
                   class="text-black text-decoration-none border-end border-secondary"
                   >회사소개 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./terms_of_use.html"
+                  href="/etc/terms_of_use"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >이용약관 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./privacy_policy.html"
+                  href="/etc/privacy_policy"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >개인정보처리방침 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./notice_questions.html"
+                  href="/notice_N_qna/notice_questions"
                   class="text-black text-decoration-none ps-2"
                   >고객센터</a
                 >
@@ -892,7 +1025,7 @@
         </div>
       </div>
       <div class="row">
-        <img src="./img/와인.png" alt="logo" height="150rem" />
+        <img src="../img/와인.png" alt="logo" height="150rem" />
       </div>
     </footer>
     <script

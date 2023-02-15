@@ -13,7 +13,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="/css/font.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -54,17 +54,18 @@
     </style>
   </head>
   <body>
-    <header
+     <header
       class="d-flex justify-content-between align-items-center border-bottom"
     >
       <nav class="navbar p-0" id="navbarHeader">
-        <a href="./index.html" class="navbar-brand p-3">
-          <img src="./img/와인.png" alt="logo" height="50rem" />
+        <a href="/index" class="navbar-brand p-3">
+          <img src="../img/와인.png" alt="logo" height="50rem" />
         </a>
         <div>
-          <nav class="fw-bold nav">
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
+           <nav class="fw-bold nav">
+            <a href="/notice_N_qna/notice_questions" class="nav-link link-dark">FAQ</a>
+            <a href="/notice_N_qna/notice" class="nav-link link-dark">공지</a>
+            <a href="/event/event" class="nav-link link-dark">이벤트</a>
           </nav>
         </div>
         <form class="d-flex">
@@ -99,9 +100,8 @@
             ></a
           >
           <a
-            href="./wishlist.html"
+            href="/user/user_wishlist"
             class="nav-link link-dark"
-            data-bs-toggle="modal"
             ><i class="material-icons col-1 text-secondary fs-3" id="favorite">
               favorite</i
             ></a
@@ -110,25 +110,77 @@
       </div>
     </header>
 
-    <!-- 검색 navbar -->
+      <!-- 로그인 modal -->
+    <div class="modal fade" id="modalTarget02">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-5">
+          <div class="fs-4 fw-bold">로그인</div>
+          <form action="/index">
+            <div class="pt-3">
+              <div class="">
+                <div class="">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="user_id"
+                    placeholder="아이디"
+                    required
+                  />
+                </div>
+                <div class="pt-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    placeholder="비밀번호"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="text-center pt-4">
+                <button type="submit" class="btn btn-danger form-control">
+                  확인
+                </button>
+              </div>
+              <div class="pt-2 d-flex justify-content-between">
+                <div>
+                  <a
+                    href="/signup_N_login/login_find_id"
+                    class="text-decoration-none text-secondary"
+                    style="font-size: small"
+                    >아이디/비밀번호 찾기</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="/signup_N_login/signup_terms"
+                    class="text-decoration-none text-secondary"
+                    style="font-size: small"
+                    >회원가입</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- 검색 navbar -->
     <nav class="navbar p-3 justify-content-center shadow-sm">
       <div class="navbarFilter">
         <ul class="list-unstyled nav justify-content-center">
           <li class="dropdown nav-item">
-            <a href="./wine_list.html" class="nav-link link-secondary">와인</a>
+            <a href="/wine/wine_list" class="nav-link link-secondary">와인</a>
           </li>
           <li>
-            <a href="./wine_country_france.html" class="nav-link link-secondary"
-              >국가</a
-            >
+            <a href="/wine/wine_country_france" class="nav-link link-secondary">국가</a>
           </li>
           <li>
-            <a href="./wine_price.html" class="nav-link link-secondary">가격</a>
+            <a href="/wine/wine_price" class="nav-link link-secondary">가격</a>
           </li>
           <li>
-            <a href="" class="nav-link link-secondary">음식페어링</a>
+            <a href="/wine_" class="nav-link link-secondary">음식페어링</a>
           </li>
           <li class="">
             <a
@@ -152,22 +204,22 @@
             <div class="border-end border-secondary border-opacity-25 pe-5">
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_red" class="text-decoration-none text-secondary"
                     >레드</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_white" class="text-decoration-none text-secondary"
                     >화이트</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_rose" class="text-decoration-none text-secondary"
                     >로제</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_sparkling" class="text-decoration-none text-secondary"
                     >스파클링</a
                   >
                 </li>
@@ -178,9 +230,7 @@
             >
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a
-                    href="./wine_country_france.html"
-                    class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_country_france" class="text-decoration-none text-secondary"
                     >프랑스</a
                   >
                 </li>
@@ -190,9 +240,7 @@
                   >
                 </li>
                 <li class="pb-2">
-                  <a
-                    href="./wine_country_spain.html"
-                    class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_country_spain" class="text-decoration-none text-secondary"
                     >스페인</a
                   >
                 </li>
@@ -218,7 +266,7 @@
             >
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_price" class="text-decoration-none text-secondary"
                     >3만원 이하</a
                   >
                 </li>
@@ -287,62 +335,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- 로그인 modal -->
-    <div class="modal fade" id="modalTarget02">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center p-5">
-          <div class="fs-4 fw-bold">로그인</div>
-          <form action="./index.html">
-            <div class="pt-3">
-              <div class="">
-                <div class="">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="user_id"
-                    placeholder="아이디"
-                    required
-                  />
-                </div>
-                <div class="pt-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="password"
-                    placeholder="비밀번호"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="text-center pt-4">
-                <button type="submit" class="btn btn-danger form-control">
-                  확인
-                </button>
-              </div>
-              <div class="pt-2 d-flex justify-content-between">
-                <div>
-                  <a
-                    href="./login_find_id.html"
-                    class="text-decoration-none text-secondary"
-                    style="font-size: small"
-                    >아이디/비밀번호 찾기</a
-                  >
-                </div>
-                <div>
-                  <a
-                    href="./signup_terms.html"
-                    class="text-decoration-none text-secondary"
-                    style="font-size: small"
-                    >회원가입</a
-                  >
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
 
     <!-- 본 페이지 content -->
     <div class="container">
@@ -913,6 +905,7 @@
       </div>
 
       <hr />
+      <%-- 상품 --%>
       <div class="mt-5">
         <div class="mb-5">
           <span>총 70개 상품</span>
@@ -941,7 +934,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_escudo_rojo.png"
+                      src="../img/wine/wine_escudo_rojo.png"
                       alt="wine1"
                       width="200"
                     />
@@ -984,7 +977,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_moet_rose.png"
+                      src="../img/wine/wine_moet_rose.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1024,7 +1017,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_arras.png"
+                      src="../img/wine/wine_arras.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1062,12 +1055,12 @@
                 style="background-color: #d7f6f8; width: 230px; height: 250px"
               >
                 <a
-                  href="./wine_info.html"
+                  href="/wine/wine_info"
                   class="text-decoration-none text-black"
                 >
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_canti.png"
+                      src="../img/wine/wine_canti.png"
                       alt="wine2"
                       width="55"
                     />
@@ -1107,7 +1100,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_escudo_rojo.png"
+                      src="../img/wine/wine_escudo_rojo.png"
                       alt="wine1"
                       width="200"
                     />
@@ -1150,7 +1143,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_moet_rose.png"
+                      src="../img/wine/wine_moet_rose.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1190,7 +1183,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_arras.png"
+                      src="../img/wine/wine_arras.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1233,7 +1226,7 @@
                 >
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_canti.png"
+                      src="../img/wine/wine_canti.png"
                       alt="wine2"
                       width="55"
                     />
@@ -1273,7 +1266,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_escudo_rojo.png"
+                      src="../img/wine/wine_escudo_rojo.png"
                       alt="wine1"
                       width="200"
                     />
@@ -1316,7 +1309,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_moet_rose.png"
+                      src="../img/wine/wine_moet_rose.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1356,7 +1349,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_arras.png"
+                      src="../img/wine/wine_arras.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1394,12 +1387,12 @@
                 style="background-color: #d7f6f8; width: 230px; height: 250px"
               >
                 <a
-                  href="./wine_info.html"
+                  href="/wine/wine_info"
                   class="text-decoration-none text-black"
                 >
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_canti.png"
+                      src="../img/wine/wine_canti.png"
                       alt="wine2"
                       width="55"
                     />
@@ -1439,7 +1432,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_escudo_rojo.png"
+                      src="../img/wine/wine_escudo_rojo.png"
                       alt="wine1"
                       width="200"
                     />
@@ -1482,7 +1475,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_moet_rose.png"
+                      src="../img/wine/wine_moet_rose.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1522,7 +1515,7 @@
                 <a href="#" class="text-decoration-none text-black">
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_arras.png"
+                      src="../img/wine/wine_arras.png"
                       alt="wine2"
                       width="200"
                     />
@@ -1560,12 +1553,12 @@
                 style="background-color: #d7f6f8; width: 230px; height: 250px"
               >
                 <a
-                  href="./wine_info.html"
+                  href="/wine/wine_info"
                   class="text-decoration-none text-black"
                 >
                   <div class="pt-4">
                     <img
-                      src="./img/wine/wine_canti.png"
+                      src="../img/wine/wine_canti.png"
                       alt="wine2"
                       width="55"
                     />
@@ -1607,7 +1600,7 @@
       </div>
     </div>
 
-    <footer
+ <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"
       style="background-color: #eae0da; font-size: 0.8rem"
     >
@@ -1617,27 +1610,29 @@
             <ul class="list-unstyled d-flex">
               <li>
                 <a
-                  href="./companyInfo.html"
+                  href="/etc/companyInfo"
                   class="text-black text-decoration-none border-end border-secondary"
                   >회사소개 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./terms_of_use.html"
+                  href="/etc/terms_of_use"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >이용약관 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./privacy_policy.html"
+                  href="/etc/privacy_policy"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >개인정보처리방침 &nbsp;</a
                 >
               </li>
               <li>
-                <a href="./notice_questions.html" class="text-black text-decoration-none ps-2"
+                <a
+                  href="/notice_N_qna/notice_questions"
+                  class="text-black text-decoration-none ps-2"
                   >고객센터</a
                 >
               </li>
@@ -1666,7 +1661,7 @@
         </div>
       </div>
       <div class="row">
-        <img src="./img/와인.png" alt="logo" height="150rem" />
+        <img src="../img/와인.png" alt="logo" height="150rem" />
       </div>
     </footer>
     <script

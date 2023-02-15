@@ -13,7 +13,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="/css/font.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -39,14 +39,15 @@
     <header
       class="d-flex justify-content-between align-items-center border-bottom"
     >
-      <nav class="navbar p-0">
-        <a href="./index.html" class="navbar-brand p-3">
-          <img src="./img/와인.png" alt="logo" height="50rem" />
+      <nav class="navbar p-0" id="navbarHeader">
+        <a href="/index" class="navbar-brand p-3">
+          <img src="../img/와인.png" alt="logo" height="50rem" />
         </a>
         <div>
-          <nav class="fw-bold nav">
-            <a href="./q_a.html" class="nav-link link-dark">Q&A</a>
-            <a href="./notice.html" class="nav-link link-dark">공지</a>
+           <nav class="fw-bold nav">
+            <a href="/notice_N_qna/notice_questions" class="nav-link link-dark">FAQ</a>
+            <a href="/notice_N_qna/notice" class="nav-link link-dark">공지</a>
+            <a href="/event/event" class="nav-link link-dark">이벤트</a>
           </nav>
         </div>
         <form class="d-flex">
@@ -81,9 +82,8 @@
             ></a
           >
           <a
-            href="./wishlist.html"
+            href="/user/user_wishlist"
             class="nav-link link-dark"
-            data-bs-toggle="modal"
             ><i class="material-icons col-1 text-secondary fs-3" id="favorite">
               favorite</i
             ></a
@@ -91,151 +91,13 @@
         </nav>
       </div>
     </header>
-    <!-- 검색 navbar -->
-    <nav class="navbar p-3 justify-content-center shadow-sm">
-      <div class="">
-        <ul class="list-unstyled nav">
-          <li class="dropdown nav-item">
-            <a href="./wine.html" class="nav-link link-secondary">와인</a>
-          </li>
-          <li>
-            <a href="" class="nav-link link-secondary">국가</a>
-          </li>
-          <li>
-            <a href="" class="nav-link link-secondary">가격</a>
-          </li>
-          <li>
-            <a href="" class="nav-link link-secondary">음식페어링</a>
-          </li>
-          <div class="ps-3">
-            <button
-              class="navbar-toggler collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarFilter"
-              aria-controls="navbarFilter"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- collapse 버튼 클릭하면 나오는 검색 필터 -->
-    <div class="collapse text-secondary shadow-sm pt-4 pb-2" id="navbarFilter">
-      <div class="d-flex justify-content-center mb-3">
-        <div class="border-end border-secondary border-opacity-25 pe-5">
-          <ul class="list-unstyled">
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">레드</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">화이트</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">로제</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >스파클링</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="border-end border-secondary border-opacity-25 pe-5 ps-5">
-          <ul class="list-unstyled">
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">프랑스</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >이탈리아</a
-              >
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">스페인</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">독일</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">칠레</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">미국</a>
-            </li>
-          </ul>
-        </div>
-        <div class="border-end border-secondary border-opacity-25 pe-5 ps-5">
-          <ul class="list-unstyled">
-             <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
-                    >3만원 이하</a
-                  >
-                </li>
-                <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
-                    >3만원 ~ 6만원</a
-                  >
-                </li>
-                <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
-                    >6만원 ~ 9만원</a
-                  >
-                </li>
-                <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
-                    >6만원 ~ 15만원</a
-                  >
-                </li>
-                <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
-                    >15만원 ~ 20만원</a
-                  >
-                </li>
-                <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
-                    >20만원 이상</a
-                  >
-                </li>
-          </ul>
-        </div>
-        <div class="ps-5">
-          <ul class="list-unstyled">
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">소고기</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">양고기</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary"
-                >돼지고기</a
-              >
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">닭고기</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">버섯</a>
-            </li>
-            <li class="pb-2">
-              <a href="" class="text-decoration-none text-secondary">치즈</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- 로그인 modal -->
+      <!-- 로그인 modal -->
     <div class="modal fade" id="modalTarget02">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-center p-5">
           <div class="fs-4 fw-bold">로그인</div>
-          <form action="./index.html">
+          <form action="/index">
             <div class="pt-3">
               <div class="">
                 <div class="">
@@ -265,7 +127,7 @@
               <div class="pt-2 d-flex justify-content-between">
                 <div>
                   <a
-                    href=""
+                    href="/signup_N_login/login_find_id"
                     class="text-decoration-none text-secondary"
                     style="font-size: small"
                     >아이디/비밀번호 찾기</a
@@ -273,7 +135,7 @@
                 </div>
                 <div>
                   <a
-                    href="./signup_terms.html"
+                    href="/signup_N_login/signup_terms"
                     class="text-decoration-none text-secondary"
                     style="font-size: small"
                     >회원가입</a
@@ -285,8 +147,179 @@
         </div>
       </div>
     </div>
-    <!-- 로그인한 회원만 보여지는 1:1 문의내역-->
 
+    <!-- 검색 navbar -->
+    <nav class="navbar p-3 justify-content-center shadow-sm">
+      <div class="navbarFilter">
+        <ul class="list-unstyled nav justify-content-center">
+          <li class="dropdown nav-item">
+            <a href="/wine/wine_list" class="nav-link link-secondary">와인</a>
+          </li>
+          <li>
+            <a href="/wine/wine_country_france" class="nav-link link-secondary">국가</a>
+          </li>
+          <li>
+            <a href="/wine/wine_price" class="nav-link link-secondary">가격</a>
+          </li>
+          <li>
+            <a href="/wine_" class="nav-link link-secondary">음식페어링</a>
+          </li>
+          <li class="">
+            <a
+              class="nav-link link-secondary navbar-toggler collapsed border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarFilterMenu"
+              aria-controls="navbarFilterMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="material-symbols-outlined fs-3">
+                arrow_drop_down
+              </span>
+            </a>
+          </li>
+        </ul>
+        <!-- collapse 버튼 클릭하면 나오는 검색 필터 -->
+        <div class="collapse text-secondary pt-4" id="navbarFilterMenu">
+          <div class="d-flex justify-content-center mb-3">
+            <div class="border-end border-secondary border-opacity-25 pe-5">
+              <ul class="list-unstyled">
+                <li class="pb-2">
+                  <a href="/wine/wine_red" class="text-decoration-none text-secondary"
+                    >레드</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="/wine/wine_white" class="text-decoration-none text-secondary"
+                    >화이트</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="/wine/wine_rose" class="text-decoration-none text-secondary"
+                    >로제</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="/wine/wine_sparkling" class="text-decoration-none text-secondary"
+                    >스파클링</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="border-end border-secondary border-opacity-25 pe-5 ps-5"
+            >
+              <ul class="list-unstyled">
+                <li class="pb-2">
+                  <a href="/wine/wine_country_france" class="text-decoration-none text-secondary"
+                    >프랑스</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >이탈리아</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="/wine/wine_country_spain" class="text-decoration-none text-secondary"
+                    >스페인</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >독일</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >칠레</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >미국</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="border-end border-secondary border-opacity-25 pe-5 ps-5"
+            >
+              <ul class="list-unstyled">
+                <li class="pb-2">
+                  <a href="/wine/wine_price" class="text-decoration-none text-secondary"
+                    >3만원 이하</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >3만원 ~ 6만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >6만원 ~ 9만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >6만원 ~ 15만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >15만원 ~ 20만원</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >20만원 이상</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="ps-5">
+              <ul class="list-unstyled">
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >소고기</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >양고기</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >돼지고기</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >닭고기</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >버섯</a
+                  >
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-decoration-none text-secondary"
+                    >치즈</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <%-- 본 페이지 --%>
+    <!-- 로그인한 회원만 보여지는 리뷰-->
     <div class="fs-4 fw-bold text-center" style="margin-top: 3rem">
       내가 작성한 리뷰
     </div>
@@ -326,7 +359,7 @@
         </table>
       </div>
     </div>
-    <footer
+   <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"
       style="background-color: #eae0da; font-size: 0.8rem"
     >
@@ -336,28 +369,28 @@
             <ul class="list-unstyled d-flex">
               <li>
                 <a
-                  href="./companyInfo.html"
+                  href="/etc/companyInfo"
                   class="text-black text-decoration-none border-end border-secondary"
                   >회사소개 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./terms_of_use.html"
+                  href="/etc/terms_of_use"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >이용약관 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./privacy_policy.html"
+                  href="/etc/privacy_policy"
                   class="text-black text-decoration-none ps-2 border-end border-secondary"
                   >개인정보처리방침 &nbsp;</a
                 >
               </li>
               <li>
                 <a
-                  href="./notice_questions.html"
+                  href="/notice_N_qna/notice_questions"
                   class="text-black text-decoration-none ps-2"
                   >고객센터</a
                 >
@@ -387,8 +420,13 @@
         </div>
       </div>
       <div class="row">
-        <img src="./img/와인.png" alt="logo" height="150rem" />
+        <img src="../img/와인.png" alt="logo" height="150rem" />
       </div>
     </footer>
+       <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

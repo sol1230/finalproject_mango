@@ -1,0 +1,162 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "STORE",
+        "comment": "판매처",
+        "columns": [
+          {
+            "name": "STORE_UID",
+            "comment": "판매처UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.8720703125,
+              "widthComment": 64.3974609375,
+              "widthDataType": 90.283203125,
+              "widthDefault": 60
+            },
+            "id": "f3b30ee2-0478-4b8c-b198-250f90af8879"
+          },
+          {
+            "name": "STORE_NAME",
+            "comment": "판매처이름",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 84.6845703125,
+              "widthComment": 67,
+              "widthDataType": 90.283203125,
+              "widthDefault": 60
+            },
+            "id": "cbcf2c6e-b951-455e-a963-7da455a07980"
+          },
+          {
+            "name": "SOTRE_NO",
+            "comment": "판매처사업자번호",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.43798828125,
+              "widthComment": 106,
+              "widthDataType": 90.283203125,
+              "widthDefault": 60
+            },
+            "id": "869c8e85-0589-47ad-9e44-c6f4bc17320d"
+          },
+          {
+            "name": "SOTRE_CEO",
+            "comment": "판매처대표자",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.0048828125,
+              "widthComment": 80,
+              "widthDataType": 90.283203125,
+              "widthDefault": 60
+            },
+            "id": "fa74dd87-dfbf-497f-87eb-e28497f7ef57"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 81.6,
+          "top": 88,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a92f1eda-9913-477e-abef-766317b6c2fd"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": []
+  }
+}

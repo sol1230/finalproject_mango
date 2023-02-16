@@ -1,0 +1,254 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "USER_INQUIRY",
+        "comment": "나의 문의 내역",
+        "columns": [
+          {
+            "name": "USER_INQUIRY_UID",
+            "comment": "나의문의내역 UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 128.90234375,
+              "widthComment": 106,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "1da8eae8-8ce1-47d5-a77e-670d8d1dc6bc"
+          },
+          {
+            "name": "USER_INQUIRY_NO",
+            "comment": "문의내역 번호",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 126.01416015625,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "bc58eb55-b009-45f9-871d-fcdc9870ed95"
+          },
+          {
+            "name": "WINE",
+            "comment": "와인상품정보",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 80,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "ca3cc6d6-235a-47ef-ac4f-f0a8a97008e7"
+          },
+          {
+            "name": "USER_INQUIRY_TITLE",
+            "comment": "문의내역 제목",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 141.90869140625,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "3a5b0873-4114-41e9-849d-771dceebf72f"
+          },
+          {
+            "name": "USER_INQUIRY_CONTENT",
+            "comment": "문의내역 내용",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 169.34326171875,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "4795d0a6-aed8-40a8-85e0-42352f76a34b"
+          },
+          {
+            "name": "USER_INQUIRY_DATE",
+            "comment": "문의내역 등록일",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 140.22021484375,
+              "widthComment": 96.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "660db435-b34e-4969-a748-4664cbcedbe0"
+          },
+          {
+            "name": "USER_INQUIRY_ANSWER",
+            "comment": "문의내역 답변",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 163.5732421875,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "be6f292e-1bc8-4ff6-963e-ef5fad726910"
+          },
+          {
+            "name": "USER_INQUIRY_ANSWER_DATE",
+            "comment": "문의내역처리일",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 204.50927734375,
+              "widthComment": 93,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "46aa060f-e141-4d26-9889-357f46bc1ae6"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 204.6297,
+          "top": 78.7037,
+          "zIndex": 20,
+          "widthName": 99.2841796875,
+          "widthComment": 87.2236328125
+        },
+        "visible": true,
+        "id": "96777aed-c6b0-4884-a59b-ff4e59b37382"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": []
+  }
+}

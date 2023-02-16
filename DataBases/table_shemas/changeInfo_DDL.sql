@@ -1,0 +1,12 @@
+
+CREATE TABLE CHANGEINFO
+(
+  ID_UID         VARCHAR(100) NULL     COMMENT '아이디UID',
+  ID             VARCHAR(100) NULL     COMMENT '아이디',
+  PASSWORD       VARCHAR(100) NULL     COMMENT '비밀번호',
+  CHANGEPASSWORD VARCHAR(100) NULL     COMMENT '변경할비밀번호',
+  NAME           VARCHAR(100) NULL     COMMENT '이름',
+  BIRTH          VARCHAR(100) NULL     COMMENT '생년월일',
+  GENDER         VARCHAR(100) NULL     COMMENT '성별',
+  PHONE          VARCHAR(100) NULL     COMMENT '휴대폰'
+);

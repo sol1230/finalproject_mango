@@ -63,8 +63,8 @@
               "fk": false,
               "pfk": false,
               "widthName": 60,
-              "widthComment": 89.38818359375,
-              "widthDataType": 94.94873046875,
+              "widthComment": 90.3974609375,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "999fe18d-a3dd-4e69-b8f0-6acf2da44807"
@@ -85,9 +85,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 111.0654296875,
+              "widthName": 103.26416015625,
               "widthComment": 60,
-              "widthDataType": 94.94873046875,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "b7f6d36f-0ad2-443d-b90a-a8ea145677b5"
@@ -108,9 +108,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 72.79541015625,
+              "widthName": 69.01220703125,
               "widthComment": 60,
-              "widthDataType": 94.94873046875,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "bce3c9f3-e9ac-4d5a-90f9-467dd58c6588"
@@ -131,9 +131,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 88.6708984375,
+              "widthName": 83.2373046875,
               "widthComment": 67,
-              "widthDataType": 94.94873046875,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "a3ade6d1-e3d9-44c5-93a3-1e2403faec83"
@@ -141,7 +141,7 @@
           {
             "name": "QNA_CONTENT",
             "comment": "문의내용",
-            "dataType": "ANSWER_STATUS",
+            "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -154,9 +154,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 100.22998046875,
+              "widthName": 95.78662109375,
               "widthComment": 60,
-              "widthDataType": 115.64208984375,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "40fe4837-f8ec-45a5-a228-e6e221f17695"
@@ -177,9 +177,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 71.10693359375,
+              "widthName": 67.79345703125,
               "widthComment": 67,
-              "widthDataType": 94.94873046875,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "81ba70f8-2bce-45e2-97ab-a073c80ac5a5"
@@ -200,9 +200,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 115.64208984375,
+              "widthName": 106.15234375,
               "widthComment": 60,
-              "widthDataType": 94.94873046875,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "530e3627-40e0-4c61-a126-a91633401322"
@@ -223,9 +223,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 94.4599609375,
+              "widthName": 88.8359375,
               "widthComment": 60,
-              "widthDataType": 94.94873046875,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "e9ce3a40-0cd5-41b6-98ef-367486f95e9d"
@@ -235,7 +235,7 @@
           "active": false,
           "left": 48.8,
           "top": 100,
-          "zIndex": 1,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 67
         },

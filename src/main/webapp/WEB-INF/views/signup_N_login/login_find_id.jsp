@@ -27,15 +27,8 @@
       integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
       crossorigin="anonymous"
     ></script>
-    <style>
-      #navbarFilterMenu a:hover {
-        cursor: pointer;
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-      .navbarFilter a:hover {
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-    </style>
+    <link rel="stylesheet" href="/css/common.css" />
+
   </head>
   <body>
      <%-- header --%>

@@ -22,25 +22,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <style>
-      #navbarFilterMenu a:hover {
-        cursor: pointer;
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-      .navbarFilter a:hover {
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-      .page-link {
-        color: black;
-        background-color: white;
-        border-color: white;
-      }
-      .page-link:focus,
-      .page-link:hover {
-        color: white;
-        background-color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/common.css" />
+
+
   </head>
   <body>
     <%-- header --%>

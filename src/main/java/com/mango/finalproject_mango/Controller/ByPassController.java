@@ -236,4 +236,9 @@ public class ByPassController {
   public void wine_white() {
     int i = 0;
   }
+
+  @RequestMapping(value = { "/wine/wine_kind" })
+  public void wine_kind() {
+    int i = 0;
+  }
 }

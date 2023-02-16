@@ -27,6 +27,8 @@
       integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/css/common.css" />
+
   </head>
   <body>
     <%-- header --%>

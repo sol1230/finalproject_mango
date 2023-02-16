@@ -34,7 +34,7 @@
       .navbarFilter a:hover {
         border-bottom: 2px solid rgb(127, 127, 127);
       }
-       .page-link {
+      .page-link {
         color: black;
         background-color: white;
         border-color: rgb(192, 190, 190);
@@ -58,7 +58,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-       a {
+      a {
         text-decoration: none;
         color: black;
       }
@@ -73,8 +73,10 @@
           <img src="../img/와인.png" alt="logo" height="50rem" />
         </a>
         <div>
-           <nav class="fw-bold nav">
-            <a href="/notice_N_qna/notice_questions" class="nav-link link-dark">FAQ</a>
+          <nav class="fw-bold nav">
+            <a href="/notice_N_qna/notice_questions" class="nav-link link-dark"
+              >FAQ</a
+            >
             <a href="/notice_N_qna/notice" class="nav-link link-dark">공지</a>
             <a href="/event/event" class="nav-link link-dark">이벤트</a>
           </nav>
@@ -110,9 +112,7 @@
               person</i
             ></a
           >
-          <a
-            href="/user/user_wishlist"
-            class="nav-link link-dark"
+          <a href="/user/user_wishlist" class="nav-link link-dark"
             ><i class="material-icons col-1 text-secondary fs-3" id="favorite">
               favorite</i
             ></a
@@ -121,7 +121,7 @@
       </div>
     </header>
 
-      <!-- 로그인 modal -->
+    <!-- 로그인 modal -->
     <div class="modal fade" id="modalTarget02">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-center p-5">
@@ -185,7 +185,9 @@
             <a href="/wine/wine_list" class="nav-link link-secondary">와인</a>
           </li>
           <li>
-            <a href="/wine/wine_country_france" class="nav-link link-secondary">국가</a>
+            <a href="/wine/wine_country_france" class="nav-link link-secondary"
+              >국가</a
+            >
           </li>
           <li>
             <a href="/wine/wine_price" class="nav-link link-secondary">가격</a>
@@ -215,22 +217,30 @@
             <div class="border-end border-secondary border-opacity-25 pe-5">
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="/wine/wine_red" class="text-decoration-none text-secondary"
+                  <a
+                    href="/wine/wine_red"
+                    class="text-decoration-none text-secondary"
                     >레드</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="/wine/wine_white" class="text-decoration-none text-secondary"
+                  <a
+                    href="/wine/wine_white"
+                    class="text-decoration-none text-secondary"
                     >화이트</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="/wine/wine_rose" class="text-decoration-none text-secondary"
+                  <a
+                    href="/wine/wine_rose"
+                    class="text-decoration-none text-secondary"
                     >로제</a
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="/wine/wine_sparkling" class="text-decoration-none text-secondary"
+                  <a
+                    href="/wine/wine_sparkling"
+                    class="text-decoration-none text-secondary"
                     >스파클링</a
                   >
                 </li>
@@ -241,7 +251,9 @@
             >
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="/wine/wine_country_france" class="text-decoration-none text-secondary"
+                  <a
+                    href="/wine/wine_country_france"
+                    class="text-decoration-none text-secondary"
                     >프랑스</a
                   >
                 </li>
@@ -251,7 +263,9 @@
                   >
                 </li>
                 <li class="pb-2">
-                  <a href="/wine/wine_country_spain" class="text-decoration-none text-secondary"
+                  <a
+                    href="/wine/wine_country_spain"
+                    class="text-decoration-none text-secondary"
                     >스페인</a
                   >
                 </li>
@@ -277,7 +291,9 @@
             >
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="/wine/wine_price" class="text-decoration-none text-secondary"
+                  <a
+                    href="/wine/wine_price"
+                    class="text-decoration-none text-secondary"
                     >3만원 이하</a
                   >
                 </li>
@@ -354,11 +370,7 @@
         style="background-color: rgb(252, 249, 244); width: 100%"
       >
         <div class="" style="margin: auto; margin-left: 20%">
-          <img
-            src="../img/wine/wine_canti.png"
-            alt="canti"
-            width="130"
-          />
+          <img src="../img/wine/wine_canti.png" alt="canti" width="130" />
         </div>
         <div class="me-4">
           <div>
@@ -486,7 +498,6 @@
                         >옥션
                         <img src="../img/옥션.png" alt="" width="60" />
                       </a>
-                   
                     </td>
                     <td class="text-danger">최저</td>
                     <td class="text-danger">22,000 &#8361;</td>
@@ -665,7 +676,7 @@
       </div>
       <hr />
 
-   <!-- 상품문의 -->
+      <!-- 상품문의 -->
       <div class="mt-5" style="width: 60%">
         <span class="fw-bold">상품 문의</span><span>(총 20건)</span>
         <span class="float-end">

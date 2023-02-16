@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2200,
     "height": 2200,
-    "scrollTop": -81,
-    "scrollLeft": -49,
+    "scrollTop": -390,
+    "scrollLeft": 0,
     "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
@@ -605,9 +605,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 45,
-          "top": 134.5,
-          "zIndex": 439,
+          "left": 70.5554,
+          "top": 40.0564,
+          "zIndex": 506,
           "widthName": 78.5654296875,
           "widthComment": 83.61181640625
         },
@@ -2285,9 +2285,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 733,
-          "top": 1275,
-          "zIndex": 392,
+          "left": 653.0002,
+          "top": 1227.2224,
+          "zIndex": 503,
           "widthName": 88.6708984375,
           "widthComment": 83.61181640625
         },
@@ -3054,8 +3054,8 @@
           "columnIds": [
             "83df4adc-5bf8-4729-8d54-d57117a6554a"
           ],
-          "x": 976.721923828125,
-          "y": 1275,
+          "x": 896.722123828125,
+          "y": 1227.2224,
           "direction": "top"
         },
         "constraintName": "fk_user_to_changeinfo",

@@ -1,11 +1,11 @@
 {
   "canvas": {
     "version": "2.2.11",
-    "width": 2000,
-    "height": 2000,
-    "scrollTop": -1012,
-    "scrollLeft": -160,
-    "zoomLevel": 0.9,
+    "width": 2200,
+    "height": 2200,
+    "scrollTop": -555,
+    "scrollLeft": -264,
+    "zoomLevel": 1,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -47,7 +47,7 @@
         "comment": "계정",
         "columns": [
           {
-            "id": "3e366269-14e8-468a-b980-3c7dee118443",
+            "id": "76511bc8-0c20-49d4-829e-62b787338fef",
             "name": "UNIQUE_ID",
             "comment": "아이디",
             "dataType": "VARCHAR(100)",
@@ -70,7 +70,7 @@
             }
           },
           {
-            "id": "e718547d-e290-411d-93c2-ae5587fe4c8d",
+            "id": "43973843-787e-491b-a1e1-1b634fdc9ae6",
             "name": "PASSWORD",
             "comment": "비밀번호",
             "dataType": "VARCHAR(100)",
@@ -102,14 +102,14 @@
           "widthComment": 60
         },
         "visible": true,
-        "id": "e465b967-b2aa-422b-a7ae-1a9e5ec1c9da"
+        "id": "25c0a60c-1305-4f02-9b1e-e2882e714434"
       },
       {
         "name": "EVENT",
         "comment": "이벤트",
         "columns": [
           {
-            "id": "ecb02efe-e537-4be3-abb5-97aa26600258",
+            "id": "5100434f-60b3-4e42-b742-1bf9d21d8ea8",
             "name": "EVENT_UID",
             "comment": "ID",
             "dataType": "VARCHAR(100)",
@@ -132,7 +132,7 @@
             }
           },
           {
-            "id": "bd3587af-6b85-4e61-b3ca-031b331d7c18",
+            "id": "c1f67bff-0de7-420f-bf61-9510edd77bce",
             "name": "EVENT_TITLE",
             "comment": "이벤트 제목",
             "dataType": "VARCHAR(100)",
@@ -155,7 +155,7 @@
             }
           },
           {
-            "id": "535c7d25-342e-4683-b8ad-15ce93398744",
+            "id": "ef58f496-8fa9-449e-86de-783684a529ef",
             "name": "EVENT_DATE",
             "comment": "이벤트 날짜",
             "dataType": "VARCHAR(100)",
@@ -187,14 +187,14 @@
           "widthComment": 60
         },
         "visible": true,
-        "id": "a25a2b31-3b55-4461-bbd3-161dcba2254c"
+        "id": "0de9109b-dc02-41c9-a459-f278eb5e8715"
       },
       {
         "name": "COUPON",
         "comment": "",
         "columns": [
           {
-            "id": "34c5bd69-1ad0-48ac-acf6-d3ed403f94f7",
+            "id": "87947880-ff62-41ff-8780-825e1e67d7e0",
             "name": "COUPON_UID",
             "comment": "",
             "dataType": "VARCHAR(100)",
@@ -217,7 +217,7 @@
             }
           },
           {
-            "id": "04be0967-2fc4-4312-8f9a-3e276591fdc9",
+            "id": "ee14d39d-d9b0-4105-9247-877e0103d24e",
             "name": "DOWNLOADABLE_COUPON",
             "comment": "다운로드 가능한 쿠폰",
             "dataType": "VARCHAR(100)",
@@ -240,7 +240,7 @@
             }
           },
           {
-            "id": "3b85d3e3-9e32-4cd7-827e-f4b83196f441",
+            "id": "ffd82359-085f-4f4f-8b08-789eaa22ef50",
             "name": "USEABLE_COUPOB",
             "comment": "사용가능한 쿠폰",
             "dataType": "VARCHAR(100)",
@@ -272,14 +272,14 @@
           "widthComment": 60
         },
         "visible": true,
-        "id": "d15619cb-176b-4b84-84ee-ec09d18e9b78"
+        "id": "6398eab7-5d41-471f-b15f-1343192c08b8"
       },
       {
         "name": "STORE",
         "comment": "판매처",
         "columns": [
           {
-            "id": "9496e050-a2f0-4fcf-8bb0-9d3b8d93e5fb",
+            "id": "841ae586-9bde-454e-8ecc-f6960d5288a5",
             "name": "STORE_UID",
             "comment": "판매처UID",
             "dataType": "VARCHAR(100)",
@@ -302,7 +302,7 @@
             }
           },
           {
-            "id": "767b14ba-7598-4489-8dc6-fc385626e4a6",
+            "id": "ec6c52ce-5350-4049-989e-8f6c08319748",
             "name": "STORE_NAME",
             "comment": "판매처이름",
             "dataType": "VARCHAR(100)",
@@ -325,7 +325,7 @@
             }
           },
           {
-            "id": "b69d4306-dcff-428a-97bb-b2fb0d1f79a1",
+            "id": "229c1b5b-b6c9-4cd5-adb4-3443da25e113",
             "name": "SOTRE_NO",
             "comment": "판매처사업자번호",
             "dataType": "VARCHAR(100)",
@@ -348,7 +348,7 @@
             }
           },
           {
-            "id": "3b1dcbf5-02b4-4772-9b62-7d81205faf5b",
+            "id": "6958124d-a15e-4b44-ae17-414f849bb1ac",
             "name": "SOTRE_CEO",
             "comment": "판매처대표자",
             "dataType": "VARCHAR(100)",
@@ -380,14 +380,14 @@
           "widthComment": 60
         },
         "visible": true,
-        "id": "7fa18e35-797e-45ca-8449-5aa737d33122"
+        "id": "8fc4ef4d-ffcd-42c1-beb0-fc3855079ba4"
       },
       {
         "name": "EVENT_CONTENT",
         "comment": "이벤트 내용",
         "columns": [
           {
-            "id": "0a155263-3993-4c83-a6c8-df3008689d33",
+            "id": "6bca975d-e69c-4577-9aa1-06869929e49d",
             "name": "EVENT_CONTENT_UID",
             "comment": "ID",
             "dataType": "VARCHAR(100)",
@@ -410,7 +410,7 @@
             }
           },
           {
-            "id": "983ba66f-9f3a-4b4f-bc25-bb593e49b0c3",
+            "id": "9f9dacf5-ad50-4494-a7b0-464aa8c036c5",
             "name": "EVENT_TITLE",
             "comment": "이벤트 제목",
             "dataType": "VARCHAR(100)",
@@ -433,7 +433,7 @@
             }
           },
           {
-            "id": "e53375fd-1f1b-43d7-a638-10e96e04eae7",
+            "id": "741a9963-d0b7-47ac-9996-7e96040ab87f",
             "name": "EVENT_CONTENT",
             "comment": "이벤트 내용",
             "dataType": "VARCHAR(100)",
@@ -456,7 +456,7 @@
             }
           },
           {
-            "id": "f57b4446-899f-48c7-b6ad-f6e6e0ad7317",
+            "id": "becc7bc8-455d-4078-ad1f-8ad8f5ec342c",
             "name": "EVENT_DATE",
             "comment": "이벤트 날짜",
             "dataType": "VARCHAR(100)",
@@ -488,14 +488,14 @@
           "widthComment": 70.61181640625
         },
         "visible": true,
-        "id": "29bcfdda-1b9f-43b2-abc9-d55435fa9d49"
+        "id": "b6343a95-a0c7-42d7-b487-ec424009d14c"
       },
       {
         "name": "NOTICE_CONTENT",
         "comment": "공지사항 내용",
         "columns": [
           {
-            "id": "5ddbc967-cbe8-477d-9876-7fdcb7d7aa5b",
+            "id": "a92b9e38-e97b-4275-b6e3-eca849d00ab6",
             "name": "NOTICE_CONTENT_UID",
             "comment": "ID",
             "dataType": "VARCHAR(100)",
@@ -518,7 +518,7 @@
             }
           },
           {
-            "id": "fbd35ebc-4adf-41ef-bc9b-6fd176f6814f",
+            "id": "6f4cbbc7-5441-45a6-b19a-ad365c45785e",
             "name": "NOTICE_TITLE",
             "comment": "공지사항 제목",
             "dataType": "VARCHAR(100)",
@@ -541,7 +541,7 @@
             }
           },
           {
-            "id": "995024f4-946a-4cfc-a5eb-9399ba9ac7fa",
+            "id": "bcc3a285-76c4-4fff-9150-83004015da44",
             "name": "NOTICE_CONTENT",
             "comment": "공지사항 내용",
             "dataType": "VARCHAR(100)",
@@ -564,7 +564,7 @@
             }
           },
           {
-            "id": "583d838b-1c16-42d1-a6ac-b0406b7581ac",
+            "id": "e4c09d1a-6425-433a-9ef9-39ba84087007",
             "name": "NOTICE_DATE",
             "comment": "공지사항 작성일",
             "dataType": "VARCHAR(100)",
@@ -596,14 +596,14 @@
           "widthComment": 83.61181640625
         },
         "visible": true,
-        "id": "335a18b6-7357-43c5-8027-2fbf1edf065c"
+        "id": "49ac8d6e-9d5d-4ede-9970-9706bbe201da"
       },
       {
         "name": "QUESTIONS",
         "comment": "자주하는 질문",
         "columns": [
           {
-            "id": "e7bd8cbf-62d2-4ee5-b34c-5c6ecdabcf27",
+            "id": "0d3b5d87-3380-478a-9e48-be022c3014ab",
             "name": "QUESTIONS_UID",
             "comment": "ID",
             "dataType": "VARCHAR(100)",
@@ -626,7 +626,7 @@
             }
           },
           {
-            "id": "fad1b2ab-0d0d-454a-86de-54c0f57e5321",
+            "id": "9e4b941d-992b-4b85-b8ef-ac14163eecf3",
             "name": "QUESTION",
             "comment": "질문",
             "dataType": "VARCHAR(100)",
@@ -649,7 +649,7 @@
             }
           },
           {
-            "id": "84e03ff7-ada5-4b09-beef-e1ca101c252b",
+            "id": "d9152421-2fbc-49e3-bd9a-9c791aa843db",
             "name": "ANSWER",
             "comment": "답",
             "dataType": "VARCHAR(100)",
@@ -672,7 +672,7 @@
             }
           },
           {
-            "id": "3e383c78-ba39-4917-b9f1-05df447b739c",
+            "id": "e75ca5c3-7ea8-496b-bd32-08634f805dd6",
             "name": "SEARCH",
             "comment": "검색",
             "dataType": "VARCHAR(100)",
@@ -704,14 +704,14 @@
           "widthComment": 83.61181640625
         },
         "visible": true,
-        "id": "157e9a92-d5c7-42d9-b333-062363735e6b"
+        "id": "53a03108-7d98-4476-bc9d-0f3de2684f86"
       },
       {
         "name": "QNA",
         "comment": "",
         "columns": [
           {
-            "id": "3e319b0c-92b0-4a0c-b4cf-7b6235f466ee",
+            "id": "5ebae9c1-3b63-40b2-9e61-9e1cd581d266",
             "name": "QNA_UID",
             "comment": "",
             "dataType": "INTEGER",
@@ -734,7 +734,7 @@
             }
           },
           {
-            "id": "4150c1d0-4539-470b-a687-5d1c390b4e1c",
+            "id": "b8e03f37-1f7e-4ed0-a6b0-0117efaee412",
             "name": "QNA_NO",
             "comment": "Q_A번호",
             "dataType": "INTEGER",
@@ -757,7 +757,7 @@
             }
           },
           {
-            "id": "772f3059-79dc-45db-8fb0-b4c22bf55434",
+            "id": "64b9e447-a5cd-4a0e-8412-b00bd4447f5b",
             "name": "QNA_TITLE",
             "comment": "Q_A제목",
             "dataType": "VARCHAR(100)",
@@ -780,7 +780,7 @@
             }
           },
           {
-            "id": "34944676-ba9a-4fad-bd79-e03f4b090871",
+            "id": "d897e368-d5cd-461d-8515-8b8278c44474",
             "name": "QNA_TYPE",
             "comment": "Q_A구분",
             "dataType": "VARCHAR(100)",
@@ -812,14 +812,14 @@
           "widthComment": 60
         },
         "visible": true,
-        "id": "cc9e8318-72f2-45d7-95d2-967d815348da"
+        "id": "5e920d39-625a-45c4-844d-af7338789658"
       },
       {
         "name": "MYPAGE",
         "comment": "마이페이지",
         "columns": [
           {
-            "id": "b4c9d0ef-bea9-4713-b8f7-b8cc4f492ad5",
+            "id": "bb6e0371-c1e7-4a1b-b0a4-5b21fdfaa0a7",
             "name": "ID_UID",
             "comment": "",
             "dataType": "",
@@ -842,7 +842,7 @@
             }
           },
           {
-            "id": "3a14256f-704e-40ec-b5da-fa1247b9b594",
+            "id": "bdea47b6-d736-470c-9088-7c3186f19785",
             "name": "WISHLIST",
             "comment": "찜한상품",
             "dataType": "VARCHAR(100)",
@@ -865,7 +865,7 @@
             }
           },
           {
-            "id": "9fb60b0b-0433-4d70-aeec-8cce130d362e",
+            "id": "0585bfa0-6c14-48d9-ac0d-9c0e2a96e659",
             "name": "QNA",
             "comment": "문의내역",
             "dataType": "VARCHAR(100)",
@@ -888,7 +888,7 @@
             }
           },
           {
-            "id": "6c343ce9-0fbe-41b6-9eb4-c83a996fccf3",
+            "id": "ff3c7617-abbd-4882-af68-55acd01eaf8b",
             "name": "REVIEW",
             "comment": "내가쓴리뷰",
             "dataType": "VARCHAR(100)",
@@ -911,7 +911,7 @@
             }
           },
           {
-            "id": "a0b32162-ded6-4163-803d-b05931e16b4d",
+            "id": "e1065168-9ff9-46a4-aa33-3cbf86262f79",
             "name": "USEABLE_COUPON",
             "comment": "사용가능한쿠폰",
             "dataType": "VARCHAR(100)",
@@ -943,14 +943,14 @@
           "widthComment": 67
         },
         "visible": true,
-        "id": "963743b6-311a-408d-a363-8253051be02d"
+        "id": "5d16911a-df52-4cd8-99f5-cc6ee4908929"
       },
       {
         "name": "NOTICE",
         "comment": "공지사항",
         "columns": [
           {
-            "id": "392ccaf4-dde8-489d-8afb-1713d17329cc",
+            "id": "62439404-b8e3-4331-a361-0138db3703f3",
             "name": "NOTICE_UID",
             "comment": "ID",
             "dataType": "VARCHAR(100)",
@@ -973,7 +973,7 @@
             }
           },
           {
-            "id": "2089ba84-4713-4caa-9ddb-5f4d46f4c9c2",
+            "id": "ed5cb08b-3192-4ec3-b046-148737fc533c",
             "name": "NOTICE_NO",
             "comment": "공지사항 번호",
             "dataType": "INT",
@@ -996,7 +996,7 @@
             }
           },
           {
-            "id": "4c990d69-52c0-4d63-9795-afb61487eb3d",
+            "id": "e9faf2a3-60c7-4021-9dd6-b8519c7a1ecc",
             "name": "NOTICE_TITLE",
             "comment": "공지사항 제목",
             "dataType": "VARCHAR(100)",
@@ -1019,7 +1019,7 @@
             }
           },
           {
-            "id": "4585d3ed-a7aa-4323-a1b1-f155a0a3915b",
+            "id": "1985e230-08e7-4744-a5a2-46ccddd316cc",
             "name": "NOTICE_DATE",
             "comment": "공지사항 작성일",
             "dataType": "VARCHAR(100)",
@@ -1042,7 +1042,7 @@
             }
           },
           {
-            "id": "e31e9cce-41e6-435a-a5fe-1304b5a86eef",
+            "id": "9d101b79-f70b-42fe-aa1b-35d98e304545",
             "name": "NOTICE_SEARCH",
             "comment": "공지사항 검색",
             "dataType": "VARCHAR(100)",
@@ -1074,14 +1074,14 @@
           "widthComment": 60
         },
         "visible": true,
-        "id": "3d4e4d42-6432-4465-a924-de41af2a39c2"
+        "id": "487a62ab-8ce9-4ab6-a544-d65d781ede29"
       },
       {
         "name": "WISHLIST",
         "comment": "위시리스트",
         "columns": [
           {
-            "id": "86635d99-754f-40d3-b703-c1eee3d5df97",
+            "id": "db1eb4d6-b69c-471b-88e1-aad73da4dcb1",
             "name": "WISHLIST_UID",
             "comment": "ID",
             "dataType": "VARCHAR(100)",
@@ -1104,7 +1104,7 @@
             }
           },
           {
-            "id": "dd3a3e4d-999b-48ea-af59-c876a51dd54f",
+            "id": "634281ec-127e-4d96-babc-52484d7de478",
             "name": "NAME",
             "comment": "와인 이름",
             "dataType": "VARCHAR(100)",
@@ -1127,7 +1127,7 @@
             }
           },
           {
-            "id": "d9ad30d4-8d51-4bb5-bedc-b9e857f78df2",
+            "id": "ae0bbf79-2c8e-4265-939e-e9e996f3d9ba",
             "name": "WINE_TYPE",
             "comment": "와인 종류",
             "dataType": "VARCHAR(100)",
@@ -1150,7 +1150,7 @@
             }
           },
           {
-            "id": "c291ba70-a559-4594-b283-925b7170ce5f",
+            "id": "22cb1c41-0d39-4ca0-bb0f-698de9b8ee8e",
             "name": "COUNTRY",
             "comment": "나라",
             "dataType": "VARCHAR(100)",
@@ -1173,7 +1173,7 @@
             }
           },
           {
-            "id": "5ef3bb82-fa03-4930-9ce0-fb51f37f826e",
+            "id": "6df1b952-438f-4002-97b4-4abad0ec0862",
             "name": "VARIETY",
             "comment": "품종",
             "dataType": "VARCHAR(100)",
@@ -1205,14 +1205,145 @@
           "widthComment": 67
         },
         "visible": true,
-        "id": "456fada0-4705-4130-8bfb-9a467e765b6c"
+        "id": "dd962a97-5890-405e-afef-3a2c58a91441"
+      },
+      {
+        "name": "USER_REVIEW_MODIFY",
+        "comment": "내가 작성한 리뷰",
+        "columns": [
+          {
+            "id": "8ca507a3-ce4e-4a0b-b8c4-f588b33028c4",
+            "name": "URM_UID",
+            "comment": "내가작성한리뷰 UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.2236328125,
+              "widthComment": 119,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "56e59c66-6bea-4aa8-8978-b8d66aa30df3",
+            "name": "REVIEW_NO",
+            "comment": "리뷰 번호",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.0126953125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c8887977-555a-47d3-b8a7-c6bdd30626ee",
+            "name": "URM_DATE",
+            "comment": "리뷰작성일",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.54150390625,
+              "widthComment": 67,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "041df8ae-b4df-4153-b104-60385b41b2cf",
+            "name": "WINE",
+            "comment": "리뷰남긴제품",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 80,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e36ce6d4-abf0-429b-8476-89b3cffef51e",
+            "name": "REVIEW",
+            "comment": "리뷰",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1156,
+          "top": 701,
+          "zIndex": 12,
+          "widthName": 154.41357421875,
+          "widthComment": 100.2236328125
+        },
+        "visible": true,
+        "id": "82104e1f-aedc-45bf-a182-066430281299"
       },
       {
         "name": "ADMIN_EVENT",
         "comment": "이벤트게시판",
         "columns": [
           {
-            "id": "0095f657-2a7e-4193-a580-96572c7f234b",
+            "id": "adef9bdc-1719-4862-92a5-cbc8e0cb6337",
             "name": "EVENT_UID",
             "comment": "이벤트게시판UID",
             "dataType": "VARCHAR(100)",
@@ -1235,7 +1366,7 @@
             }
           },
           {
-            "id": "045151a6-00bb-42d7-8cab-21310a15c16e",
+            "id": "e84c7f94-5f3a-46bb-932d-60f502a3db5e",
             "name": "EVENT_FILE",
             "comment": "이벤트첨부파일",
             "dataType": "VARCHAR(100)",
@@ -1258,7 +1389,7 @@
             }
           },
           {
-            "id": "41d35faf-dc69-4c2d-b986-5d9a7aebe804",
+            "id": "87542026-34eb-426a-bbf3-67d7fe8c08a6",
             "name": "EVENT_TITLE",
             "comment": "이벤트제목",
             "dataType": "VARCHAR(100)",
@@ -1281,7 +1412,7 @@
             }
           },
           {
-            "id": "60f03cad-7f17-4927-b7f2-24b3ad3d526b",
+            "id": "f88860ff-6fd2-4c2d-a1c3-6251e24effb2",
             "name": "EVENT_DATE",
             "comment": "이벤트작성일",
             "dataType": "VARCHAR(100)",
@@ -1304,7 +1435,7 @@
             }
           },
           {
-            "id": "cd5fdcbe-37f3-446e-b21c-c2cd33462f18",
+            "id": "fdeb3e5c-08f8-4c03-81bb-ea05345e9127",
             "name": "EVENT_DATETIME",
             "comment": "이벤트기간",
             "dataType": "VARCHAR(100)",
@@ -1327,7 +1458,7 @@
             }
           },
           {
-            "id": "f05a765a-c490-414e-bbeb-e5eb54814d9e",
+            "id": "7c02c37c-7383-483e-aedc-cff1e63d2289",
             "name": "EVENT_CONTENT",
             "comment": "이벤트내용",
             "dataType": "VARCHAR(100)",
@@ -1352,21 +1483,21 @@
         ],
         "ui": {
           "active": false,
-          "left": 1156,
-          "top": 701,
-          "zIndex": 12,
+          "left": 50,
+          "top": 938.5,
+          "zIndex": 13,
           "widthName": 94.4599609375,
           "widthComment": 80
         },
         "visible": true,
-        "id": "4b85414a-cdd0-4dba-869d-b0840fefdc3a"
+        "id": "43f942d2-6a1a-4477-91b2-66e0898a77c3"
       },
       {
         "name": "ADMIN_NOTICE",
         "comment": "공지게시판",
         "columns": [
           {
-            "id": "d0616426-246b-4f81-9c76-0e8256d5e1e2",
+            "id": "83fa0cc4-c4dc-4296-bc7a-733846c2c486",
             "name": "NOTICE_UID",
             "comment": "공지게시판UID",
             "dataType": "VARCHAR(100)",
@@ -1389,7 +1520,7 @@
             }
           },
           {
-            "id": "de007cc1-23b9-47e3-972a-01a4a80c49f9",
+            "id": "bc0efbf3-f8c9-4cf7-95c6-b88efedc9e31",
             "name": "NOTICE_DATE",
             "comment": "공지작성일",
             "dataType": "VARCHAR(100)",
@@ -1412,7 +1543,7 @@
             }
           },
           {
-            "id": "f3305b40-df24-4af9-a894-9f5be17de4e4",
+            "id": "332ee48b-1be1-4a84-8566-8610a4b9e3d8",
             "name": "NOTICE_WRITER",
             "comment": "공지작성자",
             "dataType": "VARCHAR(100)",
@@ -1435,7 +1566,7 @@
             }
           },
           {
-            "id": "4f21f743-39af-4090-a398-00f1fe71ddd9",
+            "id": "bdccc511-d7eb-4edd-8a37-9ca280113177",
             "name": "NOTICE_TITLE",
             "comment": "공지제목",
             "dataType": "VARCHAR(100)",
@@ -1458,7 +1589,7 @@
             }
           },
           {
-            "id": "5736e5c5-ce1c-4867-be9c-c7d54e4d5e2c",
+            "id": "a9669dbc-bb49-45db-bce1-37479458e9db",
             "name": "NOTICE_CONTENT",
             "comment": "공지내용",
             "dataType": "VARCHAR(100)",
@@ -1481,7 +1612,7 @@
             }
           },
           {
-            "id": "dce1acf8-4658-4848-8570-3be19b759a9a",
+            "id": "9b7b0867-5abe-40cd-be61-759c4f40a2da",
             "name": "NOTICE_FILE",
             "comment": "공지첨부파일",
             "dataType": "VARCHAR(100)",
@@ -1506,21 +1637,21 @@
         ],
         "ui": {
           "active": false,
-          "left": 50,
-          "top": 959,
-          "zIndex": 13,
+          "left": 639,
+          "top": 938.5,
+          "zIndex": 14,
           "widthName": 100.22998046875,
           "widthComment": 67
         },
         "visible": true,
-        "id": "d165829c-9ed3-4ed4-9062-59ab3b2a014f"
+        "id": "7ff4dd3d-8311-4a3b-9f9c-ef7518c0b475"
       },
       {
         "name": "WINE_LIST",
         "comment": "와인 목록",
         "columns": [
           {
-            "id": "66f76996-826a-4674-a440-52aa913e06c4",
+            "id": "32f7a27b-4d45-42c1-bc01-2e3d63e7d374",
             "name": "WINE_RED_UID",
             "comment": "ID",
             "dataType": "VARCHAR(100)",
@@ -1543,7 +1674,7 @@
             }
           },
           {
-            "id": "bdba9ebd-114e-4855-86a4-bc5355f9d537",
+            "id": "45fc4c3c-a012-491b-9cb1-933679d1530d",
             "name": "NAME",
             "comment": "와인 이름",
             "dataType": "VARCHAR(100)",
@@ -1566,7 +1697,7 @@
             }
           },
           {
-            "id": "fa7c32b8-4ad1-4b45-a4b3-defbfc560836",
+            "id": "c7d14c12-5b45-495d-a6b2-03cfeb4ab329",
             "name": "WINE_TYPE",
             "comment": "와인 종류",
             "dataType": "VARCHAR(100)",
@@ -1589,7 +1720,7 @@
             }
           },
           {
-            "id": "63130305-58c2-4f01-8bbc-e978d70eb617",
+            "id": "ebc3c546-db2b-496a-a1e5-72599f4d850c",
             "name": "COUNTRY",
             "comment": "나라",
             "dataType": "VARCHAR(100)",
@@ -1612,7 +1743,7 @@
             }
           },
           {
-            "id": "1fc4655c-bedc-44e1-b441-36e842956a74",
+            "id": "2bb113bd-ff15-41b7-9dc2-d0fd0088f83a",
             "name": "VARIETY",
             "comment": "품종",
             "dataType": "VARCHAR(100)",
@@ -1635,7 +1766,7 @@
             }
           },
           {
-            "id": "860befc9-47fd-4064-99e0-1e96b222c26e",
+            "id": "6cb839cf-ee74-4161-b379-6154032013ce",
             "name": "PRICE",
             "comment": "가격",
             "dataType": "VARCHAR(100)",
@@ -1660,21 +1791,21 @@
         ],
         "ui": {
           "active": false,
-          "left": 629,
-          "top": 959,
-          "zIndex": 14,
+          "left": 1218,
+          "top": 938.5,
+          "zIndex": 15,
           "widthName": 70.62451171875,
           "widthComment": 60
         },
         "visible": true,
-        "id": "83d0db7f-c332-4dda-8a46-08340c62add1"
+        "id": "34551c4d-4870-49eb-8c75-5f1bf953dda2"
       },
       {
         "name": "REVIEW",
         "comment": "리뷰",
         "columns": [
           {
-            "id": "fcdea6d4-a2ec-4636-9301-2279ff8947de",
+            "id": "def8dce8-9fa6-4a41-8ede-f33bac62e24e",
             "name": "REVIEW_UID",
             "comment": "리뷰UID",
             "dataType": "VARCHAR(100)",
@@ -1697,7 +1828,7 @@
             }
           },
           {
-            "id": "340e7d32-0dc7-4f1c-ba3e-b96c9143a337",
+            "id": "9666cf6a-15c3-4071-be1a-80ba6c01af93",
             "name": "PRODUCT_CODE",
             "comment": "상품코드",
             "dataType": "VARCHAR(100)",
@@ -1720,7 +1851,7 @@
             }
           },
           {
-            "id": "ea830e86-eb3b-484e-acd5-80473493b2b8",
+            "id": "527453e7-e585-4480-8332-bdbc84640abf",
             "name": "REVIEW_TITLE",
             "comment": "리뷰제목",
             "dataType": "VARCHAR(100)",
@@ -1743,7 +1874,7 @@
             }
           },
           {
-            "id": "5fd118ba-d94e-4de9-bcf8-154a6d22f7ab",
+            "id": "c22079cf-b05a-4eab-a5f7-dbf969abf396",
             "name": "REVIEW_WRITER",
             "comment": "리뷰작성자",
             "dataType": "VARCHAR(100)",
@@ -1766,7 +1897,7 @@
             }
           },
           {
-            "id": "68a8bf49-16c5-457b-8d8f-120375883526",
+            "id": "ab655806-2b38-4cbf-9d6e-7aa3b25b6593",
             "name": "REVIEW_SCOPE",
             "comment": "리뷰별점",
             "dataType": "INTEGER",
@@ -1789,7 +1920,7 @@
             }
           },
           {
-            "id": "c6d513de-88d8-4161-99cb-340159bb019c",
+            "id": "d330bf69-cacb-463f-a5fb-19a27553f6b1",
             "name": "REVIEW_DATE",
             "comment": "리뷰작성일",
             "dataType": "VARCHAR(100)",
@@ -1812,7 +1943,7 @@
             }
           },
           {
-            "id": "3b8f973d-1cf9-4b05-b392-b79e2e53910f",
+            "id": "0693339d-2fd2-4adc-a6a8-36c30005df78",
             "name": "REVIEW_CONTENT",
             "comment": "리뷰내용",
             "dataType": "VARCHAR(100)",
@@ -1837,21 +1968,21 @@
         ],
         "ui": {
           "active": false,
-          "left": 1166,
-          "top": 959,
-          "zIndex": 15,
+          "left": 50,
+          "top": 1196.5,
+          "zIndex": 16,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "6153ee1f-6f5a-4414-8f03-11049d1312c0"
+        "id": "8b1b64d2-dfcb-409d-bddd-e966ee49ba9a"
       },
       {
         "name": "USERS",
         "comment": "회원들",
         "columns": [
           {
-            "id": "e5cc99ea-63e5-4df4-a264-f369e21ea45e",
+            "id": "968104bc-c482-4507-ab76-1ad09ea8ca0c",
             "name": "USER_UID",
             "comment": "회원아이디",
             "dataType": "VARCHAR(100)",
@@ -1874,7 +2005,7 @@
             }
           },
           {
-            "id": "c1a9790f-253b-4351-9685-422b241d8082",
+            "id": "3fdfdbda-4c55-4c0f-81cb-cb88816ee1cf",
             "name": "USER_PASSWORD",
             "comment": "회원비밀번호",
             "dataType": "VARCHAR(100)",
@@ -1897,7 +2028,7 @@
             }
           },
           {
-            "id": "8492b517-4341-458d-b205-e99bd792c98f",
+            "id": "3e9f5d30-85b3-4f2e-a035-b269b80b9eae",
             "name": "USER_NAME",
             "comment": "회원이름",
             "dataType": "VARCHAR(100)",
@@ -1920,7 +2051,7 @@
             }
           },
           {
-            "id": "8ee46ce0-197c-4f67-9416-afdef41fad21",
+            "id": "690bd4ad-1967-4d31-aff4-4d12d6e7528e",
             "name": "USER_BIRTH",
             "comment": "회원생년월일",
             "dataType": "VARCHAR(100)",
@@ -1943,7 +2074,7 @@
             }
           },
           {
-            "id": "9f3e2fc7-440b-4f43-b259-769dd932a04b",
+            "id": "58fbf971-8733-43be-9372-dda4e2b21a9d",
             "name": "USER_GENDER",
             "comment": "회원성별",
             "dataType": "VARCHAR(100)",
@@ -1966,7 +2097,7 @@
             }
           },
           {
-            "id": "7f16f139-70be-43ed-a92a-a704f6949b24",
+            "id": "6310ec8e-41ea-4a60-a2c7-7404c12338bb",
             "name": "USER_PHONE",
             "comment": "회원전화번호",
             "dataType": "VARCHAR(100)",
@@ -1989,7 +2120,7 @@
             }
           },
           {
-            "id": "3bb188d2-92de-4f85-9df1-61918bcb61d1",
+            "id": "4c2677be-42fe-4361-8495-fed643b4f177",
             "name": "USER_AUTHORITY",
             "comment": "회원권한",
             "dataType": "VARCHAR(100)",
@@ -2014,21 +2145,21 @@
         ],
         "ui": {
           "active": false,
-          "left": 50,
-          "top": 1237.5,
-          "zIndex": 16,
+          "left": 607,
+          "top": 1196.5,
+          "zIndex": 17,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "7a2826d1-2e32-48ba-9992-2185d2a3eccf"
+        "id": "40975f30-5dc3-4e6f-8c28-c02329773b7c"
       },
       {
         "name": "USER",
         "comment": "회원",
         "columns": [
           {
-            "id": "f332dd2c-f425-4939-b75b-259300e68c18",
+            "id": "1d7f4f0f-597f-409b-8a96-7145ee51d6fa",
             "name": "UNIQUE_ID",
             "comment": "아이디",
             "dataType": "VARCHAR(100)",
@@ -2051,7 +2182,7 @@
             }
           },
           {
-            "id": "d4475bdb-6779-467d-b287-c7043ccea2f5",
+            "id": "fc4e21e7-cf36-4ca5-864e-d4dae9aa2a1a",
             "name": "PASSWORD",
             "comment": "비밀번호",
             "dataType": "VARCHAR(100)",
@@ -2074,7 +2205,7 @@
             }
           },
           {
-            "id": "1e316c45-8de6-48be-b74c-d8bdd9694450",
+            "id": "8ecff7d0-9f11-49ff-b85b-79c6d9825ddb",
             "name": "NAME",
             "comment": "이름",
             "dataType": "VARCHAR(100)",
@@ -2097,7 +2228,7 @@
             }
           },
           {
-            "id": "0a026ff2-574f-4941-914c-16ba78f66f9b",
+            "id": "805971d8-5cbb-4993-bb12-a927c3dfd253",
             "name": "BIRTH",
             "comment": "생년월일",
             "dataType": "VARCHAR(100)",
@@ -2120,7 +2251,7 @@
             }
           },
           {
-            "id": "dd827b5b-da18-4f44-9700-020282091372",
+            "id": "2eeccd67-613e-4e99-ac7b-e3861da3eaa7",
             "name": "GENDER",
             "comment": "성별",
             "dataType": "VARCHAR(100)",
@@ -2143,7 +2274,7 @@
             }
           },
           {
-            "id": "21288e36-a7dc-4afd-8b0d-69c4ad8103f3",
+            "id": "b83d0edd-8162-43e8-a423-ed3538b32d7b",
             "name": "PHONE",
             "comment": "전화번호",
             "dataType": "VARCHAR(100)",
@@ -2166,7 +2297,7 @@
             }
           },
           {
-            "id": "dc7646bc-72e5-4c79-98f8-7b3872937846",
+            "id": "ac751b4e-1c64-4dd1-ac91-ae34e4f8500f",
             "name": "AUTHORITY",
             "comment": "권한",
             "dataType": "VARCHAR(100)",
@@ -2191,21 +2322,21 @@
         ],
         "ui": {
           "active": false,
-          "left": 609,
-          "top": 1237.5,
-          "zIndex": 17,
+          "left": 1166,
+          "top": 1196.5,
+          "zIndex": 18,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "09919683-37e5-413a-a019-aa230efe9c34"
+        "id": "1e75a5db-eafd-4944-82c7-74622267aaa3"
       },
       {
         "name": "ADMIN_QNA",
         "comment": "문의게시판",
         "columns": [
           {
-            "id": "fb2c70a7-140d-498a-9579-c977d2f6b2a4",
+            "id": "0ccec0e1-1987-480f-b5ec-910d0163bbca",
             "name": "QNA_UID",
             "comment": "문의게시판UID",
             "dataType": "VARCHAR(100)",
@@ -2228,7 +2359,7 @@
             }
           },
           {
-            "id": "040db99b-c9ed-418d-8cd6-2ee43568678a",
+            "id": "a9fda9ae-c444-4902-8fb7-e10ef1d4a57e",
             "name": "PRODUCT_CODE",
             "comment": "상품코드",
             "dataType": "VARCHAR(100)",
@@ -2251,7 +2382,7 @@
             }
           },
           {
-            "id": "278f6fe3-40cf-487e-93a0-c06201e2d640",
+            "id": "f2d619cd-ebc0-467b-9848-1cf0fc068abb",
             "name": "QNA_TITLE",
             "comment": "문의제목",
             "dataType": "VARCHAR(100)",
@@ -2274,7 +2405,7 @@
             }
           },
           {
-            "id": "f8a504a2-7498-4520-8dfd-ea74547f1bdf",
+            "id": "04eb1ed6-9778-478b-a182-de40e7a4c5c0",
             "name": "QNA_WRITER",
             "comment": "문의작성자",
             "dataType": "VARCHAR(100)",
@@ -2297,7 +2428,7 @@
             }
           },
           {
-            "id": "6b5e7185-c4ac-415d-ba96-d7eb3076ef5b",
+            "id": "8bc9ca9d-f304-4649-ba2b-65e7970cabf4",
             "name": "QNA_CONTENT",
             "comment": "문의내용",
             "dataType": "VARCHAR(100)",
@@ -2320,7 +2451,7 @@
             }
           },
           {
-            "id": "833e9773-0341-4f13-b34c-aff6635a22f7",
+            "id": "fdee4aaf-8dee-4a97-a118-e659274d7a99",
             "name": "QNA_DATE",
             "comment": "문의작성일",
             "dataType": "VARCHAR(100)",
@@ -2343,7 +2474,7 @@
             }
           },
           {
-            "id": "4e4d3e0d-4822-4198-92af-b15168bfe2f8",
+            "id": "7d4ca3e0-2a17-47c8-aa77-84a5cf17634c",
             "name": "ANSWER_STATUS",
             "comment": "답변상태",
             "dataType": "VARCHAR(100)",
@@ -2366,7 +2497,7 @@
             }
           },
           {
-            "id": "38f73402-1679-4c20-a135-5f4f1277bd8e",
+            "id": "df7895a7-2afa-41c5-83d1-80ed2406b87b",
             "name": "QNA_ANSWER",
             "comment": "문의답변",
             "dataType": "VARCHAR(100)",
@@ -2391,21 +2522,21 @@
         ],
         "ui": {
           "active": false,
-          "left": 1116,
-          "top": 1237.5,
-          "zIndex": 18,
+          "left": 50,
+          "top": 1475,
+          "zIndex": 19,
           "widthName": 79.2890625,
           "widthComment": 67
         },
         "visible": true,
-        "id": "bec50c91-b2d3-4d23-8e42-92b657a0a791"
+        "id": "4e714549-eeef-434c-bafa-caf5598e3214"
       },
       {
         "name": "CHANGEINFO",
         "comment": "",
         "columns": [
           {
-            "id": "b5b1fcd2-27ff-4ebf-a6db-aa7688aa63fc",
+            "id": "886b5686-58a1-4e12-89cd-dbf31c2d10cf",
             "name": "ID_UID",
             "comment": "아이디UID",
             "dataType": "VARCHAR(100)",
@@ -2428,7 +2559,7 @@
             }
           },
           {
-            "id": "ab52aefa-fa8e-426f-aca9-18a934de4e79",
+            "id": "059b2ff3-aa00-4c0d-87d2-9a3ce6d5dfd6",
             "name": "ID",
             "comment": "아이디",
             "dataType": "VARCHAR(100)",
@@ -2451,7 +2582,7 @@
             }
           },
           {
-            "id": "235003c8-c046-42db-8e87-c178918b92d0",
+            "id": "29145485-b17d-4f00-af6f-0ecf519b60b0",
             "name": "PASSWORD",
             "comment": "비밀번호",
             "dataType": "VARCHAR(100)",
@@ -2474,7 +2605,7 @@
             }
           },
           {
-            "id": "08de2b11-f725-44fa-b005-f4e10d5ac768",
+            "id": "1995d686-7d9e-4a9b-aaeb-e8ae825289a2",
             "name": "CHANGEPASSWORD",
             "comment": "변경할비밀번호",
             "dataType": "VARCHAR(100)",
@@ -2497,7 +2628,7 @@
             }
           },
           {
-            "id": "37cd0c1c-2227-43d6-8118-065444a75edf",
+            "id": "61a16463-d472-4b06-922e-650aecfb4cc9",
             "name": "NAME",
             "comment": "이름",
             "dataType": "VARCHAR(100)",
@@ -2520,7 +2651,7 @@
             }
           },
           {
-            "id": "8120bd6c-b8dd-43a7-89d1-ae203f08640e",
+            "id": "734fd7ac-39dd-42ff-afd0-20e979ffa0c3",
             "name": "BIRTH",
             "comment": "생년월일",
             "dataType": "VARCHAR(100)",
@@ -2543,7 +2674,7 @@
             }
           },
           {
-            "id": "7f065c44-a0fa-4a9a-805b-88cc27b9ebb5",
+            "id": "0e7e98d9-d7ac-42d6-8250-bc6380f893bf",
             "name": "GENDER",
             "comment": "성별",
             "dataType": "VARCHAR(100)",
@@ -2566,7 +2697,7 @@
             }
           },
           {
-            "id": "2606308b-6543-4726-8cb7-c44c7c7a63f2",
+            "id": "90aa52ce-a4c9-4886-b8a6-de278893c3ff",
             "name": "PHONE",
             "comment": "휴대폰",
             "dataType": "VARCHAR(100)",
@@ -2591,21 +2722,221 @@
         ],
         "ui": {
           "active": false,
-          "left": 50,
-          "top": 1536.5,
-          "zIndex": 19,
+          "left": 619,
+          "top": 1475,
+          "zIndex": 20,
           "widthName": 88.6708984375,
           "widthComment": 60
         },
         "visible": true,
-        "id": "8077d850-4453-4204-bf86-b0f8cec1c9b1"
+        "id": "f4efe113-8c80-4aee-ab1c-58ae120a0abb"
+      },
+      {
+        "name": "USER_INQUIRY",
+        "comment": "나의 문의 내역",
+        "columns": [
+          {
+            "id": "a7ffaa82-5832-4838-a58e-a8a9b6f62d67",
+            "name": "USER_INQUIRY_UID",
+            "comment": "나의문의내역 UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 128.90234375,
+              "widthComment": 106,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "63021d73-cc57-4e12-8531-8478c04311ec",
+            "name": "USER_INQUIRY_NO",
+            "comment": "문의내역 번호",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 126.01416015625,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9adbec40-8fe8-4368-99f2-9e5a349e01fc",
+            "name": "WINE",
+            "comment": "와인상품정보",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 80,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "648d2c35-a67b-421a-a112-e3da4c9aaded",
+            "name": "USER_INQUIRY_TITLE",
+            "comment": "문의내역 제목",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 141.90869140625,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "0362f600-7610-4878-91ab-7bcc8943cfa3",
+            "name": "USER_INQUIRY_CONTENT",
+            "comment": "문의내역 내용",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 169.34326171875,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "339a1f8d-478a-4724-a531-4d192f38705a",
+            "name": "USER_INQUIRY_DATE",
+            "comment": "문의내역 등록일",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 140.22021484375,
+              "widthComment": 96.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "aaf2e7cb-661b-4328-aeef-7e4747e7f084",
+            "name": "USER_INQUIRY_ANSWER",
+            "comment": "문의내역 답변",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 163.5732421875,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "6aa2a8a8-1822-4989-89c8-c1b87433c908",
+            "name": "USER_INQUIRY_ANSWER_DATE",
+            "comment": "문의내역처리일",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 204.50927734375,
+              "widthComment": 93,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1188,
+          "top": 1475,
+          "zIndex": 21,
+          "widthName": 99.2841796875,
+          "widthComment": 87.2236328125
+        },
+        "visible": true,
+        "id": "246e2664-f6ed-4ba5-8687-9dca6aac42bb"
       },
       {
         "name": "WINE",
         "comment": "와인",
         "columns": [
           {
-            "id": "b873060f-aaba-4c30-9ab0-7f1fc58c8b8e",
+            "id": "32a6d0f4-2dd3-4134-b5f5-71613035071c",
             "name": "WINE_UID",
             "comment": "와인UID",
             "dataType": "VARCHAR(100)",
@@ -2628,7 +2959,7 @@
             }
           },
           {
-            "id": "39d65ecb-5309-48e7-95ae-9e2ae04f9f70",
+            "id": "08791b38-1c7e-4cb6-91b3-bcc13a35da2d",
             "name": "WINE_NAME",
             "comment": "와인명",
             "dataType": "VARCHAR(100)",
@@ -2651,7 +2982,7 @@
             }
           },
           {
-            "id": "03fd97dc-2212-4088-95de-9d4f22b87c92",
+            "id": "36973629-14d8-4325-aa37-55834f00e5b7",
             "name": "WINE_NAME_EN",
             "comment": "와인명_영문",
             "dataType": "VARCHAR(100)",
@@ -2674,7 +3005,7 @@
             }
           },
           {
-            "id": "9b5bc016-4205-44f7-a005-f465976650f6",
+            "id": "98c0bd15-5891-402d-8d51-c45f16e0bde5",
             "name": "WINE_SCOPE",
             "comment": "와인별점",
             "dataType": "VARCHAR(100)",
@@ -2697,7 +3028,7 @@
             }
           },
           {
-            "id": "8eb5db88-b5c0-48e1-80bc-ba76a4dd6195",
+            "id": "051795b7-766d-45a8-baae-953354972159",
             "name": "WINE_COMPANY",
             "comment": "와인회사",
             "dataType": "VARCHAR(100)",
@@ -2720,7 +3051,7 @@
             }
           },
           {
-            "id": "867c33b5-ecbc-435e-a1ce-73f28f8b98bb",
+            "id": "bba7c760-9b35-4d37-8ce4-691c8811f9b0",
             "name": "WINE_VARIETY",
             "comment": "와인품종",
             "dataType": "VARCHAR(100)",
@@ -2743,7 +3074,7 @@
             }
           },
           {
-            "id": "f37cf479-fc22-432b-b8cf-a8d7ce00a9bd",
+            "id": "2ba606e7-b435-4368-ba06-143b80332dfa",
             "name": "WINE_COUNTRY",
             "comment": "와인나라",
             "dataType": "VARCHAR(100)",
@@ -2766,7 +3097,7 @@
             }
           },
           {
-            "id": "94e3f135-c992-4149-87eb-b1a0ec5af775",
+            "id": "df6cb862-7919-4ada-a593-ee219e567763",
             "name": "WINE_REGION",
             "comment": "와인생산지역",
             "dataType": "VARCHAR(100)",
@@ -2789,7 +3120,7 @@
             }
           },
           {
-            "id": "f0b6a307-1ea1-495c-9936-f3a094258ffb",
+            "id": "72435afa-301a-4a2d-99ad-8e17630c63cb",
             "name": "WINE_TYPE",
             "comment": "와인종류",
             "dataType": "VARCHAR(100)",
@@ -2812,7 +3143,7 @@
             }
           },
           {
-            "id": "6286c3fe-76f3-4002-8fca-24b109704009",
+            "id": "28c8f0cd-89d2-41ea-837a-2efa672909ec",
             "name": "WINE_ALCOHOL_DEGREE",
             "comment": "와인도수",
             "dataType": "VARCHAR(100)",
@@ -2835,7 +3166,7 @@
             }
           },
           {
-            "id": "1d960b29-8710-484f-9dae-9d4b0b4de99a",
+            "id": "8ce6d184-57c7-4f7e-aac2-35dcb771f99a",
             "name": "WINE_PRICE",
             "comment": "와인가격",
             "dataType": "VARCHAR(100)",
@@ -2858,7 +3189,7 @@
             }
           },
           {
-            "id": "f0077d21-3530-4d32-b59e-a2dd79c40489",
+            "id": "e220d6bc-a405-4318-80ea-ef5b89825ade",
             "name": "WINE_STORE",
             "comment": "와인판매처",
             "dataType": "VARCHAR(100)",
@@ -2881,7 +3212,7 @@
             }
           },
           {
-            "id": "6fe9ed7d-f393-4608-acaa-09dffead456d",
+            "id": "a92858b9-545f-4126-8b21-01c7a7ba16d9",
             "name": "WINE_IMAGE",
             "comment": "와인이미지",
             "dataType": "VARCHAR(100)",
@@ -2904,7 +3235,7 @@
             }
           },
           {
-            "id": "9ff18099-0372-4b3b-9c13-e6df198bf669",
+            "id": "7eb6e274-8f02-434c-9a44-9f4628539d39",
             "name": "WINE_FILE",
             "comment": "와인상세파일",
             "dataType": "VARCHAR(100)",
@@ -2927,7 +3258,7 @@
             }
           },
           {
-            "id": "0eeaa55a-302e-4f95-80a7-7cf1f7613944",
+            "id": "e966f0f7-ddb9-4a04-ac03-563d5ce42c24",
             "name": "WINE_INFO",
             "comment": "와인상세정보",
             "dataType": "VARCHAR(100)",
@@ -2950,7 +3281,7 @@
             }
           },
           {
-            "id": "dfacebd0-3451-4b1d-a65c-9d755b236552",
+            "id": "c4491409-5f66-49d0-9290-910023ca78cb",
             "name": "WINE_REVIEW",
             "comment": "와인리뷰",
             "dataType": "VARCHAR(100)",
@@ -2973,7 +3304,7 @@
             }
           },
           {
-            "id": "e2029cbc-8001-41ef-95f4-0c8090e64faf",
+            "id": "3dbb0f16-4bad-42b3-9f17-d5e676e35766",
             "name": "WINE_FOOD_PAIRING",
             "comment": "와인음식페어링",
             "dataType": "VARCHAR(100)",
@@ -2998,14 +3329,14 @@
         ],
         "ui": {
           "active": false,
-          "left": 619,
-          "top": 1536.5,
-          "zIndex": 20,
+          "left": 50,
+          "top": 1774,
+          "zIndex": 22,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "3ed92e47-71a4-48fb-8b3c-f0bec3cc99da"
+        "id": "9ab17fcc-3bd4-4b14-906c-aabf9de57735"
       }
     ],
     "indexes": []

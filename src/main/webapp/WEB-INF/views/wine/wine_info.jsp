@@ -288,23 +288,30 @@
             </div>
           </div>
         </div>
+
         <div class="mt-5 ms-5">
           <div class="fw-bold">상세정보</div>
           <div class="text-center">
-            <img src="../img/wine_canti_info.jpg" alt="" width="70%" />
+            <img src="../img/wine/wine_canti_info.jpg" alt="" width="70%" />
           </div>
         </div>
       </div>
+
       <div class="mt-5">
-        <div class="text-center fs-5 fw-bold" style="color: rgb(196, 32, 3)">
-          4.0
+        <div class="mb-2">
+          <span class="fw-bold">후기</span>
+          <span class="text-center fs-5 fw-bold" style="color: rgb(196, 32, 3)">
+            4.0
+          </span>
+          <span class="text-center mb-3">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i
+            ><i class="bi bi-star"></i>
+          </span>
         </div>
-        <div class="text-center mb-3">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i
-          ><i class="bi bi-star"></i>
-        </div>
+
+        <%-- 내가 쓴 리뷰 수정, 삭제 가능하게.. --%>
         <ul class="list-unstyled">
           <li class="text-decoration-none">
             <div class="card p-3" style="width: 80%, height 20%">

@@ -14,7 +14,7 @@
             <a href="/wine/wine_price" class="nav-link link-secondary">가격</a>
           </li>
           <li>
-            <a href="/wine_" class="nav-link link-secondary">음식페어링</a>
+            <a href="/wine/wine_kind" class="nav-link link-secondary">음식페어링</a>
           </li>
           <li class="">
             <a
@@ -134,7 +134,7 @@
             <div class="ps-5">
               <ul class="list-unstyled">
                 <li class="pb-2">
-                  <a href="" class="text-decoration-none text-secondary"
+                  <a href="/wine/wine_kind" class="text-decoration-none text-secondary"
                     >소고기</a
                   >
                 </li>

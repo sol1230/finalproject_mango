@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin boards add</title>
+    <title>Admin boards qna</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,7 +31,7 @@
 
     <!-- 본 페이지 content -->
     <div class="row g-0 vh-100">
-    <%@ include file="../etc/admin_nav.jsp" %>
+     <%@ include file="../etc/admin_nav.jsp" %>
 
       <main class="col-9 p-0 mb-5 ms-5">
         <form action="/admin/admin_boards" method="">
@@ -40,7 +40,7 @@
           <div class="mt-4 p-4 border bg-white">
             <div>
               <label for="" class="form-label fw-bold pe-3 m-0"
-                >공지사항 작성하기</label
+                >답변 등록하기</label
               >
             </div>
             <table
@@ -50,43 +50,40 @@
               <thead class="">
                 <tr>
                   <th scope="" class="bg-secondary bg-opacity-25">작성일</th>
-                  <td scope="" name="notice_date">2023.02.05</td>
+                  <td scope="" name="notice_date">2023.02.04</td>
 
                   <th scope="" class="bg-secondary bg-opacity-25">작성자</th>
-                  <td scope="" name="notice_writer">관리자</td>
+                  <td scope="" name="notice_writer">김민아</td>
                 </tr>
                 <tr scope="row">
                   <th scope="" class="bg-secondary bg-opacity-25">제목</th>
-                  <td scope="" colspan="3">
-                    <input
-                      type="text"
-                      name="notice_title"
-                      id="notice_title"
-                      class="form-control"
-                      placeholder="제목을 입력해 주세요."
-                    />
-                  </td>
+                  <td scope="" colspan="3">상품 문의드립니다.</td>
+                </tr>
+                <tr scope="row">
+                  <th scope="" class="bg-secondary bg-opacity-25">구분</th>
+                  <td scope="" colspan="3">상품관련</td>
                 </tr>
               </thead>
               <tbody>
                 <tr scope="row">
-                  <th class="bg-secondary bg-opacity-25">내용</th>
+                  <th class="bg-secondary bg-opacity-25" style="height: 4rem">
+                    내용
+                  </th>
+                  <td colspan="3">
+                    선물용으로도 인기가 많은 상품인가요? 기념일에 선물용으로
+                    괜찮을지 궁금해요. 너무 당도가 높지는 않겠죠?
+                  </td>
+                </tr>
+                <tr scope="row">
+                  <th class="bg-secondary bg-opacity-25">답변</th>
                   <td colspan="3">
                     <textarea
                       class="form-control"
                       name="notice_contents"
                       id="notice_contents"
                       cols="30"
-                      rows="10"
+                      rows="5"
                     ></textarea>
-                  </td>
-                </tr>
-                <tr scope="row">
-                  <th class="bg-secondary bg-opacity-25">파일첨부</th>
-                  <td colspan="3">
-                    <div class="">
-                      <input type="file" name="" id="" class="form-control" />
-                    </div>
                   </td>
                 </tr>
               </tbody>

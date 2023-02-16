@@ -26,43 +26,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <style>
-      #navbarFilterMenu a:hover {
-        cursor: pointer;
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-      .navbarFilter a:hover {
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-      .page-link {
-        color: black;
-        background-color: white;
-        border-color: rgb(192, 190, 190);
-      }
-      .page-link:focus,
-      .page-link:hover {
-        color: white;
-        background-color: black;
-      }
+    <link rel="stylesheet" href="/css/wine_info.css" />
 
-      table {
-        border-spacing: 10px;
-        border-collapse: separate;
-      }
-      span {
-        border-radius: 10px;
-        padding: 0.3rem;
-      }
-      .box {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-      }
-    </style>
   </head>
   <body>
     <%-- header --%>

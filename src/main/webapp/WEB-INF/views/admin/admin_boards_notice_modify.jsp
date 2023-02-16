@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin boards add</title>
+    <title>Admin boards notice modify</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,6 +26,7 @@
 
   </head>
   <body class="bg-light">
+
     <%-- header --%>
     <%@ include file="../etc/header.jsp" %>
 
@@ -40,7 +41,7 @@
           <div class="mt-4 p-4 border bg-white">
             <div>
               <label for="" class="form-label fw-bold pe-3 m-0"
-                >공지사항 작성하기</label
+                >공지사항 수정하기</label
               >
             </div>
             <table
@@ -63,7 +64,7 @@
                       name="notice_title"
                       id="notice_title"
                       class="form-control"
-                      placeholder="제목을 입력해 주세요."
+                      placeholder="휴무안내"
                     />
                   </td>
                 </tr>
@@ -78,7 +79,9 @@
                       id="notice_contents"
                       cols="30"
                       rows="10"
-                    ></textarea>
+                    >
+설 연휴기간으로 불편함에 유의하시기 바랍니다.</textarea
+                    >
                   </td>
                 </tr>
                 <tr scope="row">

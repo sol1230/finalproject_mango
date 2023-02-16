@@ -22,22 +22,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <style>
-      #navbarFilter li:hover {
-        cursor: pointer;
-        border-bottom: 3px solid rgb(248, 85, 85);
-      }
-      .page-link {
-        color: black;
-        background-color: white;
-        border-color: white;
-      }
-      .page-link:focus,
-      .page-link:hover {
-        color: white;
-        background-color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/admin.css" />
+
   </head>
   <body class="bg-light">
     <%-- header --%>
@@ -45,52 +31,8 @@
 
     <!-- 본 페이지 content -->
     <div class="row g-0 vh-100">
-      <nav class="p-5 bg-dark navbar-dark d-md-block col-2">
-        <div>
-          <ul class="list-unstyled navbar-nav">
-            <li class="d-flex align-items-center">
-            <a
-                href="/admin/admin_users"
-                class="text-decoration-none nav-link fs-5 fw-bold"
-                >관리자 페이지</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a href="/admin/admin_users" class="text-decoration-none nav-link"
-                >회원 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_boards"
-                class="text-decoration-none nav-link"
-                >문의/공지 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_events"
-                class="text-decoration-none nav-link"
-                >이벤트 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_stores"
-                class="text-decoration-none nav-link"
-                >판매처 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_reviews"
-                class="text-decoration-none nav-link"
-                >리뷰 관리</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <%@ include file="../etc/admin_nav.jsp" %>
+
       <main class="col-9 p-0 mb-5 ms-5">
         <form action="/admin/admin_users">
           <div class="mt-4 p-4 border bg-white">

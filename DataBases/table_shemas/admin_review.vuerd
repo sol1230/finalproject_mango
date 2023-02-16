@@ -141,7 +141,7 @@
           {
             "name": "REVIEW_SCOPE",
             "comment": "리뷰별점",
-            "dataType": "INTEGER",
+            "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -156,7 +156,7 @@
               "pfk": false,
               "widthName": 95.08203125,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.283203125,
               "widthDefault": 60
             },
             "id": "f46eabcd-75d6-46e8-97d7-dd831f39bb07"
@@ -209,10 +209,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 79.2,
           "top": 92,
-          "zIndex": 1,
+          "zIndex": 10,
           "widthName": 60,
           "widthComment": 60
         },

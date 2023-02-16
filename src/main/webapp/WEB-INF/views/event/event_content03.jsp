@@ -26,7 +26,9 @@
   <body>
     <%-- header --%>
     <%@ include file="../etc/header.jsp" %>
-
+    <%-- select --%>
+    <%@ include file="../etc/nav_select.jsp" %>
+    
     <!-- 본 페이지  -->
     <div class="container">
       <div class="fs-3 fw-bold text-center mt-5">이벤트</div>

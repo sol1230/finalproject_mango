@@ -21,20 +21,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />    
   </head>
-  <style>
-    .info_area {
-      margin-top: 10px;
-      border: 1px solid lightgrey;
-      width: 25%;
-      float: left;
-      text-align: center;
-      margin-bottom: 30px;
-      font-weight: bold;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-  </style>
   <body>
     <%-- header --%>
     <%@ include file="../etc/header.jsp" %>

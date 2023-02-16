@@ -18,10 +18,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
   <body>
     <%-- header --%>
     <%@ include file="../etc/header.jsp" %>
+    <%-- select --%>
+    <%@ include file="../etc/nav_select.jsp" %>
 
     <%-- 본 페이지 --%>
     <div class="container">

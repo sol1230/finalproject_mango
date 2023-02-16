@@ -22,6 +22,16 @@ public class ByPassController {
     int i = 0;
   }
 
+  @RequestMapping(value = { "/admin/admin_boards_notice_modify" })
+  public void admin_boards_notice_modify() {
+    int i = 0;
+  }
+
+  @RequestMapping(value = { "/admin/admin_boards_qna" })
+  public void admin_boards_qna() {
+    int i = 0;
+  }
+
   @RequestMapping(value = { "/admin/admin_events_add" })
   public void admin_events_add() {
     int i = 0;
@@ -29,6 +39,11 @@ public class ByPassController {
 
   @RequestMapping(value = { "/admin/admin_events" })
   public void admin_events() {
+    int i = 0;
+  }
+
+  @RequestMapping(value = { "/admin/admin_event_modify" })
+  public void admin_event_modify() {
     int i = 0;
   }
 
@@ -102,11 +117,6 @@ public class ByPassController {
     int i = 0;
   }
 
-  @RequestMapping(value = { "/notice_N_qna/notice_inquiry" })
-  public void notice_inquiry() {
-    int i = 0;
-  }
-
   @RequestMapping(value = { "/notice_N_qna/notice_questions" })
   public void notice_questions() {
     int i = 0;
@@ -167,8 +177,8 @@ public class ByPassController {
     int i = 0;
   }
 
-  @RequestMapping(value = { "/user/user_inquiry" })
-  public void user_inquiry() {
+  @RequestMapping(value = { "/user/user_qna" })
+  public void user_qna() {
     int i = 0;
   }
 

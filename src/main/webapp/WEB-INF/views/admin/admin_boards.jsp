@@ -13,7 +13,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href=/css/font.css" />
+    <link rel="stylesheet" href="/css/font.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -22,25 +22,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <style>
-      #navbarFilterMenu a:hover {
-        cursor: pointer;
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-      .navbarFilter a:hover {
-        border-bottom: 2px solid rgb(127, 127, 127);
-      }
-      .page-link {
-        color: black;
-        background-color: white;
-        border-color: white;
-      }
-      .page-link:focus,
-      .page-link:hover {
-        color: white;
-        background-color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/admin.css" />
   </head>
   <body class="bg-light">
     <%-- header --%>
@@ -48,52 +30,8 @@
 
     <!-- 본 페이지 content -->
     <div class="row g-0 vh-100">
-      <nav class="p-5 bg-dark navbar-dark d-md-block col-2">
-        <div>
-          <ul class="list-unstyled navbar-nav">
-            <li class="d-flex align-items-center">
-            <a
-                href="/admin/admin_users"
-                class="text-decoration-none nav-link fs-5 fw-bold"
-                >관리자 페이지</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a href="/admin/admin_users" class="text-decoration-none nav-link"
-                >회원 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_boards"
-                class="text-decoration-none nav-link"
-                >문의/공지 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_events"
-                class="text-decoration-none nav-link"
-                >이벤트 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_stores"
-                class="text-decoration-none nav-link"
-                >판매처 관리</a
-              >
-            </li>
-            <li class="d-flex align-items-center">
-              <a
-                href="/admin/admin_reviews"
-                class="text-decoration-none nav-link"
-                >리뷰 관리</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <%@ include file="../etc/admin_nav.jsp" %>
+
       <main class="col-9 p-0 mb-5 ms-5">
         <div class="mt-4 p-4 border bg-white">
           <form action="">
@@ -148,7 +86,7 @@
                 <td>답변대기</td>
                 <td>2023-02-04</td>
                 <td class="d-flex justify-content-center">
-                  <form action="">
+                  <form action="/admin/admin_boards_qna">
                     <button
                       type="submit"
                       class="btn btn-sm btn-outline-secondary"
@@ -343,7 +281,7 @@
                 <td>
                   <div class="d-flex justify-content-center">
                     <div>
-                      <form action="">
+                      <form action="/admin/admin_boards_notice_modify">
                         <button
                           type="submit"
                           class="btn btn-sm btn-outline-secondary"

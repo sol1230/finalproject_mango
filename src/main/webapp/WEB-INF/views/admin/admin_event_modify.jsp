@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin boards add</title>
+    <title>Admin boards notice modify</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +23,6 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link rel="stylesheet" href="/css/admin.css" />
-
   </head>
   <body class="bg-light">
     <%-- header --%>
@@ -31,7 +30,7 @@
 
     <!-- 본 페이지 content -->
     <div class="row g-0 vh-100">
-    <%@ include file="../etc/admin_nav.jsp" %>
+      <%@ include file="../etc/admin_nav.jsp" %>
 
       <main class="col-9 p-0 mb-5 ms-5">
         <form action="/admin/admin_boards" method="">
@@ -40,7 +39,7 @@
           <div class="mt-4 p-4 border bg-white">
             <div>
               <label for="" class="form-label fw-bold pe-3 m-0"
-                >공지사항 작성하기</label
+                >이벤트 수정하기</label
               >
             </div>
             <table
@@ -63,7 +62,7 @@
                       name="notice_title"
                       id="notice_title"
                       class="form-control"
-                      placeholder="제목을 입력해 주세요."
+                      placeholder="2023 대한민국 주류대상 와인출품 안내"
                     />
                   </td>
                 </tr>
@@ -78,7 +77,9 @@
                       id="notice_contents"
                       cols="30"
                       rows="10"
-                    ></textarea>
+                    >
+주류대상에 와인을 출품하게 되었습니다.
+                    </textarea>
                   </td>
                 </tr>
                 <tr scope="row">

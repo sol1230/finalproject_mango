@@ -35,7 +35,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <!-- 본 페이지 content -->
-    <div class="container mt-4 pb-3" style="width: 40rem">
+    <div class="container mt-4 pb-3 mb-5" style="width: 40rem">
       <div class="border rounded-3 mt-5 text-center p-5">
         <div class="fs-4 fw-bold">아이디 찾기</div>
         <hr />
@@ -43,7 +43,7 @@
           ooo님의 아이디는
           <span class="fs-5 fw-bold text-danger">ooo</span>입니다.
         </div>
-        <div>
+        <div class="">
           <button class="btn btn-danger mt-3 form-control">
             <a
               href="#modalTarget02"

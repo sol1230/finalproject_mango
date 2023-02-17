@@ -35,7 +35,7 @@
     <%@ include file="etc/nav_select.jsp" %>
 
     <!-- 본 페이지 content -->
-    <div class="container pt-5">
+    <div class="container pt-5 mb-5">
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button

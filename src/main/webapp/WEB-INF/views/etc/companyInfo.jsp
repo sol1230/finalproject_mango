@@ -64,7 +64,7 @@
             <br />
           </p>
         </div>
-        <div class="pt-4 pb-4">
+        <div class="pt-4 pb-4 mb-5">
           <picture>
             <img
               src="../img/companyPage_image.png"

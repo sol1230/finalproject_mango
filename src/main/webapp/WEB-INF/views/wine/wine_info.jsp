@@ -36,7 +36,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <!-- 본 페이지 content -->
-    <div class="container">
+    <div class="container mb-5">
       <div
         class="d-flex justify-content-center mt-5 rounded-3 p-3"
         style="background-color: rgb(252, 249, 244); width: 100%"

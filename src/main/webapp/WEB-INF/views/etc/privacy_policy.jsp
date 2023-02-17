@@ -30,7 +30,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <%-- 본 페이지 --%>
-    <div class="container">
+    <div class="container mb-5">
       <div class="fw-bold fs-3 mt-5 text-center">개인정보처리방침</div>
       <hr />
       <div class="list-group mt-5">

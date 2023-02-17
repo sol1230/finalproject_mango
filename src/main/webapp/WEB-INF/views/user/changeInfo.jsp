@@ -126,7 +126,7 @@
         </div>
 
         <!-- 모달 추가 -->
-        <div class="mt-5 text-center">
+        <div class="mt-5 mb-5 text-center">
           <button
             class="btn btn-secondary btn-lg w-25 text-decoration-none text-white"
             style="margin-right: 10px"

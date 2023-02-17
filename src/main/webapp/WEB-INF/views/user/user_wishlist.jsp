@@ -40,13 +40,12 @@
     <main class="col-9 p-0 mb-5 ms-5">
       <div class="container">
         <div class="text-center fs-3 fw-bold mt-5">위시리스트</div>
-        <hr />
-        <div class="mt-3 text-end">
+        <div class="mt-2 text-end">
           <button class="btn btn-danger">선택 삭제</button>
           <button class="btn btn-danger">전체 삭제</button>
         </div>
       </div>
-      <div class="mt-4 d-flex justify-content-center">
+      <div class="mt-2 d-flex justify-content-center">
         <div class="row p-3">
           <div class="col-3 flex-fill d-flex">
             <div class="card" style="width: 230px">

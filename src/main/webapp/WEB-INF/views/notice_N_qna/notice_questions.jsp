@@ -33,7 +33,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <!-- 본 페이지 content -->
-    <div class="container">
+    <div class="container mb-5">
       <div class="fs-3 text-center mt-5 fw-bold">자주하는 질문</div>
       <div class="input-group justify-content-center mt-5">
         <div class="">

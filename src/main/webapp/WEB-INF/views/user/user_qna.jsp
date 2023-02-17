@@ -62,26 +62,27 @@
  <div class="row g-0 vh-auto">
     <%-- user_nav --%>
     <%@ include file="../etc/user_nav.jsp" %>
-      <main class="col-9 p-0 mb-5 ms-5">
+      <main class="col-9 pt-3 pb-5 mb-5 ms-5">
       <div
         class="fs-4 fw-bold text-center"
         style="margin-top: 3rem; margin-bottom: 3rem"
       >
         나의 문의 내역
       </div>
-      <table id="boardList" class="table" style="text-align: center">
+      <table id="boardList" class="table ">
         <thead>
-          <tr>
+          <tr class="text-center">
             <th scope="col">번호</th>
             <th scope="col" style="width: 25%">상품 정보</th>
             <th scope="col">제목</th>
             <th scope="col">등록일</th>
             <th scope="col">처리일</th>
+            <th scope="col">기능</th>
           </tr>
         </thead>
         <!-- 문의 -->
         <tbody style="font-size: small">
-          <tr class="questions">
+          <tr class="questions text-center">
             <td>2</td>
             <td class="justify-content-left">
               <div class="row">
@@ -95,28 +96,51 @@
               </div>
             </td>
             <td>
-              <a href="#myCont" class="left">많이 달달한가요?</a>
+              <a href="#myCont" class="left" data-bs-toggle="collapse"
+              >많이 달달한가요?</a>
             </td>
             <td>YYYY-MM-DD</td>
             <td>YYYY-MM-DD</td>
+            <td>
+              <form action="" method="post">
+                <button class="btn btn-outline-secondary btn-sm">
+                  수정
+                </button>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
+                >
+                  삭제
+                </button>
+                <input type="hidden" name="user_id" value="" />
+              </form>
+            </td>
           </tr>
           <!-- active로 열고 싶은데.. 어떻게해요.. -->
-          <!-- 문의 내용 -->
-          <tr class="bg-light">
-            <td colspan="2">&nbsp;</td>
-            <td>선물용인데 많이 단가요</td>
-            <td colspan="2">&nbsp;</td>
-          </tr>
-          <!-- 답변 내용 -->
-          <tr class="bg-light">
-            <td colspan="2">와인타임</td>
-            <td>
-              <div>안녕하세요. 와인타임 입니다.</div>
+          <tr class="collapse" id="myCont">
+            <td  class="bg-light p-4" colspan="5">
+              <%-- 문의 내용 --%>
+              <div>
+                <span class="fw-bold fs-5 text-secondary">
+                  Q. 
+                </span>
+                <span>
+                  선물용인데 많이 단가요?
+                </span>
+              </div>
+              <%-- 답변 내용 --%>
+              <div class="mt-2">
+                <span class="fw-bold fs-5 text-danger">
+                  A. 
+                </span>
+                <span>
+                 안녕하세요. 와인타임 입니다. 해당 제품은 당도가 ...
+                </span>
+              </div>
             </td>
-            <td colspan="2">&nbsp;</td>
           </tr>
 
-          <tr>
+          <tr class="text-center">
             <td>1</td>
             <td>
               <div class="row">
@@ -133,24 +157,46 @@
                 </ul>
               </div>
             </td>
-            <td><a href="#myCont">선물용으로 적합할까요?</a></td>
+            <td><a href="#myCont2" data-bs-toggle="collapse">선물용으로 적합할까요?</a></td>
             <td>YYYY-MM-DD</td>
             <td>YYYY-MM-DD</td>
+            <td>
+              <form action="" method="post">
+                <button class="btn btn-outline-secondary btn-sm">
+                  수정
+                </button>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
+                >
+                  삭제
+                </button>
+                <input type="hidden" name="user_id" value="" />
+              </form>
+            </td>
           </tr>
           <!-- active로 열고 싶은데.. 어떻게해요.. -->
-          <!-- 문의 내용 -->
-          <tr class="bg-light">
-            <td colspan="2">&nbsp;</td>
-            <td>단거 안 좋아하시는 분 입니다.</td>
-            <td colspan="2">&nbsp;</td>
-          </tr>
-          <!-- 답변 내용 -->
-          <tr class="bg-light">
-            <td colspan="2">와인타임</td>
-            <td>
-              <div>안녕하세요. 와인타임 입니다.</div>
+          <tr class="collapse" id="myCont2">
+            <td  class="bg-light p-4" colspan="5">
+              <%-- 문의 내용 --%>
+              <div>
+                <span class="fw-bold fs-5 text-secondary">
+                  Q. 
+                </span>
+                <span>
+                  단거 안 좋아하시는 분 입니다.
+                </span>
+              </div>
+              <%-- 답변 내용 --%>
+              <div class="mt-2">
+                <span class="fw-bold fs-5 text-danger">
+                  A. 
+                </span>
+                <span>
+                 안녕하세요. 와인타임 입니다. 당도가 높지 않는 제품으로는...
+                </span>
+              </div>
             </td>
-            <td colspan="2">&nbsp;</td>
           </tr>
         </tbody>
       </table>

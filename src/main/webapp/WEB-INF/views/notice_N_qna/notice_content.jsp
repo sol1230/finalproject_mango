@@ -48,7 +48,7 @@
         <div>감사합니다.</div>
         <div>와인타임 드림</div>
       </div>
-      <div class="text-center">
+      <div class="text-center mb-5">
         <a href="/notice_N_qna/notice" class="btn btn-danger mt-5">목록으로</a>
       </div>
     </div>

@@ -30,9 +30,9 @@
     <%@ include file="../etc/nav_select.jsp" %>
     
     <!-- 본 페이지 -->
-    <div class="container">
+    <div class="container mb-5">
       <div class="fs-3 fw-bold text-center mt-5">이벤트</div>
-      <div class="d-flex justify-content-between mt-5">
+      <div class="d-flex justify-content-between mt-4">
         <div>전체 이벤트</div>
         <div>
           <select class="custom-select" id="inputGroupSelect01">

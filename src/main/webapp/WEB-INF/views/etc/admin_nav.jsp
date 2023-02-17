@@ -8,7 +8,7 @@
             <a
                 href="/admin/admin_users"
                 class="text-decoration-none nav-link fs-5 fw-bold"
-                >관리자 페이지</a
+                >관리자페이지</a
               >
             </li>
             <li class="d-flex align-items-center">
@@ -42,6 +42,13 @@
                 href="/admin/admin_reviews"
                 class="text-decoration-none nav-link"
                 >리뷰 관리</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a
+                href="/admin/admin_coupon"
+                class="text-decoration-none nav-link"
+                >쿠폰 관리</a
               >
             </li>
           </ul>

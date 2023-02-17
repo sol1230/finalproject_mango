@@ -72,6 +72,16 @@ public class ByPassController {
     int i = 0;
   }
 
+  @RequestMapping(value = { "/admin/admin_coupon" })
+  public void admin_coupon() {
+    int i = 0;
+  }
+
+  @RequestMapping(value = { "/admin/admin_coupon_add" })
+  public void admin_coupon_add() {
+    int i = 0;
+  }
+
   @RequestMapping(value = { "/etc/companyInfo" })
   public void companyInfo() {
     int i = 0;

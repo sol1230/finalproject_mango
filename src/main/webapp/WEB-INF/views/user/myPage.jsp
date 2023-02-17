@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mypage</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,8 +36,7 @@
 
     <%-- 본 페이지 --%>
     <!-- 로그인한 회원만 보여지는 마이 페이지-->
-     <div class="row g-0 vh-auto">
-     <%@ include file="../etc/user_nav.jsp" %>
+     <div class="row g-0 vh-auto mb-5">
     <div class="container" style="width: 40rem">
       <div class="fs-4 fw-bold text-center pt-5">
         <로그인한 회원 id>님의 마이페이지

@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin reviews</title>
+    <title>Admin couoon</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,6 +31,7 @@
 
     <!-- 본 페이지 content -->
     <div class="row g-0 vh-100">
+     <%-- admin nav --%>
      <%@ include file="../etc/admin_nav.jsp" %>
 
       <main class="col-9 p-0 mb-5 ms-5">
@@ -42,20 +43,14 @@
               <div class="d-flex align-items-center">
                 <div>
                   <label for="" class="form-label fw-bold pe-3 m-0"
-                    >리뷰목록</label
+                    >쿠폰 관리</label
                   >
                 </div>
-                <div>
-                  <div class="input-group">
-                    <select class="form-select" name="keyField" id="">
-                      <option>선택</option>
-                      <option value="PRODUCT_UID">상품코드</option>
-                      <option value="PRODUCT_GRADE">평점</option>
-                    </select>
-                    <input type="text" class="form-control w-50" />
-                    <button class="btn btn-outline-secondary">검색</button>
-                  </div>
-                </div>
+              </div>
+              <div class="justify-content-right align-items-center pt-2">
+                <a href="/admin/admin_coupon_add" class="text-secondary">
+                  <span class="material-symbols-outlined fs-3"> add_box </span>
+                </a>
               </div>
             </div>
           </form>
@@ -65,75 +60,58 @@
           >
             <thead class="bg-secondary bg-opacity-25">
               <tr>
-                <th scope="">상품코드</th>
-                <th scope="">제목</th>
-                <th scope="">작성자</th>
-                <th scope="">평점</th>
+                <th scope="">쿠폰 코드</th>
+                <th scope="">쿠폰 이미지</th>
+                <th scope="">쿠폰 이름</th>
                 <th scope="">작성일</th>
+                <th scope="">기한</th>
                 <th scope="">기능</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td scope="">PD20230212 L carbernet sauvignon</td>
-                <td scope=""><a href=""> 베스트 와인으로 추천!</a></td>
-                <td>이영아</td>
-                <td>4.5</td>
-                <td>20230.01.11</td>
+                <th scope="">E01B01</th>
+                <td scope="">
+                  <img src="../img/할인 쿠폰.PNG" alt="" style="width: 3rem" />
+                </td>
+                <td>할인쿠폰</td>
+                <td>2023.01.05</td>
+                <td>2023.01.05~2023.01.20</td>
                 <td>
-                  <div class="d-flex justify-content-center">
-                    <div>
-                      <form action="" class="ps-2">
-                        <button
-                          type="submit"
-                          class="btn btn btn-sm btn-outline-danger"
-                        >
-                          삭제
-                        </button>
-                      </form>
-                    </div>
+                  <div>
+                    <form action="" class="ps-2">
+                      <button
+                        type="submit"
+                        class="btn btn btn-sm btn-outline-danger"
+                      >
+                        삭제
+                      </button>
+                    </form>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td scope="">PD20230212 beringer sparkling</td>
-                <td scope=""><a href="">달지만 괜찮아요</a></td>
-                <td>유현빈</td>
-                <td>4.0</td>
-                <td>20230.01.15</td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <div>
-                      <form action="" class="ps-2">
-                        <button
-                          type="submit"
-                          class="btn btn btn-sm btn-outline-danger"
-                        >
-                          삭제
-                        </button>
-                      </form>
-                    </div>
-                  </div>
+                <th scope="">E01B02</th>
+                <td scope="">
+                  <img
+                    src="../img/무료 배송 쿠폰.PNG"
+                    alt=""
+                    style="width: 3rem"
+                  />
                 </td>
-              </tr>
-              <tr>
-                <td scope="">PD20230212 loyal peach</td>
-                <td scope=""><a href="">무난무난하네요</a></td>
-                <td>정라진</td>
-                <td>4.0</td>
-                <td>20230.01.17</td>
+                <td>무료 배송 쿠폰</td>
+                <td>2023.01.05</td>
+                <td>2023.01.05~2023.01.20</td>
                 <td>
-                  <div class="d-flex justify-content-center">
-                    <div>
-                      <form action="" class="ps-2">
-                        <button
-                          type="submit"
-                          class="btn btn btn-sm btn-outline-danger"
-                        >
-                          삭제
-                        </button>
-                      </form>
-                    </div>
+                  <div>
+                    <form action="" class="ps-2">
+                      <button
+                        type="submit"
+                        class="btn btn btn-sm btn-outline-danger"
+                      >
+                        삭제
+                      </button>
+                    </form>
                   </div>
                 </td>
               </tr>

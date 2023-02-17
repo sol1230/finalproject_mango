@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin boards add</title>
+    <title>Admin coupon add</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,18 +31,17 @@
 
     <!-- 본 페이지 content -->
     <div class="row g-0 vh-100">
-    
     <%-- admin nav --%>
     <%@ include file="../etc/admin_nav.jsp" %>
 
       <main class="col-9 p-0 mb-5 ms-5">
-        <form action="/admin/admin_boards" method="">
+        <form action="./admin_coupon.html" method="">
           <input type="hidden" name="notice_date" value="2023.02.05" />
           <input type="hidden" name="notice_writer" value="관리자" />
           <div class="mt-4 p-4 border bg-white">
             <div>
               <label for="" class="form-label fw-bold pe-3 m-0"
-                >공지사항 작성하기</label
+                >쿠폰 생성하기</label
               >
             </div>
             <table
@@ -58,7 +57,7 @@
                   <td scope="" name="notice_writer">관리자</td>
                 </tr>
                 <tr scope="row">
-                  <th scope="" class="bg-secondary bg-opacity-25">제목</th>
+                  <th scope="" class="bg-secondary bg-opacity-25">쿠폰 이름</th>
                   <td scope="" colspan="3">
                     <input
                       type="text"
@@ -69,21 +68,21 @@
                     />
                   </td>
                 </tr>
-              </thead>
-              <tbody>
                 <tr scope="row">
-                  <th class="bg-secondary bg-opacity-25">내용</th>
-                  <td colspan="3">
-                    <textarea
+                  <th scope="" class="bg-secondary bg-opacity-25">쿠폰 기한</th>
+                  <td scope="" colspan="3">
+                    <input
+                      type="text"
+                      name="notice_title"
+                      id="notice_title"
                       class="form-control"
-                      name="notice_contents"
-                      id="notice_contents"
-                      cols="30"
-                      rows="10"
-                    ></textarea>
+                      placeholder="기한을 입력해 주세요."
+                    />
                   </td>
                 </tr>
-                <tr scope="row">
+              </thead>
+              <tbody>
+                <tr>
                   <th class="bg-secondary bg-opacity-25">파일첨부</th>
                   <td colspan="3">
                     <div class="">

@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Q&A</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -59,7 +59,7 @@
 
     <%-- 본 페이지 --%>
     <!-- 로그인한 회원만 보여지는 상품 문의내역-->
- <div class="row g-0 vh-100">
+ <div class="row g-0 vh-auto">
     <%-- user_nav --%>
     <%@ include file="../etc/user_nav.jsp" %>
       <main class="col-9 p-0 mb-5 ms-5">

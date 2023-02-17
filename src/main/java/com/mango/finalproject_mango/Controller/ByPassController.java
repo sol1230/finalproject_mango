@@ -137,8 +137,18 @@ public class ByPassController {
     int i = 0;
   }
 
+  @RequestMapping(value = { "/signup_N_login/login_find_id_result" })
+  public void login_find_id_result() {
+    int i = 0;
+  }
+
   @RequestMapping(value = { "/signup_N_login/login_find_password" })
   public void login_find_password() {
+    int i = 0;
+  }
+
+  @RequestMapping(value = { "/signup_N_login/login_find_password_result" })
+  public void login_find_password_result() {
     int i = 0;
   }
 

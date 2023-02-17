@@ -42,7 +42,7 @@
               <div class="d-flex align-items-center">
                 <div>
                   <label for="" class="form-label fw-bold pe-3 m-0"
-                    >거래처 목록</label
+                    >판매처 목록</label
                   >
                 </div>
               </div>
@@ -54,7 +54,7 @@
           >
             <thead class="bg-secondary bg-opacity-25">
               <tr>
-                <th scope="">거래처</th>
+                <th scope="">판매처</th>
                 <th scope="">사업자번호</th>
                 <th scope="">대표자</th>
                 <th scope="">기능</th>

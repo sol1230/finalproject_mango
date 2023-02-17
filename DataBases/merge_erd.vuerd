@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2200,
     "height": 2200,
-    "scrollTop": -576,
-    "scrollLeft": -355,
-    "zoomLevel": 0.4,
+    "scrollTop": -491,
+    "scrollLeft": -446,
+    "zoomLevel": 0.5,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -95,9 +95,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 75.8892,
-          "top": 224.1109,
-          "zIndex": 100,
+          "left": 1430.474,
+          "top": 23.6946,
+          "zIndex": 149,
           "widthName": 66.2763671875,
           "widthComment": 60
         },
@@ -265,9 +265,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1166.5554,
-          "top": 40.8332,
-          "zIndex": 53,
+          "left": 608.2227,
+          "top": 10,
+          "zIndex": 150,
           "widthName": 60,
           "widthComment": 60
         },
@@ -419,9 +419,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 546,
-          "top": 45.5,
-          "zIndex": 23,
+          "left": 7.778,
+          "top": 88.8335,
+          "zIndex": 156,
           "widthName": 60,
           "widthComment": 60
         },
@@ -543,9 +543,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 889.5,
-          "top": 1833.9445,
-          "zIndex": 85,
+          "left": 660.75,
+          "top": 1863.9445,
+          "zIndex": 125,
           "widthName": 121.1708984375,
           "widthComment": 83.61181640625
         },
@@ -647,13 +647,36 @@
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             }
+          },
+          {
+            "name": "ADMIN_ID",
+            "comment": "관리자 아이디",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 64.1181640625,
+              "widthComment": 83.61181640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "afd26db0-3082-41bb-a7e0-27679dd3795f"
           }
         ],
         "ui": {
           "active": false,
-          "left": 70.5554,
-          "top": 40.0564,
-          "zIndex": 13,
+          "left": 1746.255859375,
+          "top": 1997.5564,
+          "zIndex": 123,
           "widthName": 78.5654296875,
           "widthComment": 83.61181640625
         },
@@ -975,9 +998,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 805.611,
-          "top": 2052.6668,
-          "zIndex": 84,
+          "left": 581.861,
+          "top": 2040.1668,
+          "zIndex": 126,
           "widthName": 104.57177734375,
           "widthComment": 96.61181640625
         },
@@ -1060,9 +1083,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 98.5551,
-          "top": 431.3333,
-          "zIndex": 101,
+          "left": 435.416,
+          "top": 292.1651,
+          "zIndex": 154,
           "widthName": 63.39453125,
           "widthComment": 67
         },
@@ -1568,9 +1591,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1589.9445,
-          "top": 1974.0001,
-          "zIndex": 82,
+          "left": 1256.1945,
+          "top": 1965.2501,
+          "zIndex": 124,
           "widthName": 100.22998046875,
           "widthComment": 83.61181640625
         },
@@ -2092,9 +2115,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 931.2779,
-          "top": 391.0002,
-          "zIndex": 56,
+          "left": 944.6115,
+          "top": 387.6668,
+          "zIndex": 143,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2798,29 +2821,6 @@
             }
           },
           {
-            "id": "e220d6bc-a405-4318-80ea-ef5b89825ade",
-            "name": "WINE_STORE",
-            "comment": "와인판매처",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 87.71875,
-              "widthComment": 67,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            }
-          },
-          {
             "id": "a92858b9-545f-4126-8b21-01c7a7ba16d9",
             "name": "WINE_IMAGE",
             "comment": "와인이미지",
@@ -2934,13 +2934,36 @@
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             }
+          },
+          {
+            "name": "STORE_UID",
+            "comment": "판매처UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 76.166015625,
+              "widthComment": 63.38818359375,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "a53b4c22-59b4-46a2-8f30-83f4d01b1f13"
           }
         ],
         "ui": {
           "active": false,
           "left": 54,
           "top": 659,
-          "zIndex": 102,
+          "zIndex": 130,
           "widthName": 60,
           "widthComment": 60
         },
@@ -3025,7 +3048,7 @@
           "active": false,
           "left": 1436.2465,
           "top": 1545.0474,
-          "zIndex": 97,
+          "zIndex": 115,
           "widthName": 60,
           "widthComment": 60
         },
@@ -3049,8 +3072,8 @@
           "columnIds": [
             "83fa0cc4-c4dc-4296-bc7a-733846c2c486"
           ],
-          "x": 1589.9445,
-          "y": 2133.3751,
+          "x": 1256.1945,
+          "y": 2124.6251,
           "direction": "left"
         },
         "end": {
@@ -3058,8 +3081,8 @@
           "columnIds": [
             "ce20158b-9e9d-478c-b7aa-752ccdbbe3e6"
           ],
-          "x": 1291.1378554687499,
-          "y": 2117.9168,
+          "x": 1067.3878554687499,
+          "y": 2105.4168,
           "direction": "right"
         },
         "constraintName": "fk_admin_notice_to_notice",
@@ -3153,8 +3176,8 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 1330.338446875,
-          "y": 417.5627,
+          "x": 1343.672046875,
+          "y": 423.08346666666665,
           "direction": "right"
         },
         "end": {
@@ -3179,8 +3202,8 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 1330.338446875,
-          "y": 523.8127,
+          "x": 1343.672046875,
+          "y": 564.7501333333333,
           "direction": "right"
         },
         "end": {
@@ -3205,8 +3228,8 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 1330.338446875,
-          "y": 470.6877,
+          "x": 1343.672046875,
+          "y": 493.91679999999997,
           "direction": "right"
         },
         "end": {
@@ -3231,8 +3254,8 @@
           "columnIds": [
             "83fa0cc4-c4dc-4296-bc7a-733846c2c486"
           ],
-          "x": 1589.9445,
-          "y": 2027.1251,
+          "x": 1256.1945,
+          "y": 2018.3751,
           "direction": "left"
         },
         "end": {
@@ -3240,8 +3263,8 @@
           "columnIds": [
             "9b08798c-e287-4b37-bdae-2340cc17bc5f"
           ],
-          "x": 1391.6259765625,
-          "y": 1888.9445,
+          "x": 1162.8759765625,
+          "y": 1918.9445,
           "direction": "right"
         },
         "constraintName": "fk_admin_notice_to_notice_content",
@@ -3257,8 +3280,8 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 931.2779,
-          "y": 444.1252,
+          "x": 944.6115,
+          "y": 493.9168,
           "direction": "left"
         },
         "end": {
@@ -3266,8 +3289,8 @@
           "columnIds": [
             "ef686b5b-082a-42bc-9d95-d7b8bcfb77e1"
           ],
-          "x": 513.51652578125,
-          "y": 496.5833,
+          "x": 850.3774257812499,
+          "y": 357.4151,
           "direction": "right"
         },
         "constraintName": "fk_user_to_wishlist",
@@ -3283,7 +3306,7 @@
           "columnIds": [
             "32a6d0f4-2dd3-4134-b5f5-71613035071c"
           ],
-          "x": 315.190673828125,
+          "x": 184.5953369140625,
           "y": 659,
           "direction": "top"
         },
@@ -3292,9 +3315,9 @@
           "columnIds": [
             "9dee5f75-994e-4c06-835b-5e4bf906869b"
           ],
-          "x": 306.035812890625,
-          "y": 561.8333,
-          "direction": "bottom"
+          "x": 435.416,
+          "y": 357.4151,
+          "direction": "left"
         },
         "constraintName": "fk_wine_to_wishlist",
         "visible": true,
@@ -3309,8 +3332,8 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 1130.8081734375,
-          "y": 603.5002,
+          "x": 1044.37663671875,
+          "y": 600.1668,
           "direction": "bottom"
         },
         "end": {
@@ -3335,8 +3358,8 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 1130.8081734375,
-          "y": 391.0002,
+          "x": 1044.37663671875,
+          "y": 387.6668,
           "direction": "top"
         },
         "end": {
@@ -3344,9 +3367,9 @@
           "columnIds": [
             "4a6f5aae-971d-489f-af2a-f58f19e204be"
           ],
-          "x": 1166.5554,
-          "y": 116.3332,
-          "direction": "left"
+          "x": 1166.26225078125,
+          "y": 85.5,
+          "direction": "right"
         },
         "constraintName": "fk_user_to_coupon",
         "visible": true,
@@ -3361,9 +3384,9 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 1330.338446875,
-          "y": 576.9377,
-          "direction": "right"
+          "x": 1243.90691015625,
+          "y": 600.1668,
+          "direction": "bottom"
         },
         "end": {
           "tableId": "40975f30-5dc3-4e6f-8c28-c02329773b7c",
@@ -3413,18 +3436,18 @@
           "columnIds": [
             "1d7f4f0f-597f-409b-8a96-7145ee51d6fa"
           ],
-          "x": 931.2779,
-          "y": 550.3752,
-          "direction": "left"
+          "x": 1243.90691015625,
+          "y": 387.6668,
+          "direction": "top"
         },
         "end": {
           "tableId": "25c0a60c-1305-4f02-9b1e-e2882e714434",
           "columnIds": [
             "74e29228-b0e4-4a27-9fc9-fd6cde6c0c2c"
           ],
-          "x": 493.73246171875,
-          "y": 279.1109,
-          "direction": "right"
+          "x": 1430.474,
+          "y": 78.69460000000001,
+          "direction": "left"
         },
         "constraintName": "fk_user_to_account",
         "visible": true,
@@ -3552,8 +3575,8 @@
           "columnIds": [
             "696e5cc0-8a84-4ae2-aa2b-47ad98df2377"
           ],
-          "x": 1826.19840625,
-          "y": 1974.0001,
+          "x": 1492.44840625,
+          "y": 1965.2501,
           "direction": "top"
         },
         "constraintName": "fk_admin_to_admin_notice",
@@ -3570,7 +3593,7 @@
             "2c704e0e-a594-46fd-9103-4eec93a738a1"
           ],
           "x": 1920.8021640625,
-          "y": 1610.2974,
+          "y": 1577.6724,
           "direction": "right"
         },
         "end": {
@@ -3637,6 +3660,58 @@
         "constraintName": "fk_admin_to_admin_users",
         "visible": true,
         "id": "ea2e7710-d037-452b-a15e-101959db3bff"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3242cb77-f8ed-4193-bf41-d3a25924aad5",
+          "columnIds": [
+            "2c704e0e-a594-46fd-9103-4eec93a738a1"
+          ],
+          "x": 1920.8021640625,
+          "y": 1642.9224,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "53a03108-7d98-4476-bc9d-0f3de2684f86",
+          "columnIds": [
+            "afd26db0-3082-41bb-a7e0-27679dd3795f"
+          ],
+          "x": 1973.1279296875,
+          "y": 1997.5564,
+          "direction": "top"
+        },
+        "constraintName": "fk_admin_to_questions",
+        "visible": true,
+        "id": "e5f209bf-bc0d-432b-adf3-0cf6e2261bbc"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8fc4ef4d-ffcd-42c1-beb0-fc3855079ba4",
+          "columnIds": [
+            "841ae586-9bde-454e-8ecc-f6960d5288a5"
+          ],
+          "x": 237.420822265625,
+          "y": 280.8335,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "9ab17fcc-3bd4-4b14-906c-aabf9de57735",
+          "columnIds": [
+            "a53b4c22-59b4-46a2-8f30-83f4d01b1f13"
+          ],
+          "x": 445.7860107421875,
+          "y": 659,
+          "direction": "top"
+        },
+        "constraintName": "fk_store_to_wine",
+        "visible": true,
+        "id": "d5419f53-2679-49f2-b405-77fdd1cb39cc"
       }
     ]
   }

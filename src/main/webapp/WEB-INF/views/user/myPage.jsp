@@ -36,6 +36,8 @@
 
     <%-- 본 페이지 --%>
     <!-- 로그인한 회원만 보여지는 마이 페이지-->
+     <div class="row g-0 vh-auto">
+     <%@ include file="../etc/user_nav.jsp" %>
     <div class="container" style="width: 40rem">
       <div class="fs-4 fw-bold text-center pt-5">
         <로그인한 회원 id>님의 마이페이지
@@ -88,6 +90,15 @@
             </a>
           </div>
         </div>
+        <div>
+          <table>
+            <tr>
+              <th>
+                이름
+              </th>
+            </tr>
+          </table>
+        </div>
 
         <div class="mt-5 text-center">
           <a
@@ -106,6 +117,7 @@
           </a>
         </div>
       </form>
+    </div>
     </div>
 
     <%-- footer --%>

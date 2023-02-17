@@ -26,6 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />    
     <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/info_area.css" />
 
   </head>
   <body>
@@ -36,72 +37,75 @@
 
     <%-- 본 페이지 --%>
     <!-- 로그인한 회원만 보여지는 리뷰-->
-    <div class="fs-4 fw-bold text-center" style="margin-top: 3rem">
-      내가 작성한 리뷰
-    </div>
 
-    <div class="content">
-      <br /><br />
-      <div class="" style="padding: 1px 10%">
-        <br />
-        <table
-          id="boardList"
-          class="table table-hover"
-          style="text-align: center"
-        >
-          <thead>
-            <tr>
-              <th>번호</th>
-              <th>작성일</th>
-              <th>제품</th>
-              <th>내용</th>
-              <th>기능</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2</td>
-              <td>YYYY-MM-DD</td>
-              <td><a href="/wine/wine_info">칸티 모스카토 다스티</a></td>
-              <td>기대를 안했었는데 맛있었어요 치즈랑 잘 어울려요</td>
-               <td>
-                <div>
-                  <form action="" method="post">
-                    <button
-                      class="btn btn-outline-danger btn-sm"
-                      onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
-                    >
-                      삭제
-                    </button>
-                    <input type="hidden" name="user_id" value="" />
-                  </form>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>1</td>
-              <td>YYYY-MM-DD</td>
-              <td><a href="#">반피 티아라 모스카토</a></td>
-              <td>행사 상품이라 구매해봤는데 괜찮았어요</td>
-               <td>
-                <div>
-                  <form action="" method="post">
-                    <button
-                      class="btn btn-outline-danger btn-sm"
-                      onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
-                    >
-                      삭제
-                    </button>
-                    <input type="hidden" name="user_id" value="" />
-                  </form>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="row g-0 vh-100">
+      <%-- user_nav --%>
+      <%@ include file="../etc/user_nav.jsp" %>
+      <main class="col-9 p-0 mb-5 ms-5">
+      <div class="fs-4 fw-bold text-center" style="margin-top: 3rem">
+        내가 작성한 리뷰
       </div>
-    </div>
+      <div class="content">
+        <br /><br />
+          <table
+            id="boardList"
+            class="table table-hover"
+            style="text-align: center"
+          >
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>작성일</th>
+                <th>제품</th>
+                <th>내용</th>
+                <th>기능</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>YYYY-MM-DD</td>
+                <td><a href="/wine/wine_info">칸티 모스카토 다스티</a></td>
+                <td>기대를 안했었는데 맛있었어요 치즈랑 잘 어울려요</td>
+                <td>
+                  <div>
+                    <form action="" method="post">
+                      <button
+                        class="btn btn-outline-danger btn-sm"
+                        onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
+                      >
+                        삭제
+                      </button>
+                      <input type="hidden" name="user_id" value="" />
+                    </form>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>YYYY-MM-DD</td>
+                <td><a href="#">반피 티아라 모스카토</a></td>
+                <td>행사 상품이라 구매해봤는데 괜찮았어요</td>
+                <td>
+                  <div>
+                    <form action="" method="post">
+                      <button
+                        class="btn btn-outline-danger btn-sm"
+                        onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
+                      >
+                        삭제
+                      </button>
+                      <input type="hidden" name="user_id" value="" />
+                    </form>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </main>
+      </div>
 
     <%-- footer --%>
     <%@ include file="../etc/footer.jsp" %>

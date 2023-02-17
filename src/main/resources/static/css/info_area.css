@@ -9,3 +9,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.h-nav :hover {
+  cursor: pointer;
+  color: rgb(239, 70, 109);
+}

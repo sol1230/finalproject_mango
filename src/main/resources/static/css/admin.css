@@ -19,3 +19,7 @@ a {
   text-decoration: none;
   color: black;
 }
+.h-nav :hover {
+  cursor: pointer;
+  color: rgb(239, 70, 109);
+}

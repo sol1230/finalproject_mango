@@ -26,6 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/info_area.css" />
 
   <style>
     .table.table td {
@@ -58,7 +59,10 @@
 
     <%-- 본 페이지 --%>
     <!-- 로그인한 회원만 보여지는 상품 문의내역-->
-    <div class="container">
+ <div class="row g-0 vh-100">
+    <%-- user_nav --%>
+    <%@ include file="../etc/user_nav.jsp" %>
+      <main class="col-9 p-0 mb-5 ms-5">
       <div
         class="fs-4 fw-bold text-center"
         style="margin-top: 3rem; margin-bottom: 3rem"
@@ -150,6 +154,7 @@
           </tr>
         </tbody>
       </table>
+      </main>
     </div>
 
     <%-- footer --%>

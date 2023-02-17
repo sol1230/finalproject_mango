@@ -25,9 +25,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />    
-  </head>
     <link rel="stylesheet" href="/css/common.css" />
-
+    <link rel="stylesheet" href="/css/info_area.css" />
+  </head>
 
   <body>
     <%-- header --%>
@@ -36,7 +36,12 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <%-- 본 페이지 --%>
+
     <!-- 로그인한 회원만 보여지는 쿠폰함-->
+    <div class="row g-0 vh-100">
+    <%-- user_nav --%>
+    <%@ include file="../etc/user_nav.jsp" %>
+    <main class="col-9 p-0 mb-5 ms-5">
     <div class="fs-4 fw-bold text-center" style="margin-top:3rem; margin-bottom: 3rem;">
         쿠폰함
       </div>
@@ -71,6 +76,8 @@
           </tr>
         </tbody>
     </table>
+    </main>
+    </div>
 
     <%-- footer --%>
     <%@ include file="../etc/footer.jsp" %>

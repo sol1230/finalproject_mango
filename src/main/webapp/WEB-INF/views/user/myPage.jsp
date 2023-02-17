@@ -44,12 +44,11 @@
         <div class="info_area">
           <div class="title">
             <string>찜한 상품</string>
-            (건)
           </div>
-          <div class="number">0</div>
-          <div class="detail">
+          <div class="number">0 <span>(개)</span></div>
+          <div class="detail mt-1">
             <a href="/user/user_wishlist">
-              <span class="width80">자세히 보기</span>
+              <span class="width80" style="color : rgb(239, 70, 109)">자세히 보기</span>
             </a>
           </div>
         </div>
@@ -57,12 +56,11 @@
         <div class="info_area">
           <div class="title">
              <string>상품 문의</string>
-            (건)
           </div>
-          <div class="number">0</div>
-          <div class="detail">
+          <div class="number">0 <span>(건)</span></div>
+          <div class="detail mt-1">
             <a href="/user/user_qna">
-              <span class="width80">자세히 보기</span>
+              <span class="width80" style="color : rgb(239, 70, 109)">자세히 보기</span>
             </a>
           </div>
         </div>
@@ -70,25 +68,23 @@
         <div class="info_area">
           <div class="title">
             <string>내가 쓴 리뷰</string>
-            (건)
           </div>
-          <div class="number">0</div>
-          <div class="detail">
+          <div class="number">0 <span>(건)</span></div>
+          <div class="detail mt-1">
             <a href="/user/user_review_modify">
-              <span class="width80">자세히 보기</span>
+              <span class="width80" style="color : rgb(239, 70, 109)">자세히 보기</span>
             </a>
           </div>
         </div>
 
         <div class="info_area">
           <div class="title">
-            <string>사용가능 쿠폰</string>
-            (건)
+            <string>쿠폰</string>
           </div>
-          <div class="number">0</div>
-          <div class="detail">
+          <div class="number">0 <span>(개)</span></div>
+          <div class="detail mt-1">
             <a href="/user/user_coupon">
-              <span class="width80">자세히 보기</span>
+              <span class="width80" style="color : rgb(239, 70, 109)">자세히 보기</span>
             </a>
           </div>
         </div>

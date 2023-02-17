@@ -31,6 +31,10 @@
         padding-top: 10px;
         padding-bottom: 10px;
       }
+      .h-nav :hover {
+        cursor: pointer;
+        color: rgb(239, 70, 109);
+      }
     </style>
   </head>
   <body>
@@ -128,7 +132,11 @@
         <div class="border-end border-secondary border-opacity-25 pe-5">
           <ul class="list-unstyled">
             <li class="pb-2">
-              <a href="./wine_red.html" class="text-decoration-none text-secondary">레드</a>
+              <a
+                href="./wine_red.html"
+                class="text-decoration-none text-secondary"
+                >레드</a
+              >
             </li>
             <li class="pb-2">
               <a
@@ -294,39 +302,77 @@
       </div>
     </div>
     <!-- 로그인한 회원만 보여지는 쿠폰함-->
+    <div class="row g-0 vh-100">
+      <nav class="p-5 bg-light navbar-light d-md-block col-2">
+        <div>
+          <ul class="list-unstyled navbar-nav h-nav">
+            <li class="d-flex align-items-center">
+              <a
+                href="./myPage.html"
+                class="text-decoration-none nav-link fs-5 fw-bold"
+                >마이 페이지</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a href="./wishlist.html" class="text-decoration-none nav-link"
+                >찜한 상품</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a href="./user_qna.html" class="text-decoration-none nav-link"
+                >상품 문의</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a
+                href="./user_REVIEW_modify.html"
+                class="text-decoration-none nav-link"
+                >내가 쓴 리뷰</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a href="./user_coupon.html" class="text-decoration-none nav-link"
+                >쿠폰</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="col-9 p-0 mb-5 ms-5">
+        <div
+          class="fs-4 fw-bold text-center"
+          style="margin-top: 3rem; margin-bottom: 3rem"
+        >
+          쿠폰함
+        </div>
 
-    <div
-      class="fs-4 fw-bold text-center"
-      style="margin-top: 3rem; margin-bottom: 3rem"
-    >
-      쿠폰함
+        <table class="table" style="text-align: center; border: hidden">
+          <thead style="border: hidden">
+            <tr>
+              <th>다운로드 가능한 쿠폰</th>
+              <th>사용 가능한 쿠폰</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="./img/무료 배송 쿠폰.PNG" width="300rem;" />
+              </td>
+              <td>
+                <img src="./img/할인 쿠폰.PNG" width="300rem;" />
+              </td>
+            </tr>
+
+            <tr style="border: hidden">
+              <td>
+                <button class="btn btn-outline-primary">다운로드 ↓</button>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
     </div>
-
-    <table class="table" style="text-align: center; border: hidden">
-      <thead style="border: hidden">
-        <tr>
-          <th>다운로드 가능한 쿠폰</th>
-          <th>사용 가능한 쿠폰</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <img src="./img/무료 배송 쿠폰.PNG" width="300rem;" />
-          </td>
-          <td>
-            <img src="./img/할인 쿠폰.PNG" width="300rem;" />
-          </td>
-        </tr>
-
-        <tr style="border: hidden">
-          <td>
-            <button class="btn btn-outline-primary">다운로드 ↓</button>
-          </td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
 
     <footer
       class="p-5 mt-5 d-flex justify-content-between align-items-center"

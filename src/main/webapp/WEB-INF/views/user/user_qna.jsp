@@ -116,9 +116,8 @@
               </form>
             </td>
           </tr>
-          <!-- active로 열고 싶은데.. 어떻게해요.. -->
           <tr class="collapse" id="myCont">
-            <td  class="bg-light p-4" colspan="5">
+            <td  class="bg-light p-4" colspan="6">
               <%-- 문의 내용 --%>
               <div>
                 <span class="fw-bold fs-5 text-secondary">
@@ -175,9 +174,8 @@
               </form>
             </td>
           </tr>
-          <!-- active로 열고 싶은데.. 어떻게해요.. -->
           <tr class="collapse" id="myCont2">
-            <td  class="bg-light p-4" colspan="5">
+            <td  class="bg-light p-4" colspan="6">
               <%-- 문의 내용 --%>
               <div>
                 <span class="fw-bold fs-5 text-secondary">

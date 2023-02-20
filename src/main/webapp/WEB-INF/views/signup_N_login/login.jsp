@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+<%-- modal로 띄움 --%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,7 +57,7 @@
         </div>
         <div class="mt-5 text-center">
           <a
-            href="./index.html"
+            href="/index"
             class="btn btn-danger btn-lg w-25 text-decoration-none text-white"
           >
             가입하기

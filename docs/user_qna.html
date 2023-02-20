@@ -401,6 +401,7 @@
               <th scope="col">제목</th>
               <th scope="col">등록일</th>
               <th scope="col">처리일</th>
+              <th scope="col">기능</th>
             </tr>
           </thead>
           <!-- 문의 -->
@@ -419,25 +420,40 @@
                 </div>
               </td>
               <td>
-                <a href="#myCont" class="left">많이 달달한가요?</a>
+                <a href="#myCont" class="left" data-bs-toggle="collapse"
+                  >많이 달달한가요?</a
+                >
               </td>
               <td>YYYY-MM-DD</td>
               <td>YYYY-MM-DD</td>
-            </tr>
-            <!-- active로 열고 싶은데.. 어떻게해요.. -->
-            <!-- 문의 내용 -->
-            <tr class="bg-light">
-              <td colspan="2">&nbsp;</td>
-              <td>선물용인데 많이 단가요</td>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-            <!-- 답변 내용 -->
-            <tr class="bg-light">
-              <td colspan="2">와인타임</td>
               <td>
-                <div>안녕하세요. 와인타임 입니다.</div>
+                <form action="" method="post">
+                  <button class="btn btn-outline-secondary btn-sm">수정</button>
+                  <button
+                    class="btn btn-outline-danger btn-sm"
+                    onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
+                  >
+                    삭제
+                  </button>
+                  <input type="hidden" name="user_id" value="" />
+                </form>
               </td>
-              <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr class="collapse" id="myCont">
+              <td class="bg-light p-4" colspan="6">
+                <!-- 문의 내용 -->
+                <div>
+                  <span class="fw-bold fs-5 text-secondary"> Q. </span>
+                  <span> 선물용인데 많이 단가요? </span>
+                </div>
+                <!-- 답변 내용 -->
+                <div class="mt-2">
+                  <span class="fw-bold fs-5 text-danger"> A. </span>
+                  <span>
+                    안녕하세요. 와인타임 입니다. 해당 제품은 당도가 ...
+                  </span>
+                </div>
+              </td>
             </tr>
 
             <tr>
@@ -457,24 +473,41 @@
                   </ul>
                 </div>
               </td>
-              <td><a href="#myCont">선물용으로 적합할까요?</a></td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <!-- active로 열고 싶은데.. 어떻게해요.. -->
-            <!-- 문의 내용 -->
-            <tr class="bg-light">
-              <td colspan="2">&nbsp;</td>
-              <td>단거 안 좋아하시는 분 입니다.</td>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-            <!-- 답변 내용 -->
-            <tr class="bg-light">
-              <td colspan="2">와인타임</td>
               <td>
-                <div>안녕하세요. 와인타임 입니다.</div>
+                <a href="#myCont2" data-bs-toggle="collapse"
+                  >선물용으로 적합할까요?</a
+                >
               </td>
-              <td colspan="2">&nbsp;</td>
+              <td>YYYY-MM-DD</td>
+              <td>YYYY-MM-DD</td>
+              <td>
+                <form action="" method="post">
+                  <button class="btn btn-outline-secondary btn-sm">수정</button>
+                  <button
+                    class="btn btn-outline-danger btn-sm"
+                    onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
+                  >
+                    삭제
+                  </button>
+                  <input type="hidden" name="user_id" value="" />
+                </form>
+              </td>
+            </tr>
+            <tr class="collapse" id="myCont2">
+              <td class="bg-light p-4" colspan="6">
+                <!-- 문의 내용 -->
+                <div>
+                  <span class="fw-bold fs-5 text-secondary"> Q. </span>
+                  <span> 단거 안 좋아하시는 분 입니다. </span>
+                </div>
+                <!-- 답변 내용 -->
+                <div class="mt-2">
+                  <span class="fw-bold fs-5 text-danger"> A. </span>
+                  <span>
+                    안녕하세요. 와인타임 입니다. 당도가 높지 않는 제품으로는...
+                  </span>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>

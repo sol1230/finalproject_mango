@@ -70,7 +70,7 @@
             <div class="title">
               <string>내가 쓴 리뷰</string>
             </div>
-            <div class="number">0 <span>(건)</span></div>
+            <div class="number">2 <span>(건)</span></div>
             <div class="detail mt-1">
               <a href="/user/user_review_modify">
                 <span class="width80" style="color : rgb(239, 70, 109)">자세히 보기</span>

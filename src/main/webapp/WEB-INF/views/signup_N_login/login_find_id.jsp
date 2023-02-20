@@ -97,7 +97,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-5 text-center">
+          <div class="mt-5 mb-5 text-center">
             <a
               href="/signup_N_login/login_find"
               class="btn btn-danger btn-lg w-25 text-decoration-none text-white"

@@ -31,7 +31,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <!-- 본 페이지 content -->
-    <div class="container">
+    <div class="container mb-5">
       <nav class="navbar navbar-light">
         <div
           class="row d-flex justify-content-between"
@@ -68,7 +68,7 @@
 
       <hr />
       <%-- 상품 --%>
-      <div class="mt-5">
+      <div class="mt-5 ">
         <div class="mb-5">
           <span>총 22개 상품</span>
           <span class="float-end">

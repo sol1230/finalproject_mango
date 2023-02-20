@@ -38,14 +38,14 @@
     <%-- 본 페이지 --%>
     <!-- 로그인한 회원만 보여지는 리뷰-->
 
-    <div class="row g-0 vh-auto">
+    <div class="row g-0 vh-auto ">
       <%-- user_nav --%>
       <%@ include file="../etc/user_nav.jsp" %>
       <main class="col-9 p-0 mb-5 ms-5">
       <div class="fs-4 fw-bold text-center" style="margin-top: 3rem">
         내가 작성한 리뷰
       </div>
-      <div class="content">
+      <div class="content mb-5">
         <br /><br />
           <table
             id="boardList"
@@ -70,6 +70,9 @@
                 <td>
                   <div>
                     <form action="" method="post">
+                      <button class="btn btn-outline-secondary btn-sm">
+                        수정
+                      </button>
                       <button
                         class="btn btn-outline-danger btn-sm"
                         onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"
@@ -90,6 +93,9 @@
                 <td>
                   <div>
                     <form action="" method="post">
+                      <button class="btn btn-outline-secondary btn-sm">
+                        수정
+                      </button>
                       <button
                         class="btn btn-outline-danger btn-sm"
                         onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false"

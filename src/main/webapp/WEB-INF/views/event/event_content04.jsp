@@ -30,7 +30,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
     
     <!-- 본 페이지  -->
-    <div class="container">
+    <div class="container ">
       <div class="fs-3 fw-bold text-center mt-5">이벤트</div>
       <div class="d-flex justify-content-between mt-5">
         <div>설맞이 프로모션</div>
@@ -48,7 +48,7 @@
           <img src="../img/event04-3.PNG" alt="" style="width: 800px" />
         </div>
       </div>
-      <div class="text-center mt-5">
+      <div class="text-center mt-5 mb-5">
         <a href="/event/event" class="btn btn-danger">목록</a>
       </div>
     </div>

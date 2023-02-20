@@ -66,7 +66,7 @@
           <img src="../img/event03-9.PNG" alt="" style="width: 800px" />
         </div>
       </div>
-      <div class="text-center mt-5">
+      <div class="text-center mt-5 mb-5">
         <a href="/event/event" class="btn btn-danger">목록</a>
       </div>
     </div>

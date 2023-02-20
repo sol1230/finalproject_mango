@@ -32,7 +32,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <!-- 본 페이지 content -->
-    <div class="container">
+    <div class="container mb-5">
       <nav class="navbar navbar-light">
         <div
           class="row d-flex justify-content-between"

@@ -33,7 +33,7 @@
     <%@ include file="../etc/nav_select.jsp" %>
 
     <!-- 본 페이지 content -->
-    <div class="container">
+    <div class="container mb-5">
       <div class="fs-3 text-center mt-5 fw-bold">공지사항</div>
       <table class="table mt-5 text-center">
         <thead>

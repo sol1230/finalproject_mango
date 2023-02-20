@@ -36,8 +36,10 @@
 
     <%-- 본 페이지 --%>
     <!-- 로그인한 회원만 보여지는 마이 페이지-->
-    <div class="row g-0 vh-auto mb-5">
-      <div class="container" style="width: 40rem">
+    <div class="row g-0 vh-auto">
+    <%-- user_nav --%>
+    <%@ include file="../etc/user_nav.jsp" %>
+      <div class="container mb-5 pb-5" style="width: 55rem">
         <div class="fs-4 fw-bold text-center pt-5">
           <로그인한 회원 id>님의 마이페이지
         </div>

@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2200,
     "height": 2200,
-    "scrollTop": -89.6124999999976,
-    "scrollLeft": -720.0000000000016,
+    "scrollTop": -1401.5999999999995,
+    "scrollLeft": -885.6000000000007,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -982,7 +982,7 @@
           "active": false,
           "left": 982.3197,
           "top": 1741.0109,
-          "zIndex": 19,
+          "zIndex": 56,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1196,7 +1196,7 @@
           {
             "id": "648d2c35-a67b-421a-a112-e3da4c9aaded",
             "name": "QNA_TITLE",
-            "comment": "문의내역 제목",
+            "comment": "문의내역제목",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1211,7 +1211,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 69.01220703125,
-              "widthComment": 83.376953125,
+              "widthComment": 80,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1219,7 +1219,7 @@
           {
             "id": "0362f600-7610-4878-91ab-7bcc8943cfa3",
             "name": "QNA_CONTENT",
-            "comment": "문의내역 내용",
+            "comment": "문의내역내용",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1234,7 +1234,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 95.78662109375,
-              "widthComment": 83.376953125,
+              "widthComment": 80,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1242,7 +1242,7 @@
           {
             "id": "339a1f8d-478a-4724-a531-4d192f38705a",
             "name": "QNA_DATE",
-            "comment": "문의내역 작성일",
+            "comment": "문의내역작성일",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1257,7 +1257,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 67.79345703125,
-              "widthComment": 96.376953125,
+              "widthComment": 93,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1265,7 +1265,7 @@
           {
             "id": "aaf2e7cb-661b-4328-aeef-7e4747e7f084",
             "name": "QNA_ANSWER",
-            "comment": "문의내역 답변",
+            "comment": "문의내역답변",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1280,7 +1280,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 88.8359375,
-              "widthComment": 83.376953125,
+              "widthComment": 80,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1382,7 +1382,7 @@
           "active": false,
           "left": 633.9234,
           "top": 1180.9706,
-          "zIndex": 13,
+          "zIndex": 53,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1828,7 +1828,7 @@
           "columnIds": [
             "8f85a0b9-c69e-4499-a39c-c078f7ecfc33"
           ],
-          "x": 873.900206640625,
+          "x": 872.211730078125,
           "y": 1180.9706,
           "direction": "top"
         },

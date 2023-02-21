@@ -1,13 +1,13 @@
-// package com.mango.finalproject_mango.dao;
+package com.mango.finalproject_mango.dao;
 
-// import org.mybatis.spring.SqlSessionTemplate;
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.stereotype.Component;
-// import org.springframework.stereotype.Repository;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-// // @Repository
-// @Component
-// public class CommonDao {
+// @Repository
+@Component
+public class CommonDao {
 //   @Autowired // DI해줌
 //   private SqlSessionTemplate sqlSessionTemplate; // DB와 Mapper XML 연결 클래스
 
@@ -35,4 +35,4 @@
 //     Object result = sqlSessionTemplate.delete(sqlMapId, dataMap);
 //     return result;
 //   }
-// }
+}

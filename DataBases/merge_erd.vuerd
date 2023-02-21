@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2200,
     "height": 2200,
-    "scrollTop": -793.6124999999984,
-    "scrollLeft": -764.000000000001,
-    "zoomLevel": 0.3,
+    "scrollTop": -1401.5999999999995,
+    "scrollLeft": -885.6000000000007,
+    "zoomLevel": 1,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -189,7 +189,7 @@
           "active": false,
           "left": 1514.0473,
           "top": 772.6666,
-          "zIndex": 315,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
         },
@@ -293,29 +293,6 @@
             }
           },
           {
-            "name": "STORE_CODE",
-            "comment": "상품코드",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 82.43115234375,
-              "widthComment": 60,
-              "widthDataType": 90.283203125,
-              "widthDefault": 60
-            },
-            "id": "a026d992-53c1-4cfb-9b7a-6c8b4d8abcef"
-          },
-          {
             "name": "STORE_URL",
             "comment": "URL",
             "dataType": "VARCHAR(100)",
@@ -389,7 +366,7 @@
           "active": false,
           "left": 809.5993,
           "top": 212.9042,
-          "zIndex": 320,
+          "zIndex": 20,
           "widthName": 60,
           "widthComment": 60
         },
@@ -474,7 +451,7 @@
           "active": false,
           "left": 595.2831,
           "top": 693.2314,
-          "zIndex": 327,
+          "zIndex": 9,
           "widthName": 60.84912109375,
           "widthComment": 67
         },
@@ -651,7 +628,7 @@
           "active": false,
           "left": 1535.658,
           "top": 1068.587,
-          "zIndex": 314,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -828,7 +805,7 @@
           "active": false,
           "left": 1505.7753,
           "top": 1326.0254,
-          "zIndex": 313,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 60
         },
@@ -872,7 +849,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -895,7 +872,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -918,7 +895,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -1005,7 +982,7 @@
           "active": false,
           "left": 982.3197,
           "top": 1741.0109,
-          "zIndex": 323,
+          "zIndex": 56,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1182,7 +1159,7 @@
           "active": false,
           "left": 921.945,
           "top": 919.0002,
-          "zIndex": 251,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1219,7 +1196,7 @@
           {
             "id": "648d2c35-a67b-421a-a112-e3da4c9aaded",
             "name": "QNA_TITLE",
-            "comment": "문의내역 제목",
+            "comment": "문의내역제목",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1234,7 +1211,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 69.01220703125,
-              "widthComment": 83.376953125,
+              "widthComment": 80,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1242,7 +1219,7 @@
           {
             "id": "0362f600-7610-4878-91ab-7bcc8943cfa3",
             "name": "QNA_CONTENT",
-            "comment": "문의내역 내용",
+            "comment": "문의내역내용",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1257,7 +1234,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 95.78662109375,
-              "widthComment": 83.376953125,
+              "widthComment": 80,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1265,7 +1242,7 @@
           {
             "id": "339a1f8d-478a-4724-a531-4d192f38705a",
             "name": "QNA_DATE",
-            "comment": "문의내역 등록일",
+            "comment": "문의내역작성일",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1280,7 +1257,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 67.79345703125,
-              "widthComment": 96.376953125,
+              "widthComment": 93,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1288,7 +1265,7 @@
           {
             "id": "aaf2e7cb-661b-4328-aeef-7e4747e7f084",
             "name": "QNA_ANSWER",
-            "comment": "문의내역 답변",
+            "comment": "문의내역답변",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -1303,7 +1280,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 88.8359375,
-              "widthComment": 83.376953125,
+              "widthComment": 80,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             }
@@ -1405,7 +1382,7 @@
           "active": false,
           "left": 633.9234,
           "top": 1180.9706,
-          "zIndex": 324,
+          "zIndex": 53,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1766,7 +1743,7 @@
           "active": false,
           "left": 49.2001,
           "top": 780.1999,
-          "zIndex": 236,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1851,7 +1828,7 @@
           "columnIds": [
             "8f85a0b9-c69e-4499-a39c-c078f7ecfc33"
           ],
-          "x": 873.900206640625,
+          "x": 872.211730078125,
           "y": 1180.9706,
           "direction": "top"
         },
@@ -2008,7 +1985,7 @@
             "8df22663-a36d-4450-8492-ccd2ff0487fc"
           ],
           "x": 1033.5831867187499,
-          "y": 445.9042,
+          "y": 425.4042,
           "direction": "bottom"
         },
         "constraintName": "fk_user_to_store",
@@ -2060,7 +2037,7 @@
             "cb539799-5478-4a68-b10c-82b28d0ef08c"
           ],
           "x": 809.5993,
-          "y": 329.4042,
+          "y": 319.1542,
           "direction": "left"
         },
         "constraintName": "fk_wine_to_store",

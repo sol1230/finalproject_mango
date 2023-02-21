@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2200,
     "height": 2200,
-    "scrollTop": -1463.2124999999992,
-    "scrollLeft": -713.600000000001,
-    "zoomLevel": 1,
+    "scrollTop": -793.6124999999984,
+    "scrollLeft": -764.000000000001,
+    "zoomLevel": 0.3,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -472,9 +472,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 629.9497,
-          "top": 690.5649,
-          "zIndex": 321,
+          "left": 595.2831,
+          "top": 693.2314,
+          "zIndex": 327,
           "widthName": 60.84912109375,
           "widthComment": 67
         },
@@ -1799,8 +1799,8 @@
           "columnIds": [
             "ef686b5b-082a-42bc-9d95-d7b8bcfb77e1"
           ],
-          "x": 1067.6469656250001,
-          "y": 755.8149,
+          "x": 1032.980365625,
+          "y": 758.4814,
           "direction": "right"
         },
         "constraintName": "fk_user_to_wishlist",
@@ -1825,8 +1825,8 @@
           "columnIds": [
             "9dee5f75-994e-4c06-835b-5e4bf906869b"
           ],
-          "x": 629.9497,
-          "y": 755.8149,
+          "x": 595.2831,
+          "y": 758.4814,
           "direction": "left"
         },
         "constraintName": "fk_wine_to_wishlist",

@@ -137,10 +137,10 @@ public class ByPassController {
     int i = 0;
   }
 
-  @RequestMapping(value = { "/notice_N_qna/q_a" })
-  public void q_a() {
-    int i = 0;
-  }
+  // @RequestMapping(value = { "/notice_N_qna/notice_questions" })
+  // public void q_a() {
+  //   int i = 0;
+  // }
 
   @RequestMapping(value = { "/signup_N_login/login_find_id" })
   public void login_find_id() {

@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2200,
     "height": 2200,
-    "scrollTop": -899.2124999999991,
-    "scrollLeft": -662.4000000000012,
-    "zoomLevel": 0.3,
+    "scrollTop": -1463.2124999999992,
+    "scrollLeft": -713.600000000001,
+    "zoomLevel": 1,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -1217,29 +1217,6 @@
             }
           },
           {
-            "id": "63021d73-cc57-4e12-8531-8478c04311ec",
-            "name": "QNA_NO",
-            "comment": "문의내역 번호",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 83.376953125,
-              "widthDataType": 90.283203125,
-              "widthDefault": 60
-            }
-          },
-          {
             "id": "648d2c35-a67b-421a-a112-e3da4c9aaded",
             "name": "QNA_TITLE",
             "comment": "문의내역 제목",
@@ -1428,7 +1405,7 @@
           "active": false,
           "left": 633.9234,
           "top": 1180.9706,
-          "zIndex": 322,
+          "zIndex": 324,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1927,7 +1904,7 @@
             "631db437-cda5-4665-bfd5-8a8125f53f26"
           ],
           "x": 633.9234,
-          "y": 1317.9706,
+          "y": 1307.7206,
           "direction": "left"
         },
         "constraintName": "fk_wine_to_user_qna",

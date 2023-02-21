@@ -1,4 +1,4 @@
-package com.mango.finalproject_mango.controller;
+package com.mango.finalproject_mango.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -43,12 +43,12 @@
   "table": {
     "tables": [
       {
-        "name": "USER",
-        "comment": "회원",
+        "name": "QNA",
+        "comment": "문의내역",
         "columns": [
           {
-            "name": "USER_UID",
-            "comment": "회원아이디",
+            "name": "QNA_UID",
+            "comment": "문의내역UID",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -62,162 +62,162 @@
               "pk": true,
               "fk": false,
               "pfk": false,
-              "widthName": 63.12158203125,
-              "widthComment": 67,
-              "widthDataType": 90.283203125,
-              "widthDefault": 60
-            },
-            "id": "ae69e686-5b21-4303-99f7-fa67539bbb8b"
-          },
-          {
-            "name": "PASSWORD",
-            "comment": "비밀번호",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 71.88134765625,
-              "widthComment": 60,
-              "widthDataType": 90.283203125,
-              "widthDefault": 60
-            },
-            "id": "9aafdefa-1e6a-482d-9436-1cfd373e5372"
-          },
-          {
-            "name": "NAME",
-            "comment": "이름",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
               "widthName": 60,
-              "widthComment": 60,
+              "widthComment": 77.3974609375,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             },
-            "id": "dc88907b-57fa-4dde-8bd4-f219bfac0450"
+            "id": "992d8d07-bec2-4489-bd91-ce4954f05319"
           },
           {
-            "name": "BIRTH",
-            "comment": "생년월일",
+            "name": "QNA_TITLE",
+            "comment": "문의내역 제목",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
+              "widthName": 69.01220703125,
+              "widthComment": 83.376953125,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             },
-            "id": "5e498dc8-f8c5-428c-b8f1-e6730bba6b7c"
+            "id": "0a3106d5-94d5-4ac8-92d6-c046bcb2bb0e"
           },
           {
-            "name": "GENDER",
-            "comment": "성별",
+            "name": "QNA_CONTENT",
+            "comment": "문의내역 내용",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
+              "widthName": 95.78662109375,
+              "widthComment": 83.376953125,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             },
-            "id": "4ddd84b9-d65e-42a3-808a-b1eb8ada4687"
+            "id": "c8ae03ff-069c-46a1-8975-e61b4267a682"
           },
           {
-            "name": "PHONE",
-            "comment": "전화번호",
+            "name": "QNA_DATE",
+            "comment": "문의내역 작성일",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
+              "widthName": 67.79345703125,
+              "widthComment": 96.376953125,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             },
-            "id": "ca6302fc-3671-4a98-97d1-b43720a92fd0"
+            "id": "7748c85a-d39f-47d8-a64b-2065215606e5"
           },
           {
-            "name": "AUTHORITY",
-            "comment": "권한",
+            "name": "QNA_ANSWER",
+            "comment": "문의내역 답변",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 73.90625,
+              "widthName": 88.8359375,
+              "widthComment": 83.376953125,
+              "widthDataType": 90.283203125,
+              "widthDefault": 60
+            },
+            "id": "d37d8e93-438a-4a2f-8279-bb9198913296"
+          },
+          {
+            "name": "QNA_ANSWER_DATE",
+            "comment": "문의내역 처리일",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 126.29345703125,
+              "widthComment": 96.376953125,
+              "widthDataType": 90.283203125,
+              "widthDefault": 60
+            },
+            "id": "e3e64101-0b68-4f55-a19f-6434310bc880"
+          },
+          {
+            "name": "ANSWER_STATUS",
+            "comment": "답변상태",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 106.15234375,
               "widthComment": 60,
               "widthDataType": 90.283203125,
               "widthDefault": 60
             },
-            "id": "de1115d5-36a9-4c00-9ec1-923193a6aa51"
+            "id": "fc793697-c3d8-4bfa-b399-a72a763a7930"
           }
         ],
         "ui": {
           "active": false,
-          "left": 65.6,
-          "top": 79.2,
-          "zIndex": 65,
+          "left": 98.4,
+          "top": 105.6,
+          "zIndex": 73,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "b8baaeaf-dd49-459d-bfa5-7926888b213f"
+        "id": "95b06b56-40e6-4461-b19e-7b48db0f8457"
       }
     ],
     "indexes": []

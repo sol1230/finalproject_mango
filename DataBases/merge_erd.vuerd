@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2200,
     "height": 2200,
-    "scrollTop": -1401.5999999999995,
-    "scrollLeft": -885.6000000000007,
-    "zoomLevel": 1,
+    "scrollTop": -714.3999999999955,
+    "scrollLeft": -697.5999999999996,
+    "zoomLevel": 0.4,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -366,7 +366,7 @@
           "active": false,
           "left": 809.5993,
           "top": 212.9042,
-          "zIndex": 20,
+          "zIndex": 7,
           "widthName": 60,
           "widthComment": 60
         },
@@ -451,7 +451,7 @@
           "active": false,
           "left": 595.2831,
           "top": 693.2314,
-          "zIndex": 9,
+          "zIndex": 6,
           "widthName": 60.84912109375,
           "widthComment": 67
         },
@@ -982,7 +982,7 @@
           "active": false,
           "left": 982.3197,
           "top": 1741.0109,
-          "zIndex": 56,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1382,7 +1382,7 @@
           "active": false,
           "left": 633.9234,
           "top": 1180.9706,
-          "zIndex": 53,
+          "zIndex": 26,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1754,7 +1754,44 @@
     "indexes": []
   },
   "memo": {
-    "memos": []
+    "memos": [
+      {
+        "value": "권한 통일\n- 회원 : USER\n- 관리자 : ADMIN",
+        "ui": {
+          "active": false,
+          "left": 697.7333333333341,
+          "top": 854.3111111111107,
+          "zIndex": 71,
+          "width": 191.80000000000004,
+          "height": 100
+        },
+        "id": "b74009bb-f79c-4f66-8150-f371c6330d5a"
+      },
+      {
+        "value": "문의내역 답변상태 통일\n- 답변대기\n- 답변완료",
+        "ui": {
+          "active": false,
+          "left": 910.6666666666678,
+          "top": 1443.6444444444433,
+          "zIndex": 63,
+          "width": 172.6,
+          "height": 100
+        },
+        "id": "c840dd9f-bd85-4626-8bbb-deba02f98662"
+      },
+      {
+        "value": "게시판 UID\n- 쿠폰 : C01\n- 이벤트 : E01\n- 공지 : N01\n- QNA : Q01\n- 리뷰 : R01\n- 스토어 : S01\n- user : 정보 입력\n- 와인 :\n- 위시리스트 : WISH01",
+        "ui": {
+          "active": false,
+          "left": 1332.1333333333328,
+          "top": 444.46666666666454,
+          "zIndex": 72,
+          "width": 219.80000000000007,
+          "height": 186.39999999999995
+        },
+        "id": "b31fe60b-93af-48a5-9cca-b384eeb7fc96"
+      }
+    ]
   },
   "relationship": {
     "relationships": [
